@@ -1,0 +1,658 @@
+body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: url("img/APOD_\ 2014\ May\ 27\ -\ Star\ Factory\ Messier\ 17.jfif") repeat-x  50% 50%;
+
+}
+
+
+.wrapper{
+    display: block;
+    margin: 0 auto;
+
+}
+
+/*HEADER*/
+
+
+
+
+.header{
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    position: fixed;
+    margin: 10px auto;
+    padding:10px;
+}
+
+.header a.logo{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 10px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.3s;
+    margin-right: 350px;
+}
+
+.header a:hover.logo{
+    transform: scale(1.5) rotate(360deg);
+}
+
+.header .title a{
+    text-decoration: none;
+    letter-spacing: 15px;
+    color: white;
+    font-weight: 500;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav li.nav-item{
+    display: block;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+a.nav-link{
+    color:white;
+    text-decoration: none;
+}
+
+
+
+/*MAIN*/
+
+
+.main{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.sidebar{
+   position: absolute;
+   display: block;
+   top: 30vh;
+}
+
+.cosmos-objects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+}
+
+.object-item{
+    display: block;
+}
+
+.planets-list{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+}
+
+.planets-list li{
+    display: block;
+    margin: 5px 0 5px 10px;
+    padding: 5px;
+}
+
+a.object-link{
+    color: white;
+}
+
+a:hover.object-link{
+    color: grey;
+}
+
+
+
+
+.container{
+    display: block;
+    margin: 0 auto;
+
+    position: relative;
+    animation-name:  cont ;
+    animation-duration: 360s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes cont{
+    0%{
+    transform: translateY(10vh) ;
+    }
+    25%{
+    transform: translateY(-10vh) translateX(5vw) rotate(5deg);
+    }
+    50%{
+    transform: translateY(10vh) translateX(7vw);
+    }
+    75%{
+    transform: translateY(-10vh) translateX(3vw) rotate(-5deg);
+    }
+    100%{
+        transform: translateY(10vh);
+    }
+}
+
+.planet{
+    position: absolute;
+    overflow: hidden;
+    
+}
+
+
+.sun {  
+    border-radius: 50%; 
+    top:10vh ;
+    left: 35vw;
+    width: 28.5vw;
+    height: 28.5vw;
+    animation-name: sun  ;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes sun{
+    0%{
+        transform: rotate(0deg) ;
+    }
+    50%{
+        transform: rotate(720deg) scale(1.1) ;
+    }
+    100%{
+        transform: rotate(1440deg) ;
+    }
+
+}
+
+
+.hotsun{
+    animation-name: hotsun  ;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hotsun{
+    0%{
+        transform: rotate(0deg);
+    filter: brightness(90%) saturate(110%) contrast(100%);
+    }
+    25%{
+        transform: rotate(-120deg) scale(1.2);
+        filter: brightness(100%) saturate(100%) contrast(110%);
+        opacity: 0.8;
+    }
+    50%{
+        transform: rotate(-240deg) scale(1.15);
+
+        filter: brightness(110%) saturate(110%) contrast(120%);
+        opacity: 0.7;
+    }
+    75%{
+        transform: rotate(-360deg) scale(1.2);
+        filter: brightness(100%) saturate(100%) contrast(110%);
+        opacity: 0.8;
+    }
+    100%{
+        filter: brightness(90%) saturate(110%) contrast(100%);
+    }
+}
+
+.sunn{
+    opacity: 0.5;
+    filter: saturate(120%) brightness(90%) contrast(120%);
+    animation-name: sunn  ;
+    animation-duration: 180s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sunn{
+    0%{
+        transform:  rotate(120deg);
+    filter: brightness(90%) saturate(110%) contrast(100%);
+    }
+    25%{
+        transform:  rotate(240deg);
+
+        filter: brightness(100%) saturate(100%) contrast(110%);
+        opacity: 0.6;
+    }
+    50%{
+        
+        transform:  rotate(360deg) scale(1.1);
+
+        filter: brightness(110%) saturate(110%) contrast(120%);
+        opacity: 0.4;
+    }
+    75%{
+        transform:  rotate(480deg);
+
+        filter: brightness(100%) saturate(100%) contrast(110%);
+        opacity: 0.6;
+    }
+    100%{
+        transform:  rotate(540deg);
+
+        filter: brightness(90%) saturate(110%) contrast(100%);
+    }
+}
+
+
+.mercury {
+    border-radius:50%;
+    top:30vh ;
+    left: 45vw;
+    width: 0.1vw;
+    height: 0.1vw;
+    animation-name: mercury  ;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mercury{
+    0%{
+        transform: rotate(0deg) ;
+        opacity: 0.7;
+    }
+    11%{
+        transform: translate(-10vw,10vh) rotate(-180deg);
+        opacity: 1;
+    }
+    22%{
+        transform:translate(-20vw,20vh)  rotate(-180deg) ;
+    }
+    33%{
+        transform: translate(-25vw,35vh) scale(1.5) rotate(-180deg);
+    }
+    44%{
+        transform:translate(-10vw,40vh) scale(2)  rotate(-180deg) ;
+    }
+    55%{
+        transform:translate(5vw,40vh) scale(2)  rotate(-180deg) ;
+    }
+    65%{
+        transform:translate(20vw,30vh) scale(2.3)  rotate(-180deg) ;
+        opacity: 1;
+    }
+    75%{
+        transform:translate(35vw,20vh) scale(1.5)  rotate(-180deg) ;
+        opacity: 0.8;
+    }
+    85%{
+        transform:translate(18vw,10vh) scale(1)  rotate(-180deg) ;
+        opacity: 0.3;
+    }
+    100%{
+        transform: rotate(-180deg) ;
+        opacity: 0.6;
+    }
+}
+
+
+.venus {
+    border-radius: 50%;
+    top:25vh ;
+    left: 40vw;
+    width: 0.248vw;
+    height: 0.248vw;
+    animation-name:venus ;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes venus{
+    0%{
+        transform: rotate(0deg) ;
+        opacity: 0.7;
+    }
+    11%{
+        transform: translate(-15vw,8vh) rotate(-180deg);
+        opacity: 1;
+    }
+    22%{
+        transform:translate(-30vw,16vh)  rotate(-180deg) ;
+    }
+    33%{
+        transform: translate(-15vw,23vh) scale(1.5) rotate(-180deg);
+    }
+    44%{
+        transform:translate(0vw,26vh) scale(2)  rotate(-180deg) ;
+    }
+    
+    60%{
+        transform:translate(20vw,23vh) scale(2.3)  rotate(-180deg) ;
+        opacity: 1;
+    }
+    73%{
+        transform:translate(40vw,20vh) scale(1.5)  rotate(-180deg) ;
+        opacity: 0.8;
+    }
+    85%{
+        transform:translate(25vw,15vh) scale(1)  rotate(-180deg) ;
+        opacity: 0.3;
+    }
+    100%{
+        transform: rotate(-180deg) ;
+        opacity: 0.6;
+    }
+}
+
+
+.earth {
+    border-radius: 50%;
+    top:35vh ;
+    left: 40vw;
+    width: 0.261vw;
+    height: 0.261vw;
+    animation-name:earth  ;
+    animation-duration: 45s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes earth{
+    0%{
+        transform: rotate(0deg) ;
+        opacity: 0.7;
+    }
+    11%{
+        transform: translate(-15vw,8vh) rotate(-180deg);
+        opacity: 1;
+    }
+    22%{
+        transform:translate(-30vw,16vh)  rotate(-180deg) ;
+    }
+    33%{
+        transform: translate(-15vw,23vh) scale(1.5) rotate(-180deg);
+    }
+    44%{
+        transform:translate(0vw,26vh) scale(2)  rotate(-180deg) ;
+    }
+    
+    60%{
+        transform:translate(20vw,23vh) scale(2.3)  rotate(-180deg) ;
+        opacity: 1;
+    }
+    73%{
+        transform:translate(40vw,20vh) scale(1.5)  rotate(-180deg) ;
+        opacity: 0.8;
+    }
+    85%{
+        transform:translate(25vw,15vh) scale(1)  rotate(-180deg) ;
+        opacity: 0.3;
+    }
+    100%{
+        transform: rotate(-180deg) ;
+        opacity: 0.6;
+    }
+}
+
+.mars{
+    border-radius: 50%;
+    top:28vh ;
+    left: 50vw;
+    width: 0.1vw;
+    height: 0.1vw;
+    animation-name:mars ;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mars{
+    0%{
+        transform: rotate(0deg) ;
+        opacity: 0.7;
+    }
+    11%{
+        transform: translate(-10vw,10vh) rotate(-180deg);
+        opacity: 1;
+    }
+    22%{
+        transform:translate(-20vw,20vh)  rotate(-180deg) ;
+    }
+    33%{
+        transform: translate(-25vw,35vh) scale(1.5) rotate(-180deg);
+    }
+    44%{
+        transform:translate(-10vw,40vh) scale(2)  rotate(-180deg) ;
+    }
+    55%{
+        transform:translate(5vw,40vh) scale(2)  rotate(-180deg) ;
+    }
+    65%{
+        transform:translate(20vw,30vh) scale(2.3)  rotate(-180deg) ;
+        opacity: 1;
+    }
+    75%{
+        transform:translate(35vw,20vh) scale(1.5)  rotate(-180deg) ;
+        opacity: 0.8;
+    }
+    85%{
+        transform:translate(18vw,10vh) scale(1)  rotate(-180deg) ;
+        opacity: 0.3;
+    }
+    100%{
+        transform: rotate(-180deg) ;
+        opacity: 0.6;
+    }
+}
+
+
+.jupiter{
+    border-radius: 50%;
+    top:40vh ;
+    left: 85vw;
+    width: 2.865vw;
+    height: 2.865vw;
+    animation-name:jupiter ;
+    animation-duration:120s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jupiter{
+    0%{
+        transform: translate() rotate(45deg);
+        opacity: 1;
+    }
+    10%{
+        transform: translate(-20vw,15vh) scale(0.9) rotate(90deg);
+        opacity: 0.3;
+    }
+    20%{
+        transform: translate(-40vw,20vh) scale(0.8) rotate(135deg);
+        opacity: 0;
+    }
+    30%{
+        transform: translate(-60vw,25vh) scale(0.9) rotate(180deg);
+       opacity: 0.5;
+    }
+    40%{
+       transform: translate(-80vw,20vh) scale(1) rotate(225deg);
+       opacity: 1;
+}
+    50%{
+        transform: translate(-100vw,15vh) rotate(270deg);
+
+    }
+    60%{
+        transform: translate(-80vw,5vh) rotate(315deg);
+
+    }
+    70%{
+        transform: translate(-60vw,-8vh) rotate(360deg);
+
+    }
+    80%{
+        transform: translate(-40vw,-12vh) rotate(405deg);
+
+    }
+    90%{
+        transform: translate(-20vw,-10vh) rotate(450deg);
+
+    }
+    
+    100%{
+        transform: rotate(495deg);
+
+    }
+/*     0%{
+        transform: rotate(0deg) ;
+        opacity: 0.7;
+    }
+    11%{
+        transform: translate(-10vw,10vh) rotate(-180deg);
+        opacity: 1;
+    }
+    22%{
+        transform:translate(-20vw,20vh)  rotate(-180deg) ;
+    }
+    33%{
+        transform: translate(-25vw,35vh)  rotate(-180deg);
+    }
+    44%{
+        transform:translate(-10vw,40vh)   rotate(-180deg) ;
+    }
+    55%{
+        transform:translate(5vw,40vh)   rotate(-180deg) ;
+    }
+    65%{
+        transform:translate(20vw,30vh)   rotate(-180deg) ;
+        opacity: 1;
+    }
+    75%{
+        transform:translate(35vw,20vh)   rotate(-180deg) ;
+        opacity: 0.8;
+    }
+    85%{
+        transform:translate(18vw,10vh)   rotate(-180deg) ;
+        opacity: 0.3;
+    }
+    100%{
+        transform: rotate(-180deg) ;
+        opacity: 0.6;
+    } */
+}
+
+
+.saturn{
+    border-radius: 50%;
+    top:35vh ;
+    left: 35vw;
+    width: 7.17vw;
+    height: 7.17vw;
+    animation-name:saturn ;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes saturn{
+    0%{
+        transform: rotate(60deg);
+        opacity: 1;
+    }
+    11%{
+        transform: translate(10vw,10vh) rotate(120deg);
+        opacity: 1;
+    }
+    22%{
+        transform:translate(20vw,20vh)  rotate(180deg) ;
+    }
+    33%{
+        transform: translate(25vw,35vh)  rotate(240deg);
+    }
+    44%{
+        transform:translate(10vw,40vh)   rotate(300deg) ;
+    }
+    55%{
+        transform:translate(-5vw,40vh)  rotate(360deg) ;
+    }
+    65%{
+        transform:translate(-20vw,30vh) scale(0.9)  rotate(420deg) ;
+     
+    }
+    75%{
+        transform:translate(-35vw,20vh) scale(0.8)    rotate(480deg) ;
+      
+    }
+    85%{
+        transform:translate(-18vw,10vh)  rotate(540deg) ;
+        
+    }
+    100%{
+        transform: rotate(600deg) ;
+        
+    }
+}
+
+
+.uran {
+    border-radius:50%;
+    top:50vh ;
+    left: 5vw;
+    width: 1.04vw;
+    height: 1.04vw;
+    animation-name:uran ;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes uran{
+    0%{
+        transform: rotate(0deg) ;
+        opacity: 0.7;
+    }
+    11%{
+        transform: translate(-15vw,8vh) rotate(-180deg);
+        opacity: 1;
+    }
+    22%{
+        transform:translate(-30vw,16vh)  rotate(-180deg) ;
+    }
+    33%{
+        transform: translate(-15vw,23vh) scale(1.5) rotate(-180deg);
+    }
+    44%{
+        transform:translate(0vw,26vh) scale(2)  rotate(-180deg) ;
+    }
+    
+    60%{
+        transform:translate(20vw,23vh) scale(2.3)  rotate(-180deg) ;
+        opacity: 1;
+    }
+    73%{
+        transform:translate(40vw,20vh) scale(1.5)  rotate(-180deg) ;
+        opacity: 0.8;
+    }
+    85%{
+        transform:translate(25vw,15vh) scale(1)  rotate(-180deg) ;
+        opacity: 0.3;
+    }
+    100%{
+        transform: rotate(-180deg) ;
+        opacity: 0.6;
+    }
+}
