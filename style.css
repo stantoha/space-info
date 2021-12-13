@@ -1,111 +1,63 @@
 body{
+    font-weight: 300;
     margin: 0;
     padding: 0;
     list-style: none;
-    background: url("img/APOD_\ 2014\ May\ 27\ -\ Star\ Factory\ Messier\ 17.jfif") repeat-x  50% 50%;
-
+    background-color: black;
 }
-
 
 .wrapper{
     display: block;
     margin: 0 auto;
-
+    height: 300vh;
+    max-width: 1800px;
+    overflow: hidden;
+    background: url("img/universe-2742113.jpg") no-repeat 50% 50%; 
+    animation-name:bg ;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 600s;
 }
+
+.container{
+    display: block;
+    margin:0 auto;
+}
+
+
+@keyframes bg{
+    0%{
+    }
+    50%{
+         background-position-y:  100% ;
+         background-position-x:50% ;
+    }
+100%{
+}}
+
 
 /*HEADER*/
 
 
 
 
-.header{
-    display: flex;
-    width: 90vw;
-    justify-content: space-between;
-    align-items: center;
-    height: 140px;
-    position: fixed;
-    margin: 10px auto;
-    padding:10px;
-}
 
-.header a.logo{
+
+
+.planets-list{
     display: block;
-    width: 80px;
-    height: 80px;
-    border: 10px solid white;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: 0.3s;
-    margin-right: 350px;
-}
-
-.header a:hover.logo{
-    transform: scale(1.5) rotate(360deg);
-}
-
-.header .title a{
-    text-decoration: none;
-    letter-spacing: 15px;
-    color: white;
-    font-weight: 500;
-}
-.nav{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-
-.nav li.nav-item{
-    display: block;
-    padding: 5px;
     margin: 0 auto;
-}
-
-a.nav-link{
-    color:white;
-    text-decoration: none;
-}
-
-
-
-/*MAIN*/
-
-
-.main{
-    display: block;
-    position: relative;
-    margin: 0 auto;
-}
-
-.sidebar{
-   position: absolute;
-   display: block;
-   top: 30vh;
-}
-
-.cosmos-objects{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: space-between;
 }
 
 .object-item{
-    display: block;
-}
-
-.planets-list{
+    height: 50px;
     display: flex;
-    flex-direction: column;
-    align-content: space-between;
-
+    align-items: center;
+    justify-content: center;
 }
 
-.planets-list li{
-    display: block;
-    margin: 5px 0 5px 10px;
-    padding: 5px;
+.object-link{
+    width: 10em;
 }
 
 a.object-link{
@@ -116,54 +68,31 @@ a:hover.object-link{
     color: grey;
 }
 
-
-
-
-.container{
-    display: block;
-    margin: 0 auto;
-
-    position: relative;
-    animation-name:  cont ;
-    animation-duration: 360s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+section.container.solar-system{
+    height: 70vh;
 }
-@keyframes cont{
-    0%{
-    transform: translateY(10vh) ;
-    }
-    25%{
-    transform: translateY(-10vh) translateX(5vw) rotate(5deg);
-    }
-    50%{
-    transform: translateY(10vh) translateX(7vw);
-    }
-    75%{
-    transform: translateY(-10vh) translateX(3vw) rotate(-5deg);
-    }
-    100%{
-        transform: translateY(10vh);
-    }
-}
+
+
+
 
 .planet{
     position: absolute;
     overflow: hidden;
-    
+
 }
 
-
+.realsun,
 .sun {  
     border-radius: 50%; 
-    top:10vh ;
-    left: 35vw;
+    top:20vh ;
+    left: 30vw;
     width: 28.5vw;
     height: 28.5vw;
     animation-name: sun  ;
-    animation-duration: 120s;
+    animation-duration: 270s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    
 }
 
 
@@ -173,7 +102,7 @@ a:hover.object-link{
         transform: rotate(0deg) ;
     }
     50%{
-        transform: rotate(720deg) scale(1.1) ;
+        transform: rotate(720deg) scale(0.5) ;
     }
     100%{
         transform: rotate(1440deg) ;
@@ -181,10 +110,9 @@ a:hover.object-link{
 
 }
 
-
 .hotsun{
     animation-name: hotsun  ;
-    animation-duration: 120s;
+    animation-duration: 80s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -202,7 +130,7 @@ a:hover.object-link{
     50%{
         transform: rotate(-240deg) scale(1.15);
 
-        filter: brightness(110%) saturate(110%) contrast(120%);
+        filter: brightness(200%) saturate(110%) contrast(120%);
         opacity: 0.7;
     }
     75%{
@@ -219,7 +147,7 @@ a:hover.object-link{
     opacity: 0.5;
     filter: saturate(120%) brightness(90%) contrast(120%);
     animation-name: sunn  ;
-    animation-duration: 180s;
+    animation-duration: 150s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -232,7 +160,7 @@ a:hover.object-link{
     25%{
         transform:  rotate(240deg);
 
-        filter: brightness(100%) saturate(100%) contrast(110%);
+        filter: brightness(200%) saturate(100%) contrast(110%);
         opacity: 0.6;
     }
     50%{
@@ -517,105 +445,84 @@ a:hover.object-link{
         transform: rotate(495deg);
 
     }
-/*     0%{
-        transform: rotate(0deg) ;
-        opacity: 0.7;
-    }
-    11%{
-        transform: translate(-10vw,10vh) rotate(-180deg);
-        opacity: 1;
-    }
-    22%{
-        transform:translate(-20vw,20vh)  rotate(-180deg) ;
-    }
-    33%{
-        transform: translate(-25vw,35vh)  rotate(-180deg);
-    }
-    44%{
-        transform:translate(-10vw,40vh)   rotate(-180deg) ;
-    }
-    55%{
-        transform:translate(5vw,40vh)   rotate(-180deg) ;
-    }
-    65%{
-        transform:translate(20vw,30vh)   rotate(-180deg) ;
-        opacity: 1;
-    }
-    75%{
-        transform:translate(35vw,20vh)   rotate(-180deg) ;
-        opacity: 0.8;
-    }
-    85%{
-        transform:translate(18vw,10vh)   rotate(-180deg) ;
-        opacity: 0.3;
-    }
-    100%{
-        transform: rotate(-180deg) ;
-        opacity: 0.6;
-    } */
+
 }
 
 
 .saturn{
     border-radius: 50%;
-    top:35vh ;
-    left: 35vw;
+    top:5vh ;
+    left: 50vw;
     width: 7.17vw;
     height: 7.17vw;
     animation-name:saturn ;
-    animation-duration: 50s;
+    animation-duration:400s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 @keyframes saturn{
     0%{
-        transform: rotate(60deg);
+        transform: rotate(-60deg);
         opacity: 1;
     }
     11%{
-        transform: translate(10vw,10vh) rotate(120deg);
+        transform: translate(20vw,10vh) rotate(-120deg);
         opacity: 1;
     }
     22%{
-        transform:translate(20vw,20vh)  rotate(180deg) ;
+        transform:translate(30vw,20vh)  rotate(-180deg) ;
+        opacity: 1;
+
     }
     33%{
-        transform: translate(25vw,35vh)  rotate(240deg);
+        transform: translate(40vw,35vh)  rotate(-240deg);
+        opacity: 1;
+
     }
     44%{
-        transform:translate(10vw,40vh)   rotate(300deg) ;
+        transform:translate(20vw,40vh) scale(0.9)  rotate(-300deg) ;
+        opacity: 0.5;
     }
+    50%{
+        transform:translate(10vw,42vh) scale(0.85) rotate(-330deg);
+        opacity: 0.1;
+    }
+    
     55%{
-        transform:translate(-5vw,40vh)  rotate(360deg) ;
+        transform:translate(0vw,40vh) scale(0.8)  rotate(-360deg) ;
+        opacity: 0;
     }
     65%{
-        transform:translate(-20vw,30vh) scale(0.9)  rotate(420deg) ;
-     
+        transform:translate(-30vw,30vh) scale(0.9)  rotate(-420deg) ;
+        opacity: 0.3;
+
+
     }
     75%{
-        transform:translate(-35vw,20vh) scale(0.8)    rotate(480deg) ;
-      
+        transform:translate(-45vw,20vh) scale(0.8)    rotate(-480deg) ;
+      opacity: 1;
     }
     85%{
-        transform:translate(-18vw,10vh)  rotate(540deg) ;
+        transform:translate(-28vw,10vh)  rotate(-540deg) ;
         
     }
     100%{
-        transform: rotate(600deg) ;
-        
+    
+        transform: rotate(-600deg);
+
     }
 }
 
 
 .uran {
     border-radius:50%;
-    top:50vh ;
-    left: 5vw;
-    width: 1.04vw;
-    height: 1.04vw;
+    top:10vh ;
+    left: 35vw;
+    width: 3.12vw;
+    height: 3.12vw;
     animation-name:uran ;
-    animation-duration: 60s;
+    animation-duration: 205s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -623,36 +530,90 @@ a:hover.object-link{
 @keyframes uran{
     0%{
         transform: rotate(0deg) ;
-        opacity: 0.7;
+       
     }
     11%{
         transform: translate(-15vw,8vh) rotate(-180deg);
         opacity: 1;
     }
     22%{
-        transform:translate(-30vw,16vh)  rotate(-180deg) ;
+        transform:translate(-30vw,16vh)  rotate(-360deg) ;
     }
     33%{
-        transform: translate(-15vw,23vh) scale(1.5) rotate(-180deg);
+        transform: translate(-15vw,23vh) scale(1.1) rotate(-540deg);
     }
     44%{
-        transform:translate(0vw,26vh) scale(2)  rotate(-180deg) ;
+        transform:translate(0vw,26vh) scale(1.2)  rotate(-720deg) ;
     }
     
     60%{
-        transform:translate(20vw,23vh) scale(2.3)  rotate(-180deg) ;
+        transform:translate(20vw,23vh) scale(1.2)  rotate(-920deg) ;
         opacity: 1;
     }
     73%{
-        transform:translate(40vw,20vh) scale(1.5)  rotate(-180deg) ;
-        opacity: 0.8;
+        transform:translate(40vw,16vh) scale(1)  rotate(-1140deg) ;
+        opacity: 0.7;
     }
-    85%{
-        transform:translate(25vw,15vh) scale(1)  rotate(-180deg) ;
-        opacity: 0.3;
+    83%{
+        transform:translate(25vw,8vh)   rotate(-1320deg) ;
+        opacity: 0;
     }
     100%{
-        transform: rotate(-180deg) ;
-        opacity: 0.6;
+        transform: rotate(-1500deg) ;
+        opacity: 0.5;
     }
 }
+
+.neptun {
+    border-radius:50%;
+    left: 10vw;
+    top:60vh ;
+    width: 1.01vw;
+    height: 1.01vw;
+    animation-name:neptun ;
+    animation-duration: 750s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}   
+
+@keyframes neptun{
+    0%{
+        transform: rotate(0deg) ;
+    }
+    10%{
+        transform: translate(10vw,-15vh) rotate(30deg);
+    }
+    20%{
+        transform:translate(25vw,-35vh) rotate(60deg) ;
+    }
+    30%{
+        transform: translate(40vw,-50vh) scale(1.2) rotate(90deg);
+    }
+    40%{
+        transform:translate(60vw,-60vh) scale(1.2) rotate(120deg);
+    }
+    50%{
+        transform:translate(85vw,-70vh) scale(1.2)  rotate(150deg) ;
+           }
+    60%{
+        transform:translate(65vw,-40vh) scale(1.2) rotate(180deg) ;
+        opacity: 1;
+    }
+    70%{
+        transform:translate(45vw,-5vh) scale(1)  rotate(210deg) ;
+        opacity: 0;
+    }
+    80%{
+        transform:translate(25vw,15vh) scale(1) rotate(240deg);
+        
+    }
+    90%{
+        transform:translate(10vw,10vh) scale(1)  rotate(270deg) ;
+        
+    }
+    100%{
+        transform:translate(-5vw,5vh) rotate(360deg);
+      
+    }
+}
+
