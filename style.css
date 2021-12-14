@@ -1,20 +1,6 @@
+/* 
 
 
-
-
-
-/*HEADER*/
-
-
-
-
-
-
-
-.planets-list{
-    display: block;
-    margin: 0 auto;
-}
 
 .object-item{
     height: 50px;
@@ -25,18 +11,12 @@
 .solarSystem,
 .object-link{
     width: 10em;
-}
-a.solarSystem,
-a.object-link{
     color: white;
 }
 
-a:hover.object-link{
+a:hover.object-link,
+a:hover.solarSystem{
     color: grey;
-}
-
-section.container.solar-system{
-    height: 70vh;
 }
 
 
@@ -584,3 +564,4 @@ section.container.solar-system{
     }
 }
 
+ */

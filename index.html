@@ -8,34 +8,50 @@
    
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">   
    <title>cosmos</title>
 </head>
 <style>
-   @media screen and(max-width:1040px) {
-      .container {
-         max-width: 970px;
-      }
-      header.header{
-         flex-wrap: wrap;
-      }
+   /* Large desktops and laptops */
+@media (min-width: 1200px) {
+ 
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+   body{
+      font-size: 0.5em;
+   }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+   body{
+      font-size: 0.4em;
+   }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+   body{
+      font-size: 0.3em;
    }
 
-   @media screen and(max-width:992px) {
-      .container {
-         max-width: 780px;
-      }
-      .nav{
-         flex-wrap: wrap   ;
-      }
-   }
+}
 
-   @media screen and(max-width:767px) {
-      .container {
-         max-width: 320px;
-      }
-
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+   body{
+      font-size: 0.2em;
    }
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+   body{
+      font-size: 0.1em;
+   }
+}
 </style>
 
 <body>
@@ -89,7 +105,7 @@
                         <input id="password" name="password" type="password">
                      </div>
                   </form>
-                  
+
                </div>
               
    
@@ -109,7 +125,7 @@
                         </a>
                      </li>
 
-                     <li class="object-item first ">
+                     <li class="object-item first">
                         <a href="#" class="object-link">
                            Mercury
                         </a>
@@ -470,7 +486,7 @@
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit placeat dignissimos ex, optio ullam id in recusandae explicabo, blanditiis modi dolorem, fuga delectus. Tempora, doloremque! Facilis incidunt accusantium modi distinctio.
                      </span>
       
-                     <img class="planet-image rotate" src="img/uran.jpg" alt="Uran" width="600" height="600">
+                     <img class="planet-image rotate" src="img/uranus.jpg" alt="Uranus" width="600" height="600">
       
                      <ul class="planet-info-categories">
       
