@@ -1,39 +1,6 @@
-body{
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background-color: black;
-}
-
-.wrapper{
-    display: block;
-    margin: 0 auto;
-    height: 300vh;
-    max-width: 1800px;
-    overflow: hidden;
-    background: url("img/universe-2742113.jpg") no-repeat 50% 50%; 
-    animation-name:bg ;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 600s;
-}
-
-.container{
-    display: block;
-    margin:0 auto;
-}
 
 
-@keyframes bg{
-    0%{
-    }
-    50%{
-         background-position-y:  100% ;
-         background-position-x:50% ;
-    }
-100%{
-}}
+
 
 
 /*HEADER*/
@@ -55,11 +22,11 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+.solarSystem,
 .object-link{
     width: 10em;
 }
-
+a.solarSystem,
 a.object-link{
     color: white;
 }
@@ -84,8 +51,8 @@ section.container.solar-system{
 .realsun,
 .sun {  
     border-radius: 50%; 
-    top:20vh ;
-    left: 30vw;
+    top:23vh ;
+    left: 35vw;
     width: 28.5vw;
     height: 28.5vw;
     animation-name: sun  ;
