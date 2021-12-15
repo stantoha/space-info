@@ -13,43 +13,80 @@
 </head>
 <style>
    /* Large desktops and laptops */
-@media (min-width: 1200px) {
+   @media (min-width: 1600px)  {
+   body{
+      font-size: 0.8em;
+   }
+   .header a.logo{
+      transform: scale(0.9);
+   }
+ 
+}
+
+
+   /* Large desktops and laptops */
+   @media (min-width: 1200px) and (max-width:1599px ) {
+   body{
+      font-size: 0.7em;
+   }
+   .header a.logo{
+      transform: scale(0.8);
+   }
+
+   .header{
+      flex-wrap: wrap;
+   }
  
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
    body{
-      font-size: 0.5em;
+      font-size: 0.6em;
    }
+   .header a.logo{
+      transform: scale(0.7);
+   }
+ 
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
    body{
-      font-size: 0.4em;
+      font-size: 0.5em;
+   }
+   .header a.logo{
+      transform: scale(0.6);
    }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
    body{
-      font-size: 0.3em;
+      font-size: 0.4em;
    }
-
+   .header a.logo{
+      transform: scale(0.5);
+   }
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
    body{
-      font-size: 0.2em;
+      font-size: 0.3em;
+   }
+   .header a.logo{
+      transform: scale(0.4);
    }
 }
 
 /* Iphone 5 */
 @media (max-width: 320px) {
    body{
-      font-size: 0.1em;
+      font-size: 0.2em;
+   }
+   .header a.logo{
+      transform: scale(0.3);
    }
 }
 </style>
@@ -207,7 +244,7 @@
                         <img class="planet uran" src="img/uran.png" alt="Uran">
                      </a>
                      <a class="planet-link" href="#">
-                        <img class="planet neptun" src="img/nept.jpg" alt="Neptun">
+                        <img class="planet neptun" src="img/nept.png" alt="Neptun">
                      </a>
       
                   </section> 
@@ -455,7 +492,7 @@
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit placeat dignissimos ex, optio ullam id in recusandae explicabo, blanditiis modi dolorem, fuga delectus. Tempora, doloremque! Facilis incidunt accusantium modi distinctio.
                      </span>
       
-                     <img class="planet-image rotate" src="img/saturn.jpg" alt="Saturn" width="600" height="600">
+                     <img class="planet-image rotate" src="img/saturn.png" alt="Saturn" width="600" height="600">
       
                      <ul class="planet-info-categories">
       
@@ -486,7 +523,7 @@
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit placeat dignissimos ex, optio ullam id in recusandae explicabo, blanditiis modi dolorem, fuga delectus. Tempora, doloremque! Facilis incidunt accusantium modi distinctio.
                      </span>
       
-                     <img class="planet-image rotate" src="img/uranus.jpg" alt="Uranus" width="600" height="600">
+                     <img class="planet-image rotate" src="img/uran.png" alt="Uranus" width="600" height="600">
       
                      <ul class="planet-info-categories">
       
@@ -517,7 +554,7 @@
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit placeat dignissimos ex, optio ullam id in recusandae explicabo, blanditiis modi dolorem, fuga delectus. Tempora, doloremque! Facilis incidunt accusantium modi distinctio.
                      </span>
       
-                     <img class="planet-image rotate" src="img/nept.jpg" alt="Neptune" width="600" height="600">
+                     <img class="planet-image nept rotate" src="img/nept.png" alt="Neptune" width="600" height="600">
       
                      <ul class="planet-info-categories">
       
@@ -541,7 +578,9 @@
                   </section> 
                </div>
    
-               
+               <aside class="aside">
+                  
+               </aside>
     
                
             </main> 

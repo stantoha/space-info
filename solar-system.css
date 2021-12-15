@@ -5,7 +5,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: black; 
-   
+   height: 100%;
     
 }
 
@@ -14,7 +14,7 @@ body{
     align-self: center;
     margin: 0 auto;
     overflow: hidden;
-    background: url("img/universe@0\,5x.jpg") no-repeat center top; 
+    background: url("img/solar-system-439046@0\,75x.jpg") no-repeat center top; 
     background-size:100% auto ;
     animation-name:bg ;
     animation-iteration-count: infinite;
@@ -69,6 +69,8 @@ body{
     align-self: center;
     justify-content: space-between ;
     align-items: center;
+    padding: 5px;
+    padding-bottom: 0;
 }
 
 .header-left,
@@ -78,11 +80,12 @@ body{
 }
 
 .header-left{
-    flex: 37%;
+    flex: 50%;
 }
 
 .header-right{
-    flex: 63%;
+    flex: 50%;
+    text-align: right;
 }
 
 .header a.logo{
@@ -182,7 +185,7 @@ nav.nav{
 
 .main{
     display:flex;
-    min-height: 80vh;
+    min-height: 90vh;
     justify-content: space-between;
     margin: 0 auto;
     padding: 10px;
@@ -227,7 +230,7 @@ a:hover.solarSystem{
 
 
 .content{
- width: 77vw;
+ width: 72vw;
     display:flex;
     padding: 30px;
    
@@ -248,11 +251,17 @@ article.planet-info {
     font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .planet-info-list span {
+    padding: 10px;
+    margin: 0 auto;
     color: rgba(255, 255, 255, 0.5);
     line-height: 1.5;
+    font-size: 1.5em;
+    font-weight: 500;
+    
 }
 
 img.planet-image {
@@ -290,6 +299,23 @@ img.planet-image {
     margin: 0 20px;
 }
 
+aside{
+    width:5vw;
+    display:flex;
+    flex-direction: column;
+   align-items: center;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+ }
+
+
+
+
+
+
+
+
+
 
 
 /*planets*/
@@ -305,9 +331,10 @@ img.planet-image {
 .sun {  
     border-radius: 50%; 
     top:23vh ;
-    left: 35vw;
+    left: 38vw;
     width: 28.5vw;
     height: 28.5vw;
+    box-shadow: 0 0 100px 0 rgb(228, 124, 55);
     animation-name: sun  ;
     animation-duration: 270s;
     animation-timing-function: linear;
@@ -331,6 +358,8 @@ img.planet-image {
 }
 
 .hotsun{
+    box-shadow: 0 0 200px 0 rgb(241, 103, 48);
+    opacity: 0.5;
     animation-name: hotsun  ;
     animation-duration: 80s;
     animation-timing-function: linear;
@@ -343,18 +372,18 @@ img.planet-image {
     filter: brightness(90%) saturate(110%) contrast(100%);
     }
     25%{
-        transform: rotate(-120deg) scale(1.2);
+        transform: rotate(-120deg) scale(1.1);
         filter: brightness(100%) saturate(100%) contrast(110%);
         opacity: 0.8;
     }
     50%{
-        transform: rotate(-240deg) scale(1.15);
+        transform: rotate(-240deg) scale(1.05);
 
         filter: brightness(200%) saturate(110%) contrast(120%);
         opacity: 0.7;
     }
     75%{
-        transform: rotate(-360deg) scale(1.2);
+        transform: rotate(-360deg) scale(1.1);
         filter: brightness(100%) saturate(100%) contrast(110%);
         opacity: 0.8;
     }
