@@ -4,91 +4,98 @@
 <head>
    <link rel="stylesheet" href="solar-system.css">
    <link rel="stylesheet" href="style.css">
-  <!--  <link rel="stylesheet" href="section.css"> -->
-   
+   <!--  <link rel="stylesheet" href="section.css"> -->
+
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">   
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>cosmos</title>
 </head>
 <style>
    /* Large desktops and laptops */
-   @media (min-width: 1600px)  {
-   body{
-      font-size: 0.8em;
+   @media (min-width: 1600px) {
+      body {
+         font-size: 0.8em;
+      }
+
+      .header a.logo {
+         transform: scale(0.9);
+      }
+
    }
-   .header a.logo{
-      transform: scale(0.9);
-   }
- 
-}
 
 
    /* Large desktops and laptops */
-   @media (min-width: 1200px) and (max-width:1599px ) {
-   body{
-      font-size: 0.7em;
-   }
-   .header a.logo{
-      transform: scale(0.8);
+   @media (min-width: 1200px) and (max-width:1599px) {
+      body {
+         font-size: 0.7em;
+      }
+
+      .header a.logo {
+         transform: scale(0.8);
+      }
+
+      .header {
+         flex-wrap: wrap;
+      }
+
    }
 
-   .header{
-      flex-wrap: wrap;
-   }
- 
-}
+   /* Landscape tablets and medium desktops */
+   @media (min-width: 992px) and (max-width: 1199px) {
+      body {
+         font-size: 0.6em;
+      }
 
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-   body{
-      font-size: 0.6em;
-   }
-   .header a.logo{
-      transform: scale(0.7);
-   }
- 
-}
+      .header a.logo {
+         transform: scale(0.7);
+      }
 
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-   body{
-      font-size: 0.5em;
    }
-   .header a.logo{
-      transform: scale(0.6);
-   }
-}
 
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-   body{
-      font-size: 0.4em;
-   }
-   .header a.logo{
-      transform: scale(0.5);
-   }
-}
+   /* Portrait tablets and small desktops */
+   @media (min-width: 768px) and (max-width: 991px) {
+      body {
+         font-size: 0.5em;
+      }
 
-/* Portrait phones and smaller */
-@media (max-width: 480px) {
-   body{
-      font-size: 0.3em;
+      .header a.logo {
+         transform: scale(0.6);
+      }
    }
-   .header a.logo{
-      transform: scale(0.4);
-   }
-}
 
-/* Iphone 5 */
-@media (max-width: 320px) {
-   body{
-      font-size: 0.2em;
+   /* Landscape phones and portrait tablets */
+   @media (max-width: 767px) {
+      body {
+         font-size: 0.4em;
+      }
+
+      .header a.logo {
+         transform: scale(0.5);
+      }
    }
-   .header a.logo{
-      transform: scale(0.3);
+
+   /* Portrait phones and smaller */
+   @media (max-width: 480px) {
+      body {
+         font-size: 0.3em;
+      }
+
+      .header a.logo {
+         transform: scale(0.4);
+      }
    }
-}
+
+   /* Iphone 5 */
+   @media (max-width: 320px) {
+      body {
+         font-size: 0.2em;
+      }
+
+      .header a.logo {
+         transform: scale(0.3);
+      }
+   }
 </style>
 
 <body>
@@ -100,17 +107,17 @@
                   <a class="logo" href="#">
                      <img src="img/space.svg" alt="logo">
                   </a>
-      
+
                   <h1 class="title">
                      <a href="#" class="title-link">
                         solar system
                      </a>
                   </h1>
                </div>
-   
-               
+
+
                <div class="header-right">
-            
+
 
                   <nav class="nav">
                      <li class="nav-item">
@@ -128,36 +135,36 @@
                      <li class="nav-item">
                         <a class="nav-link" href="#">CONTACTS</a>
                      </li>
-      
+
                   </nav>
 
-                    
+
                   <form class="sign-form" action="" method="get">
                      <div class="form-col">
                         <label for="email">email:</label><br>
                         <label for="password">password:</label>
                      </div>
                      <div class="form-col">
-                        <input id="email" name="email" type="email">                  
+                        <input id="email" name="email" type="email">
                         <input id="password" name="password" type="password">
                      </div>
                   </form>
 
                </div>
-              
-   
+
+
             </header>
          </div>
-   
+
          <div class="container main-container">
-             <main class="main">
-   
-                <div class="sidebar">
-                  
-                 
+            <main class="main">
+
+               <div class="sidebar">
+
+
                   <ul class="planets-list">
                      <li class="object-item ">
-                        <a href="#" class="solarSystem">
+                        <a href="#" class="object-link solarSystem">
                            Solar-System
                         </a>
                      </li>
@@ -167,43 +174,43 @@
                            Mercury
                         </a>
                      </li>
-   
+
                      <li class="object-item second">
                         <a href="#" class="object-link">
                            Venus
                         </a>
                      </li>
-   
+
                      <li class="object-item third">
                         <a href="#" class="object-link">
                            Earth
                         </a>
                      </li>
-   
+
                      <li class="object-item fourth">
                         <a href="#" class="object-link">
                            Mars
                         </a>
                      </li>
-   
+
                      <li class="object-item fifth">
                         <a href="#" class="object-link">
                            Jupiter
                         </a>
                      </li>
-   
+
                      <li class="object-item sixth">
                         <a href="#" class="object-link">
                            Saturn
                         </a>
                      </li>
-   
+
                      <li class="object-item seventh">
                         <a href="#" class="object-link">
                            Uranus
                         </a>
                      </li>
-   
+
                      <li class="object-item eighth">
                         <a href="#" class="object-link">
                            Neptune
@@ -214,386 +221,474 @@
 
 
                <div class=" content">
-                   <section class="container solar-system">
-                     <a class="planet-link" href="#">
-                        <img class="planet realsun sun" src="img/real sun PNG image with transparent background.png"></img>
-                        <img class="planet sun" src="img/sun1.png" alt="Sun">
-                        <img class="planet sun hotsun" src="img/Hot Sun.png" alt="Sun">
-                        <img class="planet sun sunn" src="img/sunny.png" alt="Sun">
-                     </a>
-      
-                     <a class="planet-link" href="#">
-                        <img class="planet mercury" src="img/mercury.jpg" alt="Mercury">
-                     </a>
-                     <a class="planet-link" href="#">
-                        <img class="planet earth" src="img/earth3.jpg" alt="Earth">
-                     </a>
-                     <a class="planet-link" href="#">
-                        <img class="planet venus" src="img/venus.jpg" alt="Venus">
-                     </a>
-                     <a class="planet-link" href="#">
-                        <img class="planet mars" src="img/marss.jpg" alt="Mars">
-                     </a>
-                     <a class="planet-link" href="#">
-                        <img class="planet jupiter" src="img/jupiter.jpg" alt="Jupiter">
-                     </a>
-                     <a class="planet-link" href="#">
-                        <img class="planet saturn" src="img/saturn.png" alt="Saturn">
-                     </a>
-                     <a class="planet-link" href="#">
-                        <img class="planet uran" src="img/uran.png" alt="Uran">
-                     </a>
-                     <a class="planet-link" href="#">
-                        <img class="planet neptun" src="img/nept.png" alt="Neptun">
-                     </a>
-      
-                  </section> 
-      
+                  <section class="solar-system planet-info-list">
+                     <h2 class="sub-title">
+                        The solar system: A guide to things orbiting our sun
+                     </h2>
+                     <span>
+                        How the solar system formed, was found and what it's filled with.
+                     </span>
+
+                     <div class="planet-image ">
+                        <a class="planet-link" href="#">
+                           <img class="planet realsun sun"
+                              src="img/real sun PNG image with transparent background.png"></img>
+                           <img class="planet sun" src="img/sun1.png" alt="Sun">
+                           <img class="planet sun hotsun" src="img/Hot Sun.png" alt="Sun">
+                           <img class="planet sun sunn" src="img/sunny.png" alt="Sun">
+                        </a>
+
+                        <a class="planet-link" href="#">
+                           <img class="planet mercury" src="img/mercury.jpg" alt="Mercury">
+                        </a>
+                        <a class="planet-link" href="#">
+                           <img class="planet earth" src="img/earth3.jpg" alt="Earth">
+                        </a>
+                        <a class="planet-link" href="#">
+                           <img class="planet venus" src="img/venus.jpg" alt="Venus">
+                        </a>
+                        <a class="planet-link" href="#">
+                           <img class="planet mars" src="img/marss.jpg" alt="Mars">
+                        </a>
+                        <a class="planet-link" href="#">
+                           <img class="planet jupiter" src="img/jupiter.jpg" alt="Jupiter">
+                        </a>
+                        <a class="planet-link" href="#">
+                           <img class="planet saturn" src="img/saturn.png" alt="Saturn">
+                        </a>
+                        <a class="planet-link" href="#">
+                           <img class="planet uran" src="img/uran.png" alt="Uran">
+                        </a>
+                        <a class="planet-link" href="#">
+                           <img class="planet neptun" src="img/nept.png" alt="Neptun">
+                        </a>
+                     </div>
+
+
+                     <article class="planet-info">
+                        <p>
+                           The order of the planets in the solar system, starting nearest the sun and working outward is
+                           the following: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune and then the
+                           possible Planet Nine.
+
+                           Ever since the discovery of Pluto in 1930, kids grew up learning that the solar system has
+                           nine planets. That all changed in the late 1990s when astronomers started arguing about
+                           whether Pluto was indeed a planet. In a highly controversial decision, the International
+                           Astronomical Union ultimately decided in 2006 to designate Pluto as a "dwarf planet,"
+                           reducing the list of the solar system's true planets to just eight.
+
+                           If you insist on including Pluto, it would come after Neptune on the list. Pluto is truly way
+                           out there and on a wildly tilted, elliptical orbit (two of the several reasons it was
+                           demoted).
+                        </p>
+                        <br>
+                        <p>
+                           Astronomers, however, are still hunting for another possible planet in our solar system, a
+                           true ninth planet, after mathematical evidence of its existence was revealed on Jan. 20,
+                           2016. The alleged "Planet Nine," also called "Planet X," is believed to be about 10 times the
+                           mass of Earth and 5,000 times the mass of Pluto.
+                        </p>
+                        <br>
+                        <p>
+                           The solar system is made up of the sun and everything that orbits around it, including
+                           planets, moons, asteroids, comets and meteoroids. It extends from the sun, called Sol by the
+                           ancient Romans, and goes past the four inner planets, through the Asteroid Belt to the four
+                           gas giants and on to the disk-shaped Kuiper Belt and far beyond to the teardrop-shaped
+                           heliopause. Scientists estimate that the edge of the solar system is about 9 billion miles
+                           (15 billion kilometers) from the sun. Beyond the heliopause lies the giant, spherical Oort
+                           Cloud, which is thought to surround the solar system.
+                        </p>
+                        <br>
+                        <h4>HOW WAS THE SOLAR SYSTEM DISCOVERED?</h4> 
+                        <p>
+                          
+For millennia, astronomers have followed points of light that seemed to move among the stars. The ancient Greeks named them planets, meaning "wanderers." Mercury, Venus, Mars, Jupiter and Saturn were known in antiquity, and the invention of the telescope added the Asteroid Belt, Uranus, Neptune, Pluto and many of these worlds' moons. The dawn of the space age saw dozens of probes launched to explore our system, an adventure that continues today. 
+
+There have been five human-made objects so far, Voyager 1, Voyager 2, New Horizons, Pioneer 10 and Pioneer 11, that have crossed the threshold into interstellar space. 
+                        </p>
+                     </article>
+
+                  </section>
+
                   <section class="hidden Mercury-info-list planet-info-list">
                      <h2 class="sub-title">
                         Mercury
                      </h2>
                      <span>
                         Mercury is the closest planet to the Sun and the smallest since Pluto was downgraded to a dwarf
-                        planet. It is also one of five planets visible by the naked eye, along with Saturn, Jupiter, Mars,
-                        and Venus. Despite its proximity to Earth, Mercury is among the least explored planets due to its
+                        planet. It is also one of five planets visible by the naked eye, along with Saturn, Jupiter,
+                        Mars,
+                        and Venus. Despite its proximity to Earth, Mercury is among the least explored planets due to
+                        its
                         proximity to the Sun. Nevertheless, researchers do not expect life to exist on the planet due to
                         its unconducive environment.
                      </span>
-      
+
                      <img class="planet-image rotate" src="img/mercury.jpg" alt="Mercury" width="600" height="600">
-      
+
                      <ul class="planet-info-categories">
-      
+
                         <li class="planet-info-categorie">
                            <article class="planet-info"><br>
                               <h4>Longer Day Than Year</h4>
                               <p>
                                  It takes Mercury 176 Earth days to complete a rotation around its axis and 88 days to
-                                 complete a revolution around the Sun, meaning that a day is longer than its year. Mercury and
-                                 the Sun are nearly in a tidal lock, which has slowed the planet's rotation. Additionally,
-                                 Mercury has the greatest orbital eccentricity, ranging from 29 million mi to 43 million mi.
+                                 complete a revolution around the Sun, meaning that a day is longer than its year.
+                                 Mercury and
+                                 the Sun are nearly in a tidal lock, which has slowed the planet's rotation.
+                                 Additionally,
+                                 Mercury has the greatest orbital eccentricity, ranging from 29 million mi to 43 million
+                                 mi.
                               </p>
                               <br>
                               <h4>Mercury’s Unique Orbit</h4>
                               <p>
-                                 Mercury revolves around the Sun at 112,000 mph, which is the fastest of all planets. Its
-                                 orbit is immensely elliptical, as its distance from the Sun varies between 29 million mi and
-                                 43 million mi. The elliptical orbit also influences its visibility from Earth, as it can move
+                                 Mercury revolves around the Sun at 112,000 mph, which is the fastest of all planets.
+                                 Its
+                                 orbit is immensely elliptical, as its distance from the Sun varies between 29 million
+                                 mi and
+                                 43 million mi. The elliptical orbit also influences its visibility from Earth, as it
+                                 can move
                                  between clear visibility or not be visible at all.
                               </p>
                               <br>
                               <h4> Difficult To Spot In The Sky</h4>
                               <p>
-                                 Mercury plays peekaboo with the Sun, as the planet rises and sets close to when the Sun does,
-                                 which can make it challenging to see it in the sky. Ironically, the planet's existence was
-                                 documented by ancient astronomers before the discovery of Venus and Mars. Current astronomers
-                                 believe that the darker skies of the past made it possible for ancient astronomers to see
+                                 Mercury plays peekaboo with the Sun, as the planet rises and sets close to when the Sun
+                                 does,
+                                 which can make it challenging to see it in the sky. Ironically, the planet's existence
+                                 was
+                                 documented by ancient astronomers before the discovery of Venus and Mars. Current
+                                 astronomers
+                                 believe that the darker skies of the past made it possible for ancient astronomers to
+                                 see
                                  Mercury.
                               </p>
                               <br>
                               <h4>Mercury Has No Rings Or Moons</h4>
                               <p>
-                                 Mercury and Venus are the only two planets in the Solar System without either a moon or ring.
-                                 Astronomers believe that in the past, both planets had moons, but that the Sun’s immense
-                                 gravity pulled them away. Moons offer a better understanding of the formation of planets, and
+                                 Mercury and Venus are the only two planets in the Solar System without either a moon or
+                                 ring.
+                                 Astronomers believe that in the past, both planets had moons, but that the Sun’s
+                                 immense
+                                 gravity pulled them away. Moons offer a better understanding of the formation of
+                                 planets, and
                                  the lack of a moon leaves certain questions unanswered.
                               </p>
                               <br>
                               <h4>Second Hottest Planet</h4>
                               <p>
-                                 Mercury may be the closest planet to the Sun, but it is not as hot as Venus. Mercury has a
-                                 light atmosphere that allows heat to escape, unlike Venus, which has a dense atmosphere that
+                                 Mercury may be the closest planet to the Sun, but it is not as hot as Venus. Mercury
+                                 has a
+                                 light atmosphere that allows heat to escape, unlike Venus, which has a dense atmosphere
+                                 that
                                  traps the heat. The side of Mercury that faces the Sun experiences temperatures of
                                  approximately 427 °C, while the alternate side can be as cold as -173 °C. Venus has an
-                                 average temperature of 427 °C, as its dense atmosphere circulates heat evenly throughout the
+                                 average temperature of 427 °C, as its dense atmosphere circulates heat evenly
+                                 throughout the
                                  planet.
                               </p>
                               <br>
                               <h4>Molten Core</h4>
                               <p>
-                                 Recent studies show that Mercury indeed has a molten core, which is contrary to the solid
-                                 iron core theory proposed throughout the 20th and early 21st centuries. The cores of smaller
-                                 planets cool and solidify rapidly, but extensive research concludes that this is not the case
-                                 for Mercury. Researchers believe that the core is made up of lighter materials that have
+                                 Recent studies show that Mercury indeed has a molten core, which is contrary to the
+                                 solid
+                                 iron core theory proposed throughout the 20th and early 21st centuries. The cores of
+                                 smaller
+                                 planets cool and solidify rapidly, but extensive research concludes that this is not
+                                 the case
+                                 for Mercury. Researchers believe that the core is made up of lighter materials that
+                                 have
                                  lower melting points, such as sulfur.
                               </p>
                               <br>
                               <h4>Mercury Has Organic Material And Water Ice</h4>
                               <p>
-                                 Surprisingly, given its proximity to the hot Sun, Mercury contains water ice. However, this
-                                 ice is located within permanently shadowed craters that do not receive sunlight throughout
+                                 Surprisingly, given its proximity to the hot Sun, Mercury contains water ice. However,
+                                 this
+                                 ice is located within permanently shadowed craters that do not receive sunlight
+                                 throughout
                                  the year. Organic materials, which are the building blocks of life, have also been
-                                 discovered, but the harsh conditions on Mercury cannot support life as it exists on Earth.
+                                 discovered, but the harsh conditions on Mercury cannot support life as it exists on
+                                 Earth.
                                  The concentration of sulfur on Mercury is unlike any other planet in the Solar System.
                               </p>
                               <br>
                               <h4>The Most Cratered Planet</h4>
                               <p>
-                                 While other planets "self-heal" after collisions with comets and asteroids, Mercury does not,
-                                 which has led to numerous craters on the planet's surface. Most are small craters, while a
-                                 few are more than 50 mi wide. The largest crater is the Caloris Basin, which has a diameter
+                                 While other planets "self-heal" after collisions with comets and asteroids, Mercury
+                                 does not,
+                                 which has led to numerous craters on the planet's surface. Most are small craters,
+                                 while a
+                                 few are more than 50 mi wide. The largest crater is the Caloris Basin, which has a
+                                 diameter
                                  of 963 mi.
                               </p>
                               <br>
                               <h4>Two Probes Have Visited Mercury</h4>
                               <p>
-                                 It is challenging to travel between Earth and Mercury not only because the closest distance
-                                 between the two planets is over 48 million mi, but also due to the immense temperature from
+                                 It is challenging to travel between Earth and Mercury not only because the closest
+                                 distance
+                                 between the two planets is over 48 million mi, but also due to the immense temperature
+                                 from
                                  the Sun. Only two probes have reached Mercury: NASA's Mariner 10in 1974-75 and NASA's
                                  MESSENGER in 2004. In 2018, the European Space Agency (ESA) and the Japanese Aerospace
-                                 Exploration Agency (JAXA) launched the joint BepiColombomission that is expected to reach the
+                                 Exploration Agency (JAXA) launched the joint BepiColombomission that is expected to
+                                 reach the
                                  orbit of Mercury in December 2025.
                               </p>
                               <br>
                               <h4>Changing Atmosphere</h4>
                               <p>
-                                 Mercury has a fragile atmosphere known as an exosphere. It is unable to retain heat, which is
+                                 Mercury has a fragile atmosphere known as an exosphere. It is unable to retain heat,
+                                 which is
                                  why the dark side of the planet is frigid. Research shows that the concentration of
-                                 magnesium, sodium, and calcium in Mercury’s atmosphere fluctuates depending on its distance
-                                 from the Sun. Although there is no conclusive evidence regarding why this occurs, astronomers
+                                 magnesium, sodium, and calcium in Mercury’s atmosphere fluctuates depending on its
+                                 distance
+                                 from the Sun. Although there is no conclusive evidence regarding why this occurs,
+                                 astronomers
                                  link it to solar radiation pressure.
                               </p>
                            </article>
                         </li>
-      
-                     </ul>
-                  </section>  
 
-                 <section class="hidden Venus-info-list planet-info-list">
+                     </ul>
+                  </section>
+
+                  <section class="hidden Venus-info-list planet-info-list">
                      <h2 class="sub-title">
                         Venus
                      </h2>
                      <span>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit placeat dignissimos ex, optio ullam id in recusandae explicabo, blanditiis modi dolorem, fuga delectus. Tempora, doloremque! Facilis incidunt accusantium modi distinctio.
+                        
                      </span>
-      
+
                      <img class="planet-image rotate" src="img/venus.jpg" alt="Venus" width="600" height="600">
-      
+
                      <ul class="planet-info-categories">
-      
+
                         <li class="planet-info-categorie">
                            <article class="planet-info"><br>
                               <h4></h4>
                               <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum odit blanditiis officiis perferendis, ipsam consequatur illo, esse corporis nesciunt temporibus repellendus ea aliquid culpa doloremque delectus explicabo amet voluptates. 
+                                
                               </p>
                               <br>
                               <h4></h4>
                               <p>
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, fuga labore quia laudantium nam maxime reprehenderit veritatis provident mollitia eius quaerat! Qui, veritatis nam. Laudantium nemo voluptate reprehenderit architecto sint!
+                                 
                               </p>
                               <br>
-                             
+
                            </article>
                         </li>
-      
+
                      </ul>
-                  </section>  
+                  </section>
 
                   <section class="hidden Earth-info-list planet-info-list">
                      <h2 class="sub-title">
                         Earth
                      </h2>
                      <span>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit placeat dignissimos ex, optio ullam id in recusandae explicabo, blanditiis modi dolorem, fuga delectus. Tempora, doloremque! Facilis incidunt accusantium modi distinctio.
+                        
                      </span>
-      
+
                      <img class="planet-image rotate" src="img/earth3.jpg" alt="Earth" width="600" height="600">
-      
+
                      <ul class="planet-info-categories">
-      
+
                         <li class="planet-info-categorie">
                            <article class="planet-info"><br>
                               <h4></h4>
                               <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum odit blanditiis officiis perferendis, ipsam consequatur illo, esse corporis nesciunt temporibus repellendus ea aliquid culpa doloremque delectus explicabo amet voluptates. 
+                                
                               </p>
                               <br>
                               <h4></h4>
                               <p>
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, fuga labore quia laudantium nam maxime reprehenderit veritatis provident mollitia eius quaerat! Qui, veritatis nam. Laudantium nemo voluptate reprehenderit architecto sint!
+                                 
                               </p>
                               <br>
-                             
+
                            </article>
                         </li>
-      
-                     </ul>
-                  </section>  
 
-                <section class="hidden Mars-info-list planet-info-list">
+                     </ul>
+                  </section>
+
+                  <section class="hidden Mars-info-list planet-info-list">
                      <h2 class="sub-title">
-                        mars
+                        Mars
                      </h2>
                      <span>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit placeat dignissimos ex, optio ullam id in recusandae explicabo, blanditiis modi dolorem, fuga delectus. Tempora, doloremque! Facilis incidunt accusantium modi distinctio.
+                        
                      </span>
-      
+
                      <img class="planet-image rotate" src="img/marss.jpg" alt="mars" width="600" height="600">
-      
+
                      <ul class="planet-info-categories">
-      
+
                         <li class="planet-info-categorie">
                            <article class="planet-info"><br>
                               <h4></h4>
                               <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum odit blanditiis officiis perferendis, ipsam consequatur illo, esse corporis nesciunt temporibus repellendus ea aliquid culpa doloremque delectus explicabo amet voluptates. 
+                                .
                               </p>
                               <br>
                               <h4></h4>
                               <p>
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, fuga labore quia laudantium nam maxime reprehenderit veritatis provident mollitia eius quaerat! Qui, veritatis nam. Laudantium nemo voluptate reprehenderit architecto sint!
+                                 
                               </p>
                               <br>
-                             
+
                            </article>
                         </li>
-      
-                     </ul>
-                  </section>  
 
-                   <section class="hidden Jupiter-info-list planet-info-list">
+                     </ul>
+                  </section>
+
+                  <section class="hidden Jupiter-info-list planet-info-list">
                      <h2 class="sub-title">
                         Jupiter
                      </h2>
                      <span>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit placeat dignissimos ex, optio ullam id in recusandae explicabo, blanditiis modi dolorem, fuga delectus. Tempora, doloremque! Facilis incidunt accusantium modi distinctio.
+                        
                      </span>
-      
+
                      <img class="planet-image rotate" src="img/jupiter.jpg" alt="Jupiter" width="600" height="600">
-      
+
                      <ul class="planet-info-categories">
-      
+
                         <li class="planet-info-categorie">
                            <article class="planet-info"><br>
                               <h4></h4>
                               <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum odit blanditiis officiis perferendis, ipsam consequatur illo, esse corporis nesciunt temporibus repellendus ea aliquid culpa doloremque delectus explicabo amet voluptates. 
+                                .
                               </p>
                               <br>
                               <h4></h4>
                               <p>
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, fuga labore quia laudantium nam maxime reprehenderit veritatis provident mollitia eius quaerat! Qui, veritatis nam. Laudantium nemo voluptate reprehenderit architecto sint!
+                                 
                               </p>
                               <br>
-                             
+
                            </article>
                         </li>
-      
+
                      </ul>
-                  </section>  
+                  </section>
 
                   <section class="hidden Saturn-info-list planet-info-list">
                      <h2 class="sub-title">
                         Saturn
                      </h2>
                      <span>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit placeat dignissimos ex, optio ullam id in recusandae explicabo, blanditiis modi dolorem, fuga delectus. Tempora, doloremque! Facilis incidunt accusantium modi distinctio.
+                        
                      </span>
-      
+
                      <img class="planet-image rotate" src="img/saturn.png" alt="Saturn" width="600" height="600">
-      
+
                      <ul class="planet-info-categories">
-      
+
                         <li class="planet-info-categorie">
                            <article class="planet-info"><br>
                               <h4></h4>
                               <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum odit blanditiis officiis perferendis, ipsam consequatur illo, esse corporis nesciunt temporibus repellendus ea aliquid culpa doloremque delectus explicabo amet voluptates. 
+                                .
                               </p>
                               <br>
                               <h4></h4>
                               <p>
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, fuga labore quia laudantium nam maxime reprehenderit veritatis provident mollitia eius quaerat! Qui, veritatis nam. Laudantium nemo voluptate reprehenderit architecto sint!
+                                 
                               </p>
                               <br>
-                             
+
                            </article>
                         </li>
-      
+
                      </ul>
-                  </section> 
+                  </section>
 
                   <section class="hidden Uran-info-list planet-info-list">
                      <h2 class="sub-title">
                         Uran
                      </h2>
                      <span>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit placeat dignissimos ex, optio ullam id in recusandae explicabo, blanditiis modi dolorem, fuga delectus. Tempora, doloremque! Facilis incidunt accusantium modi distinctio.
+                        
                      </span>
-      
+
                      <img class="planet-image rotate" src="img/uran.png" alt="Uranus" width="600" height="600">
-      
+
                      <ul class="planet-info-categories">
-      
+
                         <li class="planet-info-categorie">
                            <article class="planet-info"><br>
                               <h4></h4>
                               <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum odit blanditiis officiis perferendis, ipsam consequatur illo, esse corporis nesciunt temporibus repellendus ea aliquid culpa doloremque delectus explicabo amet voluptates. 
+                                .
                               </p>
                               <br>
                               <h4></h4>
                               <p>
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, fuga labore quia laudantium nam maxime reprehenderit veritatis provident mollitia eius quaerat! Qui, veritatis nam. Laudantium nemo voluptate reprehenderit architecto sint!
+                                 
                               </p>
                               <br>
-                             
+
                            </article>
                         </li>
-      
+
                      </ul>
-                  </section>  
+                  </section>
 
                   <section class="hidden Neptune-info-list planet-info-list">
                      <h2 class="sub-title">
                         Neptune
                      </h2>
                      <span>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit placeat dignissimos ex, optio ullam id in recusandae explicabo, blanditiis modi dolorem, fuga delectus. Tempora, doloremque! Facilis incidunt accusantium modi distinctio.
+                        
                      </span>
-      
+
                      <img class="planet-image nept rotate" src="img/nept.png" alt="Neptune" width="600" height="600">
-      
+
                      <ul class="planet-info-categories">
-      
+
                         <li class="planet-info-categorie">
                            <article class="planet-info"><br>
                               <h4></h4>
                               <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum odit blanditiis officiis perferendis, ipsam consequatur illo, esse corporis nesciunt temporibus repellendus ea aliquid culpa doloremque delectus explicabo amet voluptates. 
+                                .
                               </p>
                               <br>
                               <h4></h4>
                               <p>
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, fuga labore quia laudantium nam maxime reprehenderit veritatis provident mollitia eius quaerat! Qui, veritatis nam. Laudantium nemo voluptate reprehenderit architecto sint!
+                                 
                               </p>
                               <br>
-                             
+
                            </article>
                         </li>
-      
+
                      </ul>
-                  </section> 
+                  </section>
                </div>
-   
+
                <aside class="aside">
-                  
+
                </aside>
-    
-               
-            </main> 
+
+
+            </main>
          </div>
-   
+
          <div class="container footer-container">
             <footer class="footer">
             </footer>
          </div>
       </div>
-   
+
    </div>
-   
+
    <script src="planet-script.js"></script>
    <script src="script.js"></script>
 </body>

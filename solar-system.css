@@ -264,11 +264,14 @@ article.planet-info {
     
 }
 
-img.planet-image {
+.planet-image {
     display: block;
     border-radius: 50%;
     margin:50px auto;
     align-self: center;
+}
+
+.rotate{
     animation-name: rotate;
     animation-duration: 120s;
     animation-timing-function: linear;
@@ -297,6 +300,10 @@ img.planet-image {
 
 .planet-info p {
     margin: 0 20px;
+}
+
+.solar-system .planet-info{
+    margin-top: 40vh;
 }
 
 aside{
@@ -330,7 +337,7 @@ aside{
 .realsun,
 .sun {  
     border-radius: 50%; 
-    top:23vh ;
+    top:35vh ;
     left: 38vw;
     width: 28.5vw;
     height: 28.5vw;
