@@ -1,29 +1,30 @@
 "use strict";
-const buttons = document.querySelectorAll('.object-link');
+const buttons = document.querySelectorAll('.planet-list-link');
 const content = document.querySelectorAll('.planet-info-list');
 const solarSystem = document.querySelector('.solar-system');
-const solarSButton = document.querySelector('.solarSystem');
-console.log(buttons);
-console.log(solarSButton);
+const solarSButton = document.querySelector('.solarSystem-link');
 
-/* solarSButton.addEventListener('click', function(){
-    solarSystem.classList.toggle('hidden');
-}); */
-
-for (let i = 0; i < buttons.length ; i++) {
-    /* if(!(content[i].classList.contains('solar-system'))){ */
-        buttons[i].addEventListener('click', function() {
-            for(let j=0;j<content.length;j++){
-                if(j!==i){
-                 /*    solarSystem.classList.add('hidden'); */
-                    content[j].classList.add('hidden');
-                }else{
-                    content[j].classList.toggle('hidden');
-                }
-        }
+const buttonClick = function () {
+    solarSButton.addEventListener('click', function () {
+        solarSystem.classList.toggle('hidden');
     });
-
-}
-
-
-
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function () {
+            if (!(solarSystem.classList.add('hidden'))) {
+                if (!(content[i].classList.contains('hidden'))) {
+                    content[i].classList.add('hidden');
+                } else {
+                    solarSystem.classList.add('hidden');
+                    for (let j = 0; j < content.length; j++) {
+                        if (j !== i) {
+                            content[j].classList.add('hidden');
+                        } else {
+                            content[j].classList.toggle('hidden');
+                        }
+                    }
+                }
+            }
+        });
+    }
+};
+buttonClick();
