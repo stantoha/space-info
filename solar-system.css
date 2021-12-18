@@ -16,16 +16,15 @@ body{
     margin: 0 auto;
     overflow: hidden;
     width: 100%;
- 
-    /* background-image: url("img/solar-system-439046.jpg"),  linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+    background-image: url(" img/solar-system-439046.jpg "),  linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
     background-repeat: no-repeat,  no-repeat;
     background-position:  50%, 50% ;
-    background: -moz-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -webkit-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -ms-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+    background: -moz-linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -webkit-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -ms-linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
     background-size:100% auto ;
     animation-name:bg ;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 1200s; */
+    animation-duration: 1200s;
 }
 
 
@@ -68,7 +67,11 @@ body{
     grid-area: hd;
     background-color: rgba(0, 0, 0, 0.5);
     display: block;
-    margin:0 auto ;
+    padding: 0 3vw;
+    margin:5px auto 0 auto ;
+    position: fixed;
+    width: 100%;
+    
 }
 
 .header{
@@ -78,7 +81,7 @@ body{
     justify-content: space-between ;
     align-items: center;
     padding: 5px;
-    height: auto;
+    height: 10vh;
 }
 
 .header-left,
@@ -198,7 +201,7 @@ nav.nav{
 .main-container{
     grid-area: mn;
     display: block;
-    margin: 5px auto;
+    margin: 13vh auto 0 auto;
 }
 
 
@@ -284,6 +287,12 @@ a:active.planet-list-link{
     transform: translateX(10px);
 }
 
+
+ .solar-system .planet-image{
+    margin: 50px auto;
+    height: 30vh;
+}
+
 .content{
     width: 65vw;
     display:flex;
@@ -296,7 +305,7 @@ a:active.planet-list-link{
 h3 {
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 10px;
     margin: 10px auto;
@@ -306,7 +315,7 @@ article.planet-info {
     color: white;
     line-height: 1.5;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -348,12 +357,23 @@ article.planet-info {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 5px;
     font-size: 1.5rem;
-    margin-left: 50px;
+    margin-left: 25px;
 }
 
 .planet-info p {
     margin: 0 20px;
 }
+
+div.header-container,
+header li,
+header h1,
+header h2,
+section h3,
+section article,
+section span{
+    z-index:5;
+}
+
 
 section.solar-system,
 section.planet-info-list,
@@ -365,20 +385,20 @@ section.solar-system-model{
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-section.solar-system,
+/* section.solar-system,
 section.planet-info-list,
 section.solar-system-model{
     display: block;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.2);
-}
+} */
 
 .planet-image-container{
     display: block;
     padding: 5px;
-    width: 320px;
-    height: 320px;
-    margin: 0 auto;
+    width: 310px;
+    height: 310px;
+    margin: 100px auto;
 }
 
 
@@ -394,7 +414,7 @@ img.planet-image{
 
 .planet-info-list .planet-info,
 .solar-system .planet-info{
-   margin-top: 5vh;
+   margin-top: 25vh;
 }
 
 aside{
@@ -407,29 +427,21 @@ aside{
  }
 
 
-
-
-
-
-
-
-
-
-
 /*planets*/
 
 
 .planet{
     position: absolute;
     overflow: hidden;
-
+    z-index: 1;
 }
+
 
 .realsun,
 .sun {  
     border-radius: 50%; 
-    top:10vh ;
-    left: 20vw;
+    top:33vh ;
+    left: 36vw;
     width: 28.5vw;
     height: 28.5vw;
     box-shadow: 0 0 100px 0 rgb(228, 124, 55);
@@ -964,15 +976,63 @@ aside{
     }
 }
 
+.up-button  {
+    display: inline-block;
+    position: fixed;
+    top:50vw;
+    left: 90vw;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    border: none;
+}
+
+.up-button svg{
+  /*  transform: scale(2.5); */
+}
+
+.visually-hidden{
+    visibility: hidden;
+}
+
+.shown {
+    display: inline-block;
+  }
 
 
 
+/* 
 
+.hidden-button {
+    display: none;
+}
 
+.up-button {
+    position: fixed;
+    z-index: 10;
+    padding: 0;
+    bottom: 75px;
+    right: 140px;
+    width: 50px;
+    height: 50px;
+    font-size: 36px;
+    font-weight: 1200;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    background-color: transparent;
+    display: none;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    fill: white;
+} 
 
-
-
-
+.shown {
+    display: inline-block;
+  } */
 
 
 
