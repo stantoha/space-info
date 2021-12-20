@@ -2,7 +2,7 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     font-weight: 300;
-    margin: 0;
+    margin: 0 15vw;
     padding: 0;
     background-color: black; 
    height: 100%;
@@ -16,7 +16,8 @@ body{
     margin: 0 auto;
     overflow: hidden;
     width: 100%;
-    background-image: url(" img/solar-system-439046.jpg "),  linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+    height: auto;
+    background-image: url("img/APOD_ 2014 May 27 - Star Factory Messier 17.jpg"),  linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
     background-repeat: no-repeat,  no-repeat;
     background-position:  50%, 50% ;
     background: -moz-linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -webkit-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -ms-linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
@@ -70,7 +71,7 @@ body{
     padding: 0 ;
     margin-top:5px;
     position: fixed;
-    width: 100vw;
+    width: 70vw;
     
 }
 
@@ -237,10 +238,10 @@ a:active.nav-link{
   }
  
   .nav-item{
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 5px;
     padding: 5px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
@@ -252,9 +253,10 @@ a:active.nav-link{
     padding: 12px 24px;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 50px;
     font-weight: 600;
     text-decoration: none;
+    text-transform: uppercase;
     transition-duration: .25s;
   }
   .nav-link:hover {
@@ -282,8 +284,12 @@ a:active.nav-link{
     left: 0;
   } 
 
+  #nav-toggle:checked ~ .nav-btnl >img {
+      position: absolute;
+    transform: translateX(-100px) rotate(360deg);
+  }
 .planet-list{
-    margin-left: 20px;
+    margin-left: 350px;
 }  
 
 .planet-item{
@@ -297,7 +303,7 @@ a:active.nav-link{
 
 
 
-a.nav-link,
+
 a.solarSystem-link,
 a.planet-link,
 a.planet-list-link{
@@ -330,15 +336,16 @@ a:active.planet-list-link{
     grid-area: mn;
     display: block;
     margin: 13vh auto 0 auto;
+    min-height: 90vh;
 }
 
 
 .main{
     display:flex;
-    min-height: 95vh;
+    height: auto;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 10px;
+    padding: 5px;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.2);
 }
@@ -360,11 +367,11 @@ a:active.planet-list-link{
 }
 
 .content{
-    width: 90vw;
+    width: 63vw;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 10px;
+    padding:5px;
     margin: 5px;
 }
 

@@ -12,6 +12,7 @@
    <title>cosmos</title>
 </head>
 <style>
+  
    /* Large desktops and laptops */
    @media (min-width: 1600px) {
 
@@ -23,7 +24,7 @@
       .sidebar p,
       .main p,
       .main span {
-         font-size: 0.8em;
+         font-size: 1.5em;
       }
 
       .header a.logo,
@@ -46,7 +47,7 @@
       .sidebar p,
       .main p,
       .main span {
-         font-size: 0.8em;
+         font-size: 1em;
       }
 
       .header a.logo,
@@ -70,13 +71,13 @@
       .sidebar p,
       .main p,
       .main span {
-         font-size: 0.6em;
+         font-size: 0.8em;
       }
 
       .header a.logo,
       h3,
       h4 {
-         transform: scale(0.7);
+         transform: scale(0.8);
       }
 
    }
@@ -92,31 +93,16 @@
       .sidebar p,
       .main p,
       .main span {
-         font-size: 0.4em;
+         font-size: 0.7em;
       }
 
-      .basic-container {
-         display: grid;
-         grid-template-areas:
-            "hd hd hd hd"
-            "mn mn mn mn"
-            "ft ft ft ft";
-         grid-template-columns: 1fr 1fr 1fr 1fr;
-         grid-template-rows: 10vh auto 5vh;
-      }
 
-      .content {
-         width: 75vw;
-      }
-
-      .aside {
-         display: none;
-      }
+      
 
       .header a.logo,
       h3,
       h4 {
-         transform: scale(0.5);
+         transform: scale(0.7);
       }
 
 
@@ -133,10 +119,10 @@
       .sidebar p,
       .main p,
       .main span {
-         font-size: 0.3em;
+         font-size: 0.6em;
       }
 
-      .basic-container {
+      /* .basic-container {
          display: grid;
          grid-template-areas:
             "hd hd hd hd"
@@ -144,15 +130,7 @@
             "ft ft ft ft";
          grid-template-columns: 1fr 1fr 1fr 1fr;
          grid-template-rows: 10vh auto 5vh;
-      }
-
-      .content {
-         width: 75vw;
-      }
-
-      .aside {
-         display: none;
-      }
+      } */
 
       .header a.logo,
       h3,
@@ -172,10 +150,10 @@
       .sidebar p,
       .main p,
       .main span {
-         font-size: 0.2em;
+         font-size: 0.5em;
       }
 
-      .basic-container {
+     /*  .basic-container {
          display: grid;
          grid-template-areas:
             "hd hd hd hd"
@@ -183,20 +161,12 @@
             "ft ft ft ft";
          grid-template-columns: 1fr 1fr 1fr 1fr;
          grid-template-rows: 10vh auto 5vh;
-      }
-
-      .content {
-         width: 75vw;
-      }
-
-      .aside {
-         display: none;
-      }
+      } */
 
       .header a.logo,
       h3,
       h4 {
-         transform: scale(0.4);
+         transform: scale(0.5);
       }
    }
 
@@ -211,10 +181,10 @@
       .sidebar p,
       .main p,
       .main span {
-         font-size: 0.1em;
+         font-size: 0.3em;
       }
 
-      .basic-container {
+      /* .basic-container {
          display: grid;
          grid-template-areas:
             "hd hd hd hd"
@@ -222,20 +192,16 @@
             "ft ft ft ft";
          grid-template-columns: 1fr 1fr 1fr 1fr;
          grid-template-rows: 10vh auto 5vh;
-      }
-
-      .aside {
-         display: none;
-      }
-
-      .content {
-         width: 75vw;
-      }
+      } */
 
       .header a.logo,
       h3,
       h4 {
-         transform: scale(0.3);
+         transform: scale(0.5);
+      }
+
+      .up-button{
+         bottom: 0;
       }
    }
 </style>
@@ -247,9 +213,13 @@
             <header class="header">
                <div class="header-left">
                   <div class="header-left-section">
-                     <a class="logo" href="#">
-                        <img src="img/space.svg" alt="logo">
-                     </a>
+                     <label class="nav-btnl" for="nav-toggle">
+                        <a class="logo" href="#">
+                        
+                           <img src="img/space.svg" alt="logo">
+                        </a>
+                     </label>
+                   
                   </div>
                   
                   <div class="header-left-section">
@@ -285,7 +255,7 @@
                      <nav class="nav">
                         <li class="nav-item"><a class="nav-link  solarSystem-link" href="#">Solar-System</a></li>
                         <li class="nav-item"><a class="nav-link  solar-system-modelbut" href="#">Solar-System-model</a></li>
-                        <li class="nav-item"><a class="nav-link  planet-list-object-link" href="#">Planet List</a>
+                        <li class="nav-item"><a class="nav-link  planet-list-object-link" href="#">Planets</a>
                            <ul class="planet-list hidden">
                               <li class="planet-item first">
                                  <a href="#" class="planet-list-link">
@@ -355,7 +325,7 @@
 
 
                <div class=" content">
-                  <section class="solar-system hidden">
+                  <section class="solar-system">
                      <h3 class="sub-title">
                         The solar system: A guide to things orbiting our sun
                      </h3>
