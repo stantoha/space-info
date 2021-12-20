@@ -14,6 +14,7 @@
 <style>
    /* Large desktops and laptops */
    @media (min-width: 1600px) {
+
       .header a,
       .header label,
       .sidebar a,
@@ -21,7 +22,7 @@
       .header p,
       .sidebar p,
       .main p,
-      .main span  {
+      .main span {
          font-size: 0.8em;
       }
 
@@ -36,6 +37,7 @@
 
    /* Large desktops and laptops */
    @media (min-width: 1200px) and (max-width:1599px) {
+
       .header a,
       .header label,
       .sidebar a,
@@ -43,7 +45,7 @@
       .header p,
       .sidebar p,
       .main p,
-      .main span  {
+      .main span {
          font-size: 0.8em;
       }
 
@@ -53,12 +55,13 @@
          transform: scale(0.8);
       }
 
-    
+
 
    }
 
    /* Landscape tablets and medium desktops */
    @media (min-width: 992px) and (max-width: 1199px) {
+
       .header a,
       .header label,
       .sidebar a,
@@ -66,7 +69,7 @@
       .header p,
       .sidebar p,
       .main p,
-      .main span   {
+      .main span {
          font-size: 0.6em;
       }
 
@@ -80,6 +83,7 @@
 
    /* Portrait tablets and small desktops */
    @media (min-width: 768px) and (max-width: 991px) {
+
       .header a,
       .header label,
       .sidebar a,
@@ -87,25 +91,25 @@
       .header p,
       .sidebar p,
       .main p,
-      .main span  {
+      .main span {
          font-size: 0.4em;
       }
 
-      .basic-container{
-    display: grid;
-    grid-template-areas:
-    "hd hd hd hd"
-    "mn mn mn mn"
-    "ft ft ft ft" ;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:10vh auto 5vh ;
-}
+      .basic-container {
+         display: grid;
+         grid-template-areas:
+            "hd hd hd hd"
+            "mn mn mn mn"
+            "ft ft ft ft";
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 10vh auto 5vh;
+      }
 
-     .content{
-        width: 75vw;
-     }
+      .content {
+         width: 75vw;
+      }
 
-      .aside{
+      .aside {
          display: none;
       }
 
@@ -115,11 +119,12 @@
          transform: scale(0.5);
       }
 
-      
+
    }
 
    /* Landscape phones and portrait tablets */
-   @media (min-width:480px) and  (max-width: 767px) {
+   @media (min-width:480px) and (max-width: 767px) {
+
       .header a,
       .header label,
       .sidebar a,
@@ -127,25 +132,25 @@
       .header p,
       .sidebar p,
       .main p,
-      .main span  {
+      .main span {
          font-size: 0.3em;
       }
 
-      .basic-container{
-    display: grid;
-    grid-template-areas:
-    "hd hd hd hd"
-    "mn mn mn mn"
-    "ft ft ft ft" ;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:10vh auto 5vh ;
-}
+      .basic-container {
+         display: grid;
+         grid-template-areas:
+            "hd hd hd hd"
+            "mn mn mn mn"
+            "ft ft ft ft";
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 10vh auto 5vh;
+      }
 
-     .content{
+      .content {
          width: 75vw;
-     }
+      }
 
-      .aside{
+      .aside {
          display: none;
       }
 
@@ -158,6 +163,7 @@
 
    /* Portrait phones and smaller */
    @media (min-width:320px) and (max-width: 479px) {
+
       .header a,
       .header label,
       .sidebar a,
@@ -165,25 +171,25 @@
       .header p,
       .sidebar p,
       .main p,
-      .main span  {
+      .main span {
          font-size: 0.2em;
       }
 
-      .basic-container{
-    display: grid;
-    grid-template-areas:
-    "hd hd hd hd"
-    "mn mn mn mn"
-    "ft ft ft ft" ;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:10vh auto 5vh ;
-}
+      .basic-container {
+         display: grid;
+         grid-template-areas:
+            "hd hd hd hd"
+            "mn mn mn mn"
+            "ft ft ft ft";
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 10vh auto 5vh;
+      }
 
-      .content{
+      .content {
          width: 75vw;
       }
 
-      .aside{
+      .aside {
          display: none;
       }
 
@@ -196,6 +202,7 @@
 
    /* Iphone 5 */
    @media (max-width: 319px) {
+
       .header a,
       .header label,
       .sidebar a,
@@ -207,23 +214,23 @@
          font-size: 0.1em;
       }
 
-      .basic-container{
-    display: grid;
-    grid-template-areas:
-    "hd hd hd hd"
-    "mn mn mn mn"
-    "ft ft ft ft" ;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:10vh auto 5vh ;
-}
+      .basic-container {
+         display: grid;
+         grid-template-areas:
+            "hd hd hd hd"
+            "mn mn mn mn"
+            "ft ft ft ft";
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 10vh auto 5vh;
+      }
 
-      .aside{
+      .aside {
          display: none;
       }
 
-     .content{
-        width: 75vw;
-     }
+      .content {
+         width: 75vw;
+      }
 
       .header a.logo,
       h3,
@@ -239,52 +246,100 @@
          <div class=" header-container">
             <header class="header">
                <div class="header-left">
-                  <a class="logo" href="#">
-                     <img src="img/space.svg" alt="logo">
-                  </a>
-
-                  <h1 class="title">
-                     <a href="#" class="title-link">
-                        solar system
+                  <div class="header-left-section">
+                     <a class="logo" href="#">
+                        <img src="img/space.svg" alt="logo">
                      </a>
-                  </h1>
+                  </div>
+                  
+                  <div class="header-left-section">
+                     <h1 class="title">
+                        <a href="#" class="title-link">
+                           solar system
+                        </a>
+                     </h1>
+                  </div>
+                  
                </div>
 
 
                <div class="header-right">
 
-
-                  <nav class="nav">
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">VISUAL</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">MODEL</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">NEWS</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACTS</a>
-                     </li>
-
-                  </nav>
-
-
-                  <form class="sign-form" action="" method="get">
+                  <form class="sign-form header-right-section" action="" method="get">
                      <div class="form-col">
                         <label for="email">email:</label><input id="email" name="email" type="email">
-                        
+
                      </div>
-                     
+
                      <div class="form-col">
                         <label for="password">password:</label>
                         <input id="password" name="password" type="password">
                      </div>
                   </form>
+
+                  <div class="burger header-right-section">
+                     <input id="nav-toggle" type="checkbox" />
+                     <label class="nav-btn" for="nav-toggle">
+                        <span></span>
+                     </label>
+                     <nav class="nav">
+                        <li class="nav-item"><a class="nav-link  solarSystem-link" href="#">Solar-System</a></li>
+                        <li class="nav-item"><a class="nav-link  solar-system-modelbut" href="#">Solar-System-model</a></li>
+                        <li class="nav-item"><a class="nav-link  planet-list-object-link" href="#">Planet List</a>
+                           <ul class="planet-list hidden">
+                              <li class="planet-item first">
+                                 <a href="#" class="planet-list-link">
+                                    Mercury
+                                 </a>
+                              </li>
+   
+                              <li class="planet-item second">
+                                 <a href="#" class="planet-list-link">
+                                    Venus
+                                 </a>
+                              </li>
+   
+                              <li class="planet-item third">
+                                 <a href="#" class="planet-list-link">
+                                    Earth
+                                 </a>
+                              </li>
+   
+                              <li class="planet-item fourth">
+                                 <a href="#" class="planet-list-link">
+                                    Mars
+                                 </a>
+                              </li>
+   
+                              <li class="planet-item fifth">
+                                 <a href="#" class="planet-list-link">
+                                    Jupiter
+                                 </a>
+                              </li>
+   
+                              <li class="planet-item sixth">
+                                 <a href="#" class="planet-list-link">
+                                    Saturn
+                                 </a>
+                              </li>
+   
+                              <li class="planet-item seventh">
+                                 <a href="#" class="planet-list-link">
+                                    Uranus
+                                 </a>
+                              </li>
+   
+                              <li class="planet-item eighth">
+                                 <a href="#" class="planet-list-link">
+                                    Neptune
+                                 </a>
+                              </li>
+                           </ul></li>
+   
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+                     </nav>
+                  </div>
 
                </div>
 
@@ -294,84 +349,9 @@
 
          <div class=" main-container">
             <main class="main">
+               <!-- <div class="sidebar">
 
-               <div class="sidebar">
-
-
-                  <ul class="objects-list">
-                     
-                     <li class="object-item ">
-                        <a href="#" class="object-link solarSystem-link">
-                           Solar-System
-                        </a>
-                     </li>
-                     <li class="object-item ">
-                        <a href="#" class="object-link solar-system-modelbut">
-                           Solar-System-model
-                        </a>
-                     </li>
-                     
-                     <li class="object-item">
-                        <a href="#" class="object-link planet-list-object-link ">Planet List</a>
-                        <ul class="planet-list hidden">
-                           <li class="planet-item first">
-                              <a href="#" class="planet-list-link">
-                                 Mercury
-                              </a>
-                           </li>
-
-                           <li class="planet-item second">
-                              <a href="#" class="planet-list-link">
-                                 Venus
-                              </a>
-                           </li>
-
-                           <li class="planet-item third">
-                              <a href="#" class="planet-list-link">
-                                 Earth
-                              </a>
-                           </li>
-
-                           <li class="planet-item fourth">
-                              <a href="#" class="planet-list-link">
-                                 Mars
-                              </a>
-                           </li>
-
-                           <li class="planet-item fifth">
-                              <a href="#" class="planet-list-link">
-                                 Jupiter
-                              </a>
-                           </li>
-
-                           <li class="planet-item sixth">
-                              <a href="#" class="planet-list-link">
-                                 Saturn
-                              </a>
-                           </li>
-
-                           <li class="planet-item seventh">
-                              <a href="#" class="planet-list-link">
-                                 Uranus
-                              </a>
-                           </li>
-
-                           <li class="planet-item eighth">
-                              <a href="#" class="planet-list-link">
-                                 Neptune
-                              </a>
-                           </li>
-                        </ul>
-                     </li>
-
-                     <li class="object-item">
-                        <a href="#">
-                           Gallery
-                        </a>
-                     </li>
-
-                  </ul>
-               </div>
+               </div> -->
 
 
                <div class=" content">
@@ -392,7 +372,7 @@
                               <img class="planet sun hotsun" src="img/Hot Sun.png" alt="Sun">
                               <img class="planet sun sunn" src="img/sunny.png" alt="Sun">
                            </a>
-   
+
                            <a class="planet-link" href="#">
                               <img class="planet mercury" src="img/mercury.jpg" alt="Mercury">
                            </a>
@@ -419,7 +399,7 @@
                            </a>
                         </div>
                      </div>
-                    
+
 
 
                      <article class="planet-info">
@@ -565,7 +545,7 @@
                            like that of the sun. Beneath these outer layers, they have no solid surfaces — the pressure
                            from their thick atmospheres liquefy their insides, although they might have rocky cores.
                            Rings of dust, rock, and ice encircle all these giants, with Saturn's being the most famous.
-                          
+
                            Comets are often known as dirty snowballs, and consist mainly of ice and rock. When a comet's
                            orbit takes it close to the sun, some of the ice in its central nucleus turns into gas that
                            shoots out of the comet's sunlit side, which the solar wind carries outward to form into a
@@ -629,7 +609,7 @@
                               style="min-width:74; min-height: 56;" class="last"></iframe>
                         </p>
                      </article>
-                     
+
                   </section>
 
                   <section class="hidden Mercury-info-list planet-info-list">
@@ -650,131 +630,131 @@
 
                      </div>
 
-                                 
-                           <article class="planet-info"><br>
-                              <h4>Longer Day Than Year</h4>
-                              <p>
-                                 It takes Mercury 176 Earth days to complete a rotation around its axis and 88 days to
-                                 complete a revolution around the Sun, meaning that a day is longer than its year.
-                                 Mercury and
-                                 the Sun are nearly in a tidal lock, which has slowed the planet's rotation.
-                                 Additionally,
-                                 Mercury has the greatest orbital eccentricity, ranging from 29 million mi to 43 million
-                                 mi.
-                              </p>
-                              <br>
-                              <h4>Mercury’s Unique Orbit</h4>
-                              <p>
-                                 Mercury revolves around the Sun at 112,000 mph, which is the fastest of all planets.
-                                 Its
-                                 orbit is immensely elliptical, as its distance from the Sun varies between 29 million
-                                 mi and
-                                 43 million mi. The elliptical orbit also influences its visibility from Earth, as it
-                                 can move
-                                 between clear visibility or not be visible at all.
-                              </p>
-                              <br>
-                              <h4> Difficult To Spot In The Sky</h4>
-                              <p>
-                                 Mercury plays peekaboo with the Sun, as the planet rises and sets close to when the Sun
-                                 does,
-                                 which can make it challenging to see it in the sky. Ironically, the planet's existence
-                                 was
-                                 documented by ancient astronomers before the discovery of Venus and Mars. Current
-                                 astronomers
-                                 believe that the darker skies of the past made it possible for ancient astronomers to
-                                 see
-                                 Mercury.
-                              </p>
-                              <br>
-                              <h4>Mercury Has No Rings Or Moons</h4>
-                              <p>
-                                 Mercury and Venus are the only two planets in the Solar System without either a moon or
-                                 ring.
-                                 Astronomers believe that in the past, both planets had moons, but that the Sun’s
-                                 immense
-                                 gravity pulled them away. Moons offer a better understanding of the formation of
-                                 planets, and
-                                 the lack of a moon leaves certain questions unanswered.
-                              </p>
-                              <br>
-                              <h4>Second Hottest Planet</h4>
-                              <p>
-                                 Mercury may be the closest planet to the Sun, but it is not as hot as Venus. Mercury
-                                 has a
-                                 light atmosphere that allows heat to escape, unlike Venus, which has a dense atmosphere
-                                 that
-                                 traps the heat. The side of Mercury that faces the Sun experiences temperatures of
-                                 approximately 427 °C, while the alternate side can be as cold as -173 °C. Venus has an
-                                 average temperature of 427 °C, as its dense atmosphere circulates heat evenly
-                                 throughout the
-                                 planet.
-                              </p>
-                              <br>
-                              <h4>Molten Core</h4>
-                              <p>
-                                 Recent studies show that Mercury indeed has a molten core, which is contrary to the
-                                 solid
-                                 iron core theory proposed throughout the 20th and early 21st centuries. The cores of
-                                 smaller
-                                 planets cool and solidify rapidly, but extensive research concludes that this is not
-                                 the case
-                                 for Mercury. Researchers believe that the core is made up of lighter materials that
-                                 have
-                                 lower melting points, such as sulfur.
-                              </p>
-                              <br>
-                              <h4>Mercury Has Organic Material And Water Ice</h4>
-                              <p>
-                                 Surprisingly, given its proximity to the hot Sun, Mercury contains water ice. However,
-                                 this
-                                 ice is located within permanently shadowed craters that do not receive sunlight
-                                 throughout
-                                 the year. Organic materials, which are the building blocks of life, have also been
-                                 discovered, but the harsh conditions on Mercury cannot support life as it exists on
-                                 Earth.
-                                 The concentration of sulfur on Mercury is unlike any other planet in the Solar System.
-                              </p>
-                              <br>
-                              <h4>The Most Cratered Planet</h4>
-                              <p>
-                                 While other planets "self-heal" after collisions with comets and asteroids, Mercury
-                                 does not,
-                                 which has led to numerous craters on the planet's surface. Most are small craters,
-                                 while a
-                                 few are more than 50 mi wide. The largest crater is the Caloris Basin, which has a
-                                 diameter
-                                 of 963 mi.
-                              </p>
-                              <br>
-                              <h4>Two Probes Have Visited Mercury</h4>
-                              <p>
-                                 It is challenging to travel between Earth and Mercury not only because the closest
-                                 distance
-                                 between the two planets is over 48 million mi, but also due to the immense temperature
-                                 from
-                                 the Sun. Only two probes have reached Mercury: NASA's Mariner 10in 1974-75 and NASA's
-                                 MESSENGER in 2004. In 2018, the European Space Agency (ESA) and the Japanese Aerospace
-                                 Exploration Agency (JAXA) launched the joint BepiColombomission that is expected to
-                                 reach the
-                                 orbit of Mercury in December 2025.
-                              </p>
-                              <br>
-                              <h4>Changing Atmosphere</h4>
-                              <p>
-                                 Mercury has a fragile atmosphere known as an exosphere. It is unable to retain heat,
-                                 which is
-                                 why the dark side of the planet is frigid. Research shows that the concentration of
-                                 magnesium, sodium, and calcium in Mercury’s atmosphere fluctuates depending on its
-                                 distance
-                                 from the Sun. Although there is no conclusive evidence regarding why this occurs,
-                                 astronomers
-                                 link it to solar radiation pressure.
-                              </p>
-                           </article>
-                       
 
-                     
+                     <article class="planet-info"><br>
+                        <h4>Longer Day Than Year</h4>
+                        <p>
+                           It takes Mercury 176 Earth days to complete a rotation around its axis and 88 days to
+                           complete a revolution around the Sun, meaning that a day is longer than its year.
+                           Mercury and
+                           the Sun are nearly in a tidal lock, which has slowed the planet's rotation.
+                           Additionally,
+                           Mercury has the greatest orbital eccentricity, ranging from 29 million mi to 43 million
+                           mi.
+                        </p>
+                        <br>
+                        <h4>Mercury’s Unique Orbit</h4>
+                        <p>
+                           Mercury revolves around the Sun at 112,000 mph, which is the fastest of all planets.
+                           Its
+                           orbit is immensely elliptical, as its distance from the Sun varies between 29 million
+                           mi and
+                           43 million mi. The elliptical orbit also influences its visibility from Earth, as it
+                           can move
+                           between clear visibility or not be visible at all.
+                        </p>
+                        <br>
+                        <h4> Difficult To Spot In The Sky</h4>
+                        <p>
+                           Mercury plays peekaboo with the Sun, as the planet rises and sets close to when the Sun
+                           does,
+                           which can make it challenging to see it in the sky. Ironically, the planet's existence
+                           was
+                           documented by ancient astronomers before the discovery of Venus and Mars. Current
+                           astronomers
+                           believe that the darker skies of the past made it possible for ancient astronomers to
+                           see
+                           Mercury.
+                        </p>
+                        <br>
+                        <h4>Mercury Has No Rings Or Moons</h4>
+                        <p>
+                           Mercury and Venus are the only two planets in the Solar System without either a moon or
+                           ring.
+                           Astronomers believe that in the past, both planets had moons, but that the Sun’s
+                           immense
+                           gravity pulled them away. Moons offer a better understanding of the formation of
+                           planets, and
+                           the lack of a moon leaves certain questions unanswered.
+                        </p>
+                        <br>
+                        <h4>Second Hottest Planet</h4>
+                        <p>
+                           Mercury may be the closest planet to the Sun, but it is not as hot as Venus. Mercury
+                           has a
+                           light atmosphere that allows heat to escape, unlike Venus, which has a dense atmosphere
+                           that
+                           traps the heat. The side of Mercury that faces the Sun experiences temperatures of
+                           approximately 427 °C, while the alternate side can be as cold as -173 °C. Venus has an
+                           average temperature of 427 °C, as its dense atmosphere circulates heat evenly
+                           throughout the
+                           planet.
+                        </p>
+                        <br>
+                        <h4>Molten Core</h4>
+                        <p>
+                           Recent studies show that Mercury indeed has a molten core, which is contrary to the
+                           solid
+                           iron core theory proposed throughout the 20th and early 21st centuries. The cores of
+                           smaller
+                           planets cool and solidify rapidly, but extensive research concludes that this is not
+                           the case
+                           for Mercury. Researchers believe that the core is made up of lighter materials that
+                           have
+                           lower melting points, such as sulfur.
+                        </p>
+                        <br>
+                        <h4>Mercury Has Organic Material And Water Ice</h4>
+                        <p>
+                           Surprisingly, given its proximity to the hot Sun, Mercury contains water ice. However,
+                           this
+                           ice is located within permanently shadowed craters that do not receive sunlight
+                           throughout
+                           the year. Organic materials, which are the building blocks of life, have also been
+                           discovered, but the harsh conditions on Mercury cannot support life as it exists on
+                           Earth.
+                           The concentration of sulfur on Mercury is unlike any other planet in the Solar System.
+                        </p>
+                        <br>
+                        <h4>The Most Cratered Planet</h4>
+                        <p>
+                           While other planets "self-heal" after collisions with comets and asteroids, Mercury
+                           does not,
+                           which has led to numerous craters on the planet's surface. Most are small craters,
+                           while a
+                           few are more than 50 mi wide. The largest crater is the Caloris Basin, which has a
+                           diameter
+                           of 963 mi.
+                        </p>
+                        <br>
+                        <h4>Two Probes Have Visited Mercury</h4>
+                        <p>
+                           It is challenging to travel between Earth and Mercury not only because the closest
+                           distance
+                           between the two planets is over 48 million mi, but also due to the immense temperature
+                           from
+                           the Sun. Only two probes have reached Mercury: NASA's Mariner 10in 1974-75 and NASA's
+                           MESSENGER in 2004. In 2018, the European Space Agency (ESA) and the Japanese Aerospace
+                           Exploration Agency (JAXA) launched the joint BepiColombomission that is expected to
+                           reach the
+                           orbit of Mercury in December 2025.
+                        </p>
+                        <br>
+                        <h4>Changing Atmosphere</h4>
+                        <p>
+                           Mercury has a fragile atmosphere known as an exosphere. It is unable to retain heat,
+                           which is
+                           why the dark side of the planet is frigid. Research shows that the concentration of
+                           magnesium, sodium, and calcium in Mercury’s atmosphere fluctuates depending on its
+                           distance
+                           from the Sun. Although there is no conclusive evidence regarding why this occurs,
+                           astronomers
+                           link it to solar radiation pressure.
+                        </p>
+                     </article>
+
+
+
                   </section>
 
                   <section class="hidden Venus-info-list planet-info-list">
@@ -789,20 +769,20 @@
 
                      </div>
 
-                           <article class="planet-info"><br>
-                              <h4></h4>
-                              <p>
+                     <article class="planet-info"><br>
+                        <h4></h4>
+                        <p>
 
-                              </p>
-                              <br>
-                              <h4></h4>
-                              <p>
+                        </p>
+                        <br>
+                        <h4></h4>
+                        <p>
 
-                              </p>
-                              <br>
+                        </p>
+                        <br>
 
-                           </article>
-                        
+                     </article>
+
                   </section>
 
                   <section class="hidden Earth-info-list planet-info-list">
@@ -817,21 +797,21 @@
 
                      </div>
 
-                     
-                           <article class="planet-info"><br>
-                              <h4></h4>
-                              <p>
 
-                              </p>
-                              <br>
-                              <h4></h4>
-                              <p>
+                     <article class="planet-info"><br>
+                        <h4></h4>
+                        <p>
 
-                              </p>
-                              <br>
+                        </p>
+                        <br>
+                        <h4></h4>
+                        <p>
 
-                           </article>
-                        
+                        </p>
+                        <br>
+
+                     </article>
+
                   </section>
 
                   <section class="hidden Mars-info-list planet-info-list">
@@ -846,21 +826,21 @@
 
                      </div>
 
-                     
-                           <article class="planet-info"><br>
-                              <h4></h4>
-                              <p>
-                                 
-                              </p>
-                              <br>
-                              <h4></h4>
-                              <p>
 
-                              </p>
-                              <br>
+                     <article class="planet-info"><br>
+                        <h4></h4>
+                        <p>
 
-                           </article>
-                      
+                        </p>
+                        <br>
+                        <h4></h4>
+                        <p>
+
+                        </p>
+                        <br>
+
+                     </article>
+
                   </section>
 
                   <section class="hidden Jupiter-info-list planet-info-list">
@@ -875,21 +855,21 @@
 
                      </div>
 
-                     
-                           <article class="planet-info"><br>
-                              <h4></h4>
-                              <p>
-                                 .
-                              </p>
-                              <br>
-                              <h4></h4>
-                              <p>
 
-                              </p>
-                              <br>
+                     <article class="planet-info"><br>
+                        <h4></h4>
+                        <p>
 
-                           </article>
-                        
+                        </p>
+                        <br>
+                        <h4></h4>
+                        <p>
+
+                        </p>
+                        <br>
+
+                     </article>
+
                   </section>
 
                   <section class="hidden Saturn-info-list planet-info-list">
@@ -904,21 +884,21 @@
 
                      </div>
 
-                     
-                           <article class="planet-info"><br>
-                              <h4></h4>
-                              <p>
-                                 .
-                              </p>
-                              <br>
-                              <h4></h4>
-                              <p>
 
-                              </p>
-                              <br>
+                     <article class="planet-info"><br>
+                        <h4></h4>
+                        <p>
 
-                           </article>
-                        </li>
+                        </p>
+                        <br>
+                        <h4></h4>
+                        <p>
+
+                        </p>
+                        <br>
+
+                     </article>
+                     </li>
 
                      </ul>
                   </section>
@@ -935,21 +915,21 @@
 
                      </div>
 
-                     
-                           <article class="planet-info"><br>
-                              <h4></h4>
-                              <p>
-                                 .
-                              </p>
-                              <br>
-                              <h4></h4>
-                              <p>
 
-                              </p>
-                              <br>
+                     <article class="planet-info"><br>
+                        <h4></h4>
+                        <p>
 
-                           </article>
-                        
+                        </p>
+                        <br>
+                        <h4></h4>
+                        <p>
+
+                        </p>
+                        <br>
+
+                     </article>
+
                   </section>
 
                   <section class="hidden Neptune-info-list planet-info-list">
@@ -966,44 +946,46 @@
                      </div>
 
 
-                     
-                           <article class="planet-info"><br>
-                              <h4></h4>
-                              <p>
-                                 .
-                              </p>
-                              <br>
-                              <h4></h4>
-                              <p>
 
-                              </p>
-                              <br>
+                     <article class="planet-info"><br>
+                        <h4></h4>
+                        <p>
+                           .
+                        </p>
+                        <br>
+                        <h4></h4>
+                        <p>
 
-                           </article>
-                       
+                        </p>
+                        <br>
+
+                     </article>
+
                   </section>
 
-                    <!-- <section class=" clearfix last "><div class="solarwidth"><ul class="solarsystem last"><li class="sun"><a href="#sun" class="last"><span class="last">Солнце</span></a></li><li class="mercury"><a href="#mercury" class="last"><span class="last">Меркурий</span></a></li><li class="venus"><a href="#venus" class="last"><span class="last">Венера</span></a></li><li class="earth"><a href="#earth" class="last"><span class="last">Земля<span class="moon last"> &amp; Moon</span></span></a></li><li class="mars"><a href="#mars" class="last"><span class="last">Марс</span></a></li><li class="asteroids_meteorids"><span class="last">Астероиды &amp; Метеориты</span></li><li class="jupiter"><a href="#jupiter" class="last"><span class="last">Юпитер</span></a></li><li class="saturn"><a href="#saturn" class="last"><span class="last">Saturn &amp; <span class="ring last">Ring</span></span></a></li><li class="uranus"><a href="#uranus" class="last"><span class="last">Уран</span></a></li><li class="neptune"><a href="#neptune" class="last"><span class="last">Нептун</span></a></li><li class="pluto last"><a href="#pluto" class="last"><span class="last">Плутон</span></a></li></ul></div><ul id="descriptions" class="last"><li><h3 id="sun"><span id="i" class="last">Солнце</span></h3><p class="last">Солнце является звездой, которая представляет собой горячий шар из раскаленных газов в центре нашей Солнечной системы. Его влияние простирается далеко за пределы орбит Нептуна и Плутона. Без Солнца и его интенсивной энергии и тепла, не было бы жизни на Земле. Существуют миллиарды звезд, как наше Солнце, разбросанных по галактике Млечный Путь.</p></li><li><h3 id="mercury"><span id="i-2" class="last">Меркурий</span></h3><p class="last">Выжженный Солнцем Меркурий лишь немного больше, чем спутник Земли Луна. Подобно Луне, Меркурий практически лишен атмосферы и не может сгладить следы воздействия от падения метеоритов, поэтому он как и Луна покрыт кратерами. Дневная сторона Меркурия очень сильно нагревается на Солнце, а на ночной стороне температура падает на сотни градусов ниже нуля. В кратерах Меркурия, которые расположены на полюсах, существует лед. Меркурий совершает один оборот вокруг Солнца за 88 дней.</p></li><li><h3 id="venus"><span id="i-3" class="last">Венера</span></h3><p class="last">Венера это мир чудовищной жары (еще больше чем на Меркурии) и вулканической активности. Аналогичная по структуре и размеру Земле, Венера покрыта толстой и токсичной атмосферой, которая создает сильный парниковый эффект. Этот выжженной мир достаточно горячий, чтобы расплавить свинец. Радарные снимки сквозь могучую атмосферу выявили вулканы и деформированные горы. Венера вращается в противоположном направлении, от вращения большинства планет.</p></li><li><h3 id="earth"><span id="i-4" class="last">Земля</span></h3><p class="last">Земля — планета океан. Наш дом, с его обилием воды и жизни делает его уникальным в нашей Солнечной системе. Другие планеты, в том числе несколько лун, также имеют залежи льда, атмосферу, времена года и даже погоду, но только на Земле все эти компоненты собрались вместе таким образом, что стало возможным существование жизнь.</p></li><li><h3 id="mars"><span id="i-5" class="last">Марс</span></h3><p class="last">Хотя детали поверхности Марса трудно увидеть с Земли, наблюдения в телескоп показывают, что на Марсе существуют сезоны и белые пятна на полюсах. В течение многих десятилетий, люди полагали, что яркие и темные области на Марсе это пятна растительности и что Марс может быть подходящим местом для жизни, и что вода существует в полярных шапках. Когда космический аппарат Маринер-4, прилетел у Марсу в 1965 году, многие из ученых были потрясены, увидев фотографии мрачной планеты покрытой кратерами. Марс оказался мертвой планетой. Более поздние миссии, однако, показали, что Марс хранит множество тайн, которые еще предстоит решить.</p></li><li><h3 id="jupiter"><span id="i-6" class="last">Юпитер</span></h3><p class="last">Юпитер — самая массивная планета в нашей Солнечной системе, имеет четыре больших спутника и множество небольших лун. Юпитер образует своего рода миниатюрную Солнечную систему. Чтобы превратится в полноценную звезду, Юпитеру нужно было стать в 80 раз массивнее.</p></li><li><h3 id="saturn"><span id="i-7" class="last">Сатурн</span></h3><p class="last">Сатурн — самая дальняя из пяти планет, которые были известны до изобретения телескопа. Подобно Юпитеру, Сатурн состоит в основном из водорода и гелия. Его объем в 755 раз больше, чем у Земли. Ветры в его атмосфере достигают скорости 500 метров в секунду. Эти быстрые ветра в сочетании с теплом, поднимающимся из недр планеты, вызывают появление желтых и золотистых полос, которые мы видим в атмосфере.</p></li><li><h3 id="uranus"><span id="i-8" class="last">Уран</span></h3><p class="last">Первая планета найденная с помощью телескопа, Уран был открыт в 1781 году астрономом Уильямом Гершелем. Седьмая планета от Солнца настолько далека, что один оборот вокруг Солнца занимает 84 года.</p></li><li><h3 id="neptune"><span id="i-9" class="last">Нептун</span></h3><p class="last">Почти в 4,5 млрд. километрах от Солнца вращается далекий Нептун. На один оборот вокруг Солнца у него уходит 165 лет. Он невидим невооруженным глазом из-за его огромного расстояния от Земли. Интересно, что его необычная эллиптическая орбита, пересекается с орбитой карликовой планеты Плутона из-за чего Плутон находится внутри орбиты Нептуна порядка 20 лет из 248 за которые совершает один оборот вокруг Солнца.</p></li><li class="last"><h3 id="pluto"><span id="i-10" class="last">Плутон</span></h3><p class="last">Крошечный, холодный и невероятно далекий Плутон был открыт в 1930 году и долго считался девятой планетой. Но после открытий подобных Плутону миров, которые находились еще дальше, Плутон был переведен в категорию карликовых планет в 2006 году.</p></li></ul></section>
+                  <!-- <section class=" clearfix last "><div class="solarwidth"><ul class="solarsystem last"><li class="sun"><a href="#sun" class="last"><span class="last">Солнце</span></a></li><li class="mercury"><a href="#mercury" class="last"><span class="last">Меркурий</span></a></li><li class="venus"><a href="#venus" class="last"><span class="last">Венера</span></a></li><li class="earth"><a href="#earth" class="last"><span class="last">Земля<span class="moon last"> &amp; Moon</span></span></a></li><li class="mars"><a href="#mars" class="last"><span class="last">Марс</span></a></li><li class="asteroids_meteorids"><span class="last">Астероиды &amp; Метеориты</span></li><li class="jupiter"><a href="#jupiter" class="last"><span class="last">Юпитер</span></a></li><li class="saturn"><a href="#saturn" class="last"><span class="last">Saturn &amp; <span class="ring last">Ring</span></span></a></li><li class="uranus"><a href="#uranus" class="last"><span class="last">Уран</span></a></li><li class="neptune"><a href="#neptune" class="last"><span class="last">Нептун</span></a></li><li class="pluto last"><a href="#pluto" class="last"><span class="last">Плутон</span></a></li></ul></div><ul id="descriptions" class="last"><li><h3 id="sun"><span id="i" class="last">Солнце</span></h3><p class="last">Солнце является звездой, которая представляет собой горячий шар из раскаленных газов в центре нашей Солнечной системы. Его влияние простирается далеко за пределы орбит Нептуна и Плутона. Без Солнца и его интенсивной энергии и тепла, не было бы жизни на Земле. Существуют миллиарды звезд, как наше Солнце, разбросанных по галактике Млечный Путь.</p></li><li><h3 id="mercury"><span id="i-2" class="last">Меркурий</span></h3><p class="last">Выжженный Солнцем Меркурий лишь немного больше, чем спутник Земли Луна. Подобно Луне, Меркурий практически лишен атмосферы и не может сгладить следы воздействия от падения метеоритов, поэтому он как и Луна покрыт кратерами. Дневная сторона Меркурия очень сильно нагревается на Солнце, а на ночной стороне температура падает на сотни градусов ниже нуля. В кратерах Меркурия, которые расположены на полюсах, существует лед. Меркурий совершает один оборот вокруг Солнца за 88 дней.</p></li><li><h3 id="venus"><span id="i-3" class="last">Венера</span></h3><p class="last">Венера это мир чудовищной жары (еще больше чем на Меркурии) и вулканической активности. Аналогичная по структуре и размеру Земле, Венера покрыта толстой и токсичной атмосферой, которая создает сильный парниковый эффект. Этот выжженной мир достаточно горячий, чтобы расплавить свинец. Радарные снимки сквозь могучую атмосферу выявили вулканы и деформированные горы. Венера вращается в противоположном направлении, от вращения большинства планет.</p></li><li><h3 id="earth"><span id="i-4" class="last">Земля</span></h3><p class="last">Земля — планета океан. Наш дом, с его обилием воды и жизни делает его уникальным в нашей Солнечной системе. Другие планеты, в том числе несколько лун, также имеют залежи льда, атмосферу, времена года и даже погоду, но только на Земле все эти компоненты собрались вместе таким образом, что стало возможным существование жизнь.</p></li><li><h3 id="mars"><span id="i-5" class="last">Марс</span></h3><p class="last">Хотя детали поверхности Марса трудно увидеть с Земли, наблюдения в телескоп показывают, что на Марсе существуют сезоны и белые пятна на полюсах. В течение многих десятилетий, люди полагали, что яркие и темные области на Марсе это пятна растительности и что Марс может быть подходящим местом для жизни, и что вода существует в полярных шапках. Когда космический аппарат Маринер-4, прилетел у Марсу в 1965 году, многие из ученых были потрясены, увидев фотографии мрачной планеты покрытой кратерами. Марс оказался мертвой планетой. Более поздние миссии, однако, показали, что Марс хранит множество тайн, которые еще предстоит решить.</p></li><li><h3 id="jupiter"><span id="i-6" class="last">Юпитер</span></h3><p class="last">Юпитер — самая массивная планета в нашей Солнечной системе, имеет четыре больших спутника и множество небольших лун. Юпитер образует своего рода миниатюрную Солнечную систему. Чтобы превратится в полноценную звезду, Юпитеру нужно было стать в 80 раз массивнее.</p></li><li><h3 id="saturn"><span id="i-7" class="last">Сатурн</span></h3><p class="last">Сатурн — самая дальняя из пяти планет, которые были известны до изобретения телескопа. Подобно Юпитеру, Сатурн состоит в основном из водорода и гелия. Его объем в 755 раз больше, чем у Земли. Ветры в его атмосфере достигают скорости 500 метров в секунду. Эти быстрые ветра в сочетании с теплом, поднимающимся из недр планеты, вызывают появление желтых и золотистых полос, которые мы видим в атмосфере.</p></li><li><h3 id="uranus"><span id="i-8" class="last">Уран</span></h3><p class="last">Первая планета найденная с помощью телескопа, Уран был открыт в 1781 году астрономом Уильямом Гершелем. Седьмая планета от Солнца настолько далека, что один оборот вокруг Солнца занимает 84 года.</p></li><li><h3 id="neptune"><span id="i-9" class="last">Нептун</span></h3><p class="last">Почти в 4,5 млрд. километрах от Солнца вращается далекий Нептун. На один оборот вокруг Солнца у него уходит 165 лет. Он невидим невооруженным глазом из-за его огромного расстояния от Земли. Интересно, что его необычная эллиптическая орбита, пересекается с орбитой карликовой планеты Плутона из-за чего Плутон находится внутри орбиты Нептуна порядка 20 лет из 248 за которые совершает один оборот вокруг Солнца.</p></li><li class="last"><h3 id="pluto"><span id="i-10" class="last">Плутон</span></h3><p class="last">Крошечный, холодный и невероятно далекий Плутон был открыт в 1930 году и долго считался девятой планетой. Но после открытий подобных Плутону миров, которые находились еще дальше, Плутон был переведен в категорию карликовых планет в 2006 году.</p></li></ul></section>
 
                   </section> -->
-                  
+
                </div>
 
-               <aside class="aside">
-                  
-               </aside>
+               <!-- <aside class="aside">
 
-               <button class="up-button"  type="button">
-                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Up_arrow_white.svg" alt="">
-                  
-        
-                 <span class="visually-hidden">Наверх</span>
-                </button>
+               </aside> -->
+
+               <button class="up-button" type="button">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Up_arrow_white.svg" alt="">
+
+
+                  <span class="visually-hidden">Наверх</span>
+               </button>
             </main>
          </div>
 
          <div class="container footer-container">
             <footer class="footer">
+
+
             </footer>
          </div>
       </div>

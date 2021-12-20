@@ -67,39 +67,43 @@ body{
     grid-area: hd;
     background-color: rgba(0, 0, 0, 0.5);
     display: block;
-    padding: 0 3vw;
-    margin:5px auto 0 auto ;
+    padding: 0 ;
+    margin-top:5px;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     
 }
 
 .header{
     display: flex;
-    width: 90vw;
     align-self: center;
     justify-content: space-between ;
     align-items: center;
     padding: 5px;
+    margin: 0 5vw;
     height: 10vh;
 }
 
 .header-left,
 .header-right{
     display: flex;
-    justify-content: space-around;
-   
-}
-
-.header-left{
     flex: 50%;
+    justify-content:flex-start;
 }
 
-.header-right{
-    flex: 50%;
-    text-align: right;
-}
 
+
+.header-left-section,
+.header-right-section{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 5px;
+    margin:5px auto;
+}
+.header-right-section{
+    justify-content: flex-end;
+}
 .header a.logo{
     display:block;
     width: 58px;
@@ -122,8 +126,11 @@ body{
 }
 
 
-.header .title a{
+.header h1.title{
     display: block;
+    margin:0;
+}
+.header h1.title a{
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 5px ;
@@ -131,15 +138,11 @@ body{
     font-weight: 300;
     font-family: Arial, Helvetica, sans-serif;
     transition: 0.3s;
-    margin:5px 30px;
 }
-
 .sign-form{
     display: flex;
    flex-direction: column;
    align-content: center;
-    padding: 5px;
-    margin:5px ;
 }
 
 
@@ -180,20 +183,145 @@ a:active.nav-link{
     color: tomato;
 }
 
-nav.nav{
+.burger{
     display: flex;
-    justify-content:flex-start;
+    justify-content: center;
     align-items: center;
-
-    list-style: none;
-    padding: 10px;
-    margin:0 10px;
-}       
-
-.nav li.nav-item{
-    display: block;
-    margin: 0 5px;
+   width: auto;
+    height: 50px;
 }
+
+.nav-btn{
+    display: block;
+    position: absolute;
+    
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .nav-btn > span,
+  .nav-btn > span::before,
+  .nav-btn > span::after {
+      display: block;
+      position: absolute;
+      top: 10px;
+    width: 30px;
+    height: 6px;
+    background-color: white;
+    transition-duration: .25s;
+  }
+  .nav-btn > span::before {
+    content: '';
+    top: -10px;
+  }
+  .nav-btn > span::after {
+    content: '';
+    top: 10px;
+  }
+  
+  .nav{
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 20vw;
+    height: 100%;
+    margin: 0;
+    padding: 150px 0;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+  }
+ 
+  .nav-item{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+  .nav-link {
+    display: block;
+    padding: 12px 24px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .nav-link:hover {
+    background-color: #CFD8DC;
+  }
+   
+   
+  #nav-toggle{
+    opacity: 0;
+  }
+   
+  #nav-toggle:checked ~ .nav-btn > span{
+    transform: rotate(45deg);
+  }
+  #nav-toggle:checked ~ .nav-btn > span::before{
+    top: 0;
+    transform: rotate(0);
+  }
+  #nav-toggle:checked ~ .nav-btn > span::after{
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #nav-toggle:checked ~ .nav{
+    visibility: visible;
+    left: 0;
+  } 
+
+.planet-list{
+    margin-left: 20px;
+}  
+
+.planet-item{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+
+
+a.nav-link,
+a.solarSystem-link,
+a.planet-link,
+a.planet-list-link{
+    width: 8em;
+    color: white;
+    transition:all 0.3s;
+}
+
+a:hover.nav-link,
+a:hover.planet-link,
+a:hover.solarSystem-link,
+a:hover.planet-list-link{
+    color: grey;
+    transform: translateX(20px);
+}
+
+a:active.nav-link,
+a:active.planet-link,
+a:active.solarSystem-link,
+a:active.planet-list-link{
+    color: rgb(107, 18, 18);
+    transform: translateX(20px);
+}
+
 
 
 /*MAIN*/
@@ -207,7 +335,7 @@ nav.nav{
 
 .main{
     display:flex;
-    min-height: 90vh;
+    min-height: 95vh;
     justify-content: space-between;
     margin: 0 auto;
     padding: 10px;
@@ -216,76 +344,14 @@ nav.nav{
 }
 
  
-.sidebar{
+/* .sidebar{
    width:10vw;
    display:flex;
    flex-direction: column;
   align-items: center;
    padding: 10px;
    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.sidebar ul.objects-list{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-}
-
-.objects-item{
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-}
-
-.objects-list ul.planet-list{
-
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-}
-
-
-.planet-item{
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-li.planet-item,
-li.object-item{
-    padding: 5px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-}
-
-a.object-link,
-a.solarSystem-link,
-a.planet-link,
-a.planet-list-link{
-    width: 8em;
-    color: white;
-    transition:all 0.3s;
-}
-
-a:hover.object-link,
-a:hover.planet-link,
-a:hover.solarSystem-link,
-a:hover.planet-list-link{
-    color: grey;
-    transform: translateX(10px);
-}
-
-a:active.object-link,
-a:active.planet-link,
-a:active.solarSystem-link,
-a:active.planet-list-link{
-    color: rgb(107, 18, 18);
-    transform: translateX(10px);
-}
+} */
 
 
  .solar-system .planet-image{
@@ -294,7 +360,7 @@ a:active.planet-list-link{
 }
 
 .content{
-    width: 65vw;
+    width: 90vw;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -417,14 +483,14 @@ img.planet-image{
    margin-top: 25vh;
 }
 
-aside{
+/* aside{
     width:10vw;
     display:flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
     background-color: rgba(0, 0, 0, 0.4);
- }
+ } */
 
 
 /*planets*/
@@ -1002,7 +1068,9 @@ aside{
     display: inline-block;
   }
 
+  
 
+  
 
 /* 
 
@@ -1041,3 +1109,4 @@ aside{
     background-color: white;
 }
 
+    
