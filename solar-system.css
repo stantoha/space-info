@@ -2,9 +2,9 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     font-weight: 300;
-    margin: 0 15vw;
+    margin: 0 10vw;
     padding: 0;
-    background-color: black; 
+    background-color: black;
    height: 100%;
     
 }
@@ -16,31 +16,13 @@ body{
     margin: 0 auto;
     overflow: hidden;
     width: 100%;
-    height: auto;
-    background-image: url("img/APOD_ 2014 May 27 - Star Factory Messier 17.jpg"),  linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
-    background-repeat: no-repeat,  no-repeat;
-    background-position:  50%, 50% ;
+    
+    background-image: url("img/universe.jpg"),url("img/universe.jpg"),  linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+    background-repeat: no-repeat,    no-repeat;
+    background-position:top, bottom ;
     background: -moz-linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -webkit-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -ms-linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
     background-size:100% auto ;
-    animation-name:bg ;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 1200s;
 }
-
-
-
-@keyframes bg{
-    0%{
-    }
-    50%{
-         background-position-y:-100% ;
-    background-position-x:center ;
-    }
-100%{
-    background-position-y:100% ;
-    background-position-x:center ;
-}}
 
 .basic-container{
     display: grid;
@@ -50,7 +32,7 @@ body{
     ". hd hd hd hd hd hd ."
     ". mn mn mn mn mn mn ."
     ". ft ft ft ft ft ft ." ;
-    grid-template-columns:0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr ;
+    grid-template-columns:0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.1fr ;
     grid-template-rows:auto auto 5vh ;
 }
 
@@ -69,9 +51,9 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
     display: block;
     padding: 0 ;
-    margin-top:5px;
+    margin:0 auto ;
     position: fixed;
-    width: 70vw;
+    width: 80vw;
     
 }
 
@@ -133,8 +115,7 @@ body{
 }
 .header h1.title a{
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 5px ;
+    letter-spacing: 10px ;
     color: white;
     font-weight: 300;
     font-family: Arial, Helvetica, sans-serif;
@@ -149,20 +130,25 @@ body{
 
 .form-col{
     display: flex;
-   
+  
     align-items: center;
 }
 .form-col label{
     color: white;
-    text-transform: uppercase;
-    width: 30%;
+    
+    width: 80px;
     padding:5px;
-   
+    justify-content: flex-start;
+    margin-right: 5px;
+    font-size:0.7 ;
+    font-weight: 300;
+    opacity: 0.5;
 }
 
 .form-col input{
-    height: 10%;
-    width: 50%;
+    justify-content:flex-end;
+    height: 30%;
+    width: 120px;
 }
 
 
@@ -195,9 +181,8 @@ a:active.nav-link{
 .nav-btn{
     display: block;
     position: absolute;
-    
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
     z-index: 1;
   }
@@ -206,19 +191,19 @@ a:active.nav-link{
   .nav-btn > span::after {
       display: block;
       position: absolute;
-      top: 10px;
-    width: 30px;
-    height: 6px;
+      top: 25px;
+    width: 45px;
+    height: 9px;
     background-color: white;
     transition-duration: .25s;
   }
   .nav-btn > span::before {
     content: '';
-    top: -10px;
+    top: -15px;
   }
   .nav-btn > span::after {
     content: '';
-    top: 10px;
+    top: 15px;
   }
   
   .nav{
@@ -227,7 +212,7 @@ a:active.nav-link{
     visibility: hidden;
     top: 0;
     left: -100%;
-    width: 20vw;
+    width: 10vw;
     height: 100%;
     margin: 0;
     padding: 150px 0;
@@ -241,26 +226,37 @@ a:active.nav-link{
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 5px;
     padding: 5px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    text-align: center;
+    text-align: start;
 }
 
-  .nav-link {
+a.solarSystem-link,
+  a.nav-link {
     display: block;
     padding: 12px 24px;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 50px;
-    font-weight: 600;
+    margin: 0;
+    font-weight: 700;
     text-decoration: none;
-    text-transform: uppercase;
-    transition-duration: .25s;
+    transition-duration: .75s;
   }
-  .nav-link:hover {
-    background-color: #CFD8DC;
+  a:hover.solarSystem-link,
+  a:hover.nav-link {
+    background-color: rgba(30, 75, 115, 1);
+    transform: translateX(40px) scale(1.4);
+    border-radius: 5px/5px;
+    letter-spacing: 1px;
+    padding: 9px 18px;
+  }
+  a:active.solarSystem-link,
+  a:active.nav-link{
+    color:#e76f1f;
+    transform: translateX(40px) scale(1.2);
   }
    
    
@@ -288,8 +284,10 @@ a:active.nav-link{
       position: absolute;
     transform: translateX(-100px) rotate(360deg);
   }
+
 .planet-list{
-    margin-left: 350px;
+    padding-top: 25vh;
+    margin-left: 27px;
 }  
 
 .planet-item{
@@ -298,34 +296,39 @@ a:active.nav-link{
     align-items: center;
     justify-content: center;
     padding: 5px;
-
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    border-left: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    margin-top: 20px;  
 }
 
 
 
 
-a.solarSystem-link,
+
 a.planet-link,
 a.planet-list-link{
-    width: 8em;
+    font-size: 0.8;
+    width: 4em;
     color: white;
     transition:all 0.3s;
 }
 
-a:hover.nav-link,
+
 a:hover.planet-link,
-a:hover.solarSystem-link,
+
 a:hover.planet-list-link{
     color: grey;
-    transform: translateX(20px);
+    transform: translateX(6px) scale(1.2);
 }
 
-a:active.nav-link,
+
 a:active.planet-link,
 a:active.solarSystem-link,
 a:active.planet-list-link{
-    color: rgb(107, 18, 18);
-    transform: translateX(20px);
+    color: #e76f1f;
+    transform: translateX(6px) scale(1.2);
 }
 
 
@@ -335,8 +338,8 @@ a:active.planet-list-link{
 .main-container{
     grid-area: mn;
     display: block;
-    margin: 13vh auto 0 auto;
-    min-height: 90vh;
+    margin: 12vh auto 0 auto;
+    min-height: 80%;
 }
 
 
@@ -345,9 +348,9 @@ a:active.planet-list-link{
     height: auto;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 5px;
+    padding:0;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0,0.7);
 }
 
  
@@ -361,13 +364,13 @@ a:active.planet-list-link{
 } */
 
 
- .solar-system .planet-image{
-    margin: 50px auto;
-    height: 30vh;
-}
+/*  .solar-system .planet-image{
+    margin:  auto;
+    height: 28vh;
+} */
 
 .content{
-    width: 63vw;
+    width: 68vw;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -379,9 +382,9 @@ h3 {
     color: white;
     text-align: center;
     font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    margin: 10px auto;
+    letter-spacing: 5px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 article.planet-info {
@@ -391,6 +394,7 @@ article.planet-info {
     font-weight: 400;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -400,10 +404,10 @@ article.planet-info {
     padding: 10px;
     margin: 0 auto;
     color: rgba(255, 255, 255, 0.5);
-    line-height: 1.5;
-    font-size: 1em;
+    line-height: 1;
+    font-size: 0.8em;
     font-weight: 400;
-    text-align: center;
+
 }
 
 .rotate{
@@ -433,8 +437,26 @@ article.planet-info {
     margin-left: 25px;
 }
 
-.planet-info p {
-    margin: 0 20px;
+
+
+.planet-info span{
+    margin: 0 auto;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.planet-info.article-image img{
+    margin: 15px;
+}
+.basic-info li,
+.planet-info p{
+    color: rgba(255, 255, 255, 0.5);
+    margin: 50px auto;
+    text-align:start;
+}
+
+.basic-info li{
+    width: 150px;
 }
 
 div.header-container,
@@ -449,45 +471,77 @@ section span{
 
 
 section.solar-system,
-section.planet-info-list,
-section.solar-system-model{
+section.planet-info-list{
     display: flex;
     flex-direction: column;
     align-content: center;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
+    text-align:start;
 }
 
-/* section.solar-system,
-section.planet-info-list,
-section.solar-system-model{
-    display: block;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
-} */
+div.solar-system-model{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.planet-info-image-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 3px solid rgba(255, 255, 255, 0.5); */
+}
+
+
 
 .planet-image-container{
-    display: block;
-    padding: 5px;
+    display: flex;
+    background: url("img/APOD_\ 2014\ May\ 27\ -\ Star\ Factory\ Messier\ 17.jpg");
+    background-position: 50%, 50%;
+    padding: 200px;
     width: 310px;
     height: 310px;
-    margin: 100px auto;
+    margin:0 auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px/30px;
+    box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.7);
+    animation-name:bg ;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1200s; 
 }
+
+
+ 
+@keyframes bg{
+    0%{
+    }
+    50%{
+         background-position-x:-100% ;
+    background-position-y:center ;
+    }
+100%{
+    background-position-x:100% ;
+    background-position-y:center ;
+}} 
+
 
 
 img.planet-image{
-    display: inline-block;
+    display:block;
     margin:5px;
     width: 300px;
     height: 300px;
     border-radius: 50%;
     justify-self: center;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .planet-info-list .planet-info,
 .solar-system .planet-info{
-   margin-top: 25vh;
+   margin-top: 100px;
 }
 
 /* aside{
@@ -513,16 +567,15 @@ img.planet-image{
 .realsun,
 .sun {  
     border-radius: 50%; 
-    top:33vh ;
-    left: 36vw;
+    top:30vh ;
+    left: 35.5vw;
     width: 28.5vw;
     height: 28.5vw;
     box-shadow: 0 0 100px 0 rgb(228, 124, 55);
     animation-name: sun  ;
-    animation-duration: 270s;
+    animation-duration: 180s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    
 }
 
 
@@ -542,9 +595,9 @@ img.planet-image{
 
 .hotsun{
     box-shadow: 0 0 200px 0 rgb(241, 103, 48);
-    opacity: 0.5;
+    opacity: 0.7;
     animation-name: hotsun  ;
-    animation-duration: 80s;
+    animation-duration: 110s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -579,7 +632,7 @@ img.planet-image{
     opacity: 0.5;
     filter: saturate(120%) brightness(90%) contrast(120%);
     animation-name: sunn  ;
-    animation-duration: 150s;
+    animation-duration: 205s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -623,7 +676,7 @@ img.planet-image{
     width: 0.1vw;
     height: 0.1vw;
     animation-name: mercury  ;
-    animation-duration: 15s;
+    animation-duration: 25s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -675,7 +728,7 @@ img.planet-image{
     width: 0.248vw;
     height: 0.248vw;
     animation-name:venus ;
-    animation-duration: 25s;
+    animation-duration: 35s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -725,7 +778,7 @@ img.planet-image{
     width: 0.261vw;
     height: 0.261vw;
     animation-name:earth  ;
-    animation-duration: 45s;
+    animation-duration: 55s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -774,7 +827,7 @@ img.planet-image{
     width: 0.1vw;
     height: 0.1vw;
     animation-name:mars ;
-    animation-duration: 25s;
+    animation-duration: 75s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -826,7 +879,7 @@ img.planet-image{
     width: 2.865vw;
     height: 2.865vw;
     animation-name:jupiter ;
-    animation-duration:120s;
+    animation-duration:100s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -888,7 +941,7 @@ img.planet-image{
     width: 7.17vw;
     height: 7.17vw;
     animation-name:saturn ;
-    animation-duration:200s;
+    animation-duration:130s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -954,7 +1007,7 @@ img.planet-image{
     width: 3.12vw;
     height: 3.12vw;
     animation-name:uran ;
-    animation-duration: 205s;
+    animation-duration: 135s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -1003,7 +1056,7 @@ img.planet-image{
     width: 1.01vw;
     height: 1.01vw;
     animation-name:neptun ;
-    animation-duration: 350s;
+    animation-duration: 140s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }   
@@ -1064,7 +1117,7 @@ img.planet-image{
 }
 
 .up-button svg{
-  /*  transform: scale(2.5); */
+   transform: scale(2.5);
 }
 
 .visually-hidden{

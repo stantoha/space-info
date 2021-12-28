@@ -12,7 +12,6 @@
    <title>cosmos</title>
 </head>
 <style>
-  
    /* Large desktops and laptops */
    @media (min-width: 1600px) {
 
@@ -24,7 +23,7 @@
       .sidebar p,
       .main p,
       .main span {
-         font-size: 1.5em;
+         font-size: 1.2em;
       }
 
       .header a.logo,
@@ -51,6 +50,8 @@
       }
 
       .header a.logo,
+      .header h1,
+      h2,
       h3,
       h4 {
          transform: scale(0.8);
@@ -74,16 +75,28 @@
          font-size: 0.8em;
       }
 
+
       .header a.logo,
+      .header h1,
+      h2,
       h3,
       h4 {
-         transform: scale(0.8);
+         transform: scale(0.7);
       }
 
    }
 
    /* Portrait tablets and small desktops */
    @media (min-width: 768px) and (max-width: 991px) {
+      body {
+         margin: 0 5vw;
+      }
+
+
+      .header-container {
+         width: 89vw;
+
+      }
 
       .header a,
       .header label,
@@ -97,12 +110,12 @@
       }
 
 
-      
-
       .header a.logo,
+      .header h1,
+      h2,
       h3,
       h4 {
-         transform: scale(0.7);
+         transform: scale(0.6);
       }
 
 
@@ -110,37 +123,13 @@
 
    /* Landscape phones and portrait tablets */
    @media (min-width:480px) and (max-width: 767px) {
-
-      .header a,
-      .header label,
-      .sidebar a,
-      .main a,
-      .header p,
-      .sidebar p,
-      .main p,
-      .main span {
-         font-size: 0.6em;
+      body {
+         margin: 0 auto;
       }
 
-      /* .basic-container {
-         display: grid;
-         grid-template-areas:
-            "hd hd hd hd"
-            "mn mn mn mn"
-            "ft ft ft ft";
-         grid-template-columns: 1fr 1fr 1fr 1fr;
-         grid-template-rows: 10vh auto 5vh;
-      } */
-
-      .header a.logo,
-      h3,
-      h4 {
-         transform: scale(0.5);
+      .header-container {
+         width: 100vw;
       }
-   }
-
-   /* Portrait phones and smaller */
-   @media (min-width:320px) and (max-width: 479px) {
 
       .header a,
       .header label,
@@ -153,25 +142,55 @@
          font-size: 0.5em;
       }
 
-     /*  .basic-container {
-         display: grid;
-         grid-template-areas:
-            "hd hd hd hd"
-            "mn mn mn mn"
-            "ft ft ft ft";
-         grid-template-columns: 1fr 1fr 1fr 1fr;
-         grid-template-rows: 10vh auto 5vh;
-      } */
-
       .header a.logo,
+      .header h1,
+      h2,
       h3,
       h4 {
          transform: scale(0.5);
       }
    }
 
+   /* Portrait phones and smaller */
+   @media (min-width:320px) and (max-width: 479px) {
+      body {
+         margin: 0 auto;
+      }
+
+      .header-container {
+         width: 100vw;
+      }
+
+      .header a,
+      .header label,
+      .sidebar a,
+      .main a,
+      .header p,
+      .sidebar p,
+      .main p,
+      .main span {
+         font-size: 0.5em;
+      }
+
+
+      .header a.logo,
+      .header h1,
+      h2,
+      h3,
+      h4 {
+         transform: scale(0.4);
+      }
+   }
+
    /* Iphone 5 */
    @media (max-width: 319px) {
+      body {
+         margin: 0 auto;
+      }
+
+      .header-container {
+         width: 100vw;
+      }
 
       .header a,
       .header label,
@@ -184,23 +203,16 @@
          font-size: 0.3em;
       }
 
-      /* .basic-container {
-         display: grid;
-         grid-template-areas:
-            "hd hd hd hd"
-            "mn mn mn mn"
-            "ft ft ft ft";
-         grid-template-columns: 1fr 1fr 1fr 1fr;
-         grid-template-rows: 10vh auto 5vh;
-      } */
 
       .header a.logo,
+      .header h1,
+      h2,
       h3,
       h4 {
-         transform: scale(0.5);
+         transform: scale(0.3);
       }
 
-      .up-button{
+      .up-button {
          bottom: 0;
       }
    }
@@ -215,13 +227,13 @@
                   <div class="header-left-section">
                      <label class="nav-btnl" for="nav-toggle">
                         <a class="logo" href="#">
-                        
+
                            <img src="img/space.svg" alt="logo">
                         </a>
                      </label>
-                   
+
                   </div>
-                  
+
                   <div class="header-left-section">
                      <h1 class="title">
                         <a href="#" class="title-link">
@@ -229,7 +241,7 @@
                         </a>
                      </h1>
                   </div>
-                  
+
                </div>
 
 
@@ -254,7 +266,7 @@
                      </label>
                      <nav class="nav">
                         <li class="nav-item"><a class="nav-link  solarSystem-link" href="#">Solar-System</a></li>
-                        <li class="nav-item"><a class="nav-link  solar-system-modelbut" href="#">Solar-System-model</a></li>
+
                         <li class="nav-item"><a class="nav-link  planet-list-object-link" href="#">Planets</a>
                            <ul class="planet-list hidden">
                               <li class="planet-item first">
@@ -262,50 +274,51 @@
                                     Mercury
                                  </a>
                               </li>
-   
+
                               <li class="planet-item second">
                                  <a href="#" class="planet-list-link">
                                     Venus
                                  </a>
                               </li>
-   
+
                               <li class="planet-item third">
                                  <a href="#" class="planet-list-link">
                                     Earth
                                  </a>
                               </li>
-   
+
                               <li class="planet-item fourth">
                                  <a href="#" class="planet-list-link">
                                     Mars
                                  </a>
                               </li>
-   
+
                               <li class="planet-item fifth">
                                  <a href="#" class="planet-list-link">
                                     Jupiter
                                  </a>
                               </li>
-   
+
                               <li class="planet-item sixth">
                                  <a href="#" class="planet-list-link">
                                     Saturn
                                  </a>
                               </li>
-   
+
                               <li class="planet-item seventh">
                                  <a href="#" class="planet-list-link">
                                     Uranus
                                  </a>
                               </li>
-   
+
                               <li class="planet-item eighth">
                                  <a href="#" class="planet-list-link">
                                     Neptune
                                  </a>
                               </li>
-                           </ul></li>
-   
+                           </ul>
+                        </li>
+
                         <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
                      </nav>
@@ -373,6 +386,15 @@
 
 
                      <article class="planet-info">
+                        <div class="solar-system-model">
+
+                           <p>
+                              <iframe loading="lazy" src="https://www.solarsystemscope.com/iframe" width="740"
+                                 height="560" style="min-width:74; min-height: 56;" class="last"></iframe>
+                           </p>
+
+
+                        </div>
                         <p>
                            The order of the planets in the solar system, starting nearest the sun and
                            working outward is
@@ -570,35 +592,57 @@
                         </p>
                      </article>
                   </section>
-                  <br>
 
-                  <section class="hidden solar-system-model">
-                     <article>
-                        <p>
-                           <iframe loading="lazy" src="https://www.solarsystemscope.com/iframe" width="740" height="560"
-                              style="min-width:74; min-height: 56;" class="last"></iframe>
-                        </p>
-                     </article>
 
-                  </section>
+
 
                   <section class="hidden Mercury-info-list planet-info-list">
                      <h3 class="sub-title">
                         Mercury
                      </h3>
                      <span>
-                        Mercury is the closest planet to the Sun and the smallest since Pluto was downgraded to a dwarf
-                        planet. It is also one of five planets visible by the naked eye, along with Saturn, Jupiter,
-                        Mars,
-                        and Venus. Despite its proximity to Earth, Mercury is among the least explored planets due to
-                        its
-                        proximity to the Sun. Nevertheless, researchers do not expect life to exist on the planet due to
-                        its unconducive environment.
+                       
                      </span>
-                     <div class="planet-image-container">
-                        <img class="planet-image rotate" src="img/mercury.jpg" alt="Mercury" width="300" height="300">
-
+                     <div class="planet-info-image-container">
+                        <div class="basic-info">
+                           <ul>
+                              <li>
+                                 diameter:
+                              </li>
+                              
+                              <li>
+                                 sun:
+                              </li>
+                              
+                              <li>
+                                 temperature:
+                              </li>
+                              
+                              <li>
+                                 
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="planet-image-container">
+                           <img class="planet-image rotate" src="img/mercury.jpg" alt="Mercury" width="300" height="300">
+                        </div>
+                        <div class="basic-info">
+                           
+                             <p> Mercury is the closest planet to the Sun and the smallest since Pluto was downgraded to a dwarf
+                              planet. 
+                              It is also one of five planets visible by the naked eye, along with Saturn, Jupiter,
+                              Mars,
+                              and Venus. 
+                              Despite its proximity to Earth, Mercury is among the least explored planets due to
+                              its
+                              proximity to the Sun. 
+                              Nevertheless, researchers do not expect life to exist on the planet due to
+                              its unconducive environment.</p>
+                              
+                           
+                        </div>
                      </div>
+                
 
 
                      <article class="planet-info"><br>
@@ -740,16 +784,60 @@
                      </div>
 
                      <article class="planet-info"><br>
-                        <h4></h4>
+                        <h4> All About Venus</h4>
                         <p>
+                           Even though Venus isn't the closest planet to the Sun, it is still the hottest. It has a
+                           thick atmosphere full of the greenhouse gas carbon dioxide and clouds made of sulfuric acid.
+                           The gas traps heat and keeps Venus toasty warm. In fact, it's so hot on Venus, metals like
+                           lead would be puddles of melted liquid.
+                           Venus looks like a very active planet. It has mountains and volcanoes. Venus is similar in
+                           size to Earth. Earth is just a little bit bigger.
 
+                           <p>
+                              Venus is unusual because it spins the opposite direction of Earth and most other planets.
+                              And
+                              its rotation is very slow. It takes about 243 Earth days to spin around just once. Because
+                              it's so close to the Sun, a year goes by fast. It takes 225 Earth days for Venus to go all
+                              the way around the Sun. That means that a day on Venus is a little longer than a year on
+                              Venus.
+
+                              Since the day and year lengths are similar, one day on Venus is not like a day on Earth.
+                              Here, the Sun rises and sets once each day. But on Venus, the Sun rises every 117 Earth
+                              days.
+                              That means the Sun rises two times during each year on Venus, even though it is still the
+                              same day on Venus! And because Venus rotates backwards, the Sun rises in the west and sets
+                              in
+                              the east.
+
+                              Just like Mercury, Venus doesn't have any moons.
+
+                              a cartoon of Venus smiling saying, Is it hot out here, or is it just me?
+                              Structure and Surface
+                              Venus is the hottest planet in our solar system.
+                              Venus is a terrestrial planet. It is small and rocky.
+                              Venus has a thick atmosphere. It traps heat and makes Venus very hot.
+                              Venus has an active surface, including volcanoes!
+                              Venus spins the opposite direction of Earth and most other planets.
+                           </p>
                         </p>
                         <br>
-                        <h4></h4>
+                        <h4> Time on Venus</h4>
                         <p>
-
+                           A day on Venus lasts 243 Earth days.
+                           A year on Venus lasts 225 Earth days.
                         </p>
-                        <br>
+
+                        <h4> Venus's Neighbors</h4>
+                        <p> Venus does not have any moons.
+                           Venus is the second planet from the Sun. That means Mercury and Earth are Venus's neighboring
+                           planets.
+                        </p>
+                        <h4> Quick History</h4>
+                        <p>
+                           Venus has been known since ancient times because it can be seen easily without a telescope.
+                           Venus has been visited by several spacecraft: Mariner 2, Mariner 5, Mariner 10, Pioneer Venus
+                           1, Pioneer Venus 2, and an orbiter called Magellan.
+                        </p>
 
                      </article>
 
@@ -768,19 +856,75 @@
                      </div>
 
 
-                     <article class="planet-info"><br>
-                        <h4></h4>
+                     <article class="planet-info">
+                        <h4> All About Earth</h4>
+                        <p>
+                           All About Earth
+                           Our home planet Earth is a rocky, terrestrial planet. It has a solid and active surface with
+                           mountains, valleys, canyons, plains and so much more. Earth is special because it is an ocean
+                           planet. Water covers 70% of Earth's surface. </p>
+                        <p>Our atmosphere is made mostly of nitrogen and has plenty of oxygen for us to breathe. The
+                           atmosphere also protects us from incoming meteoroids, most of which break up in our
+                           atmosphere before they can strike the surface as meteorites.
+
+                           Since we live here, you might think we know all there is to know about Earth. Not at all,
+                           actually! We have a lot we can learn about our home planet. Right now, there are many
+                           satellites orbiting Earth taking pictures and measurements. This is how we can learn more
+                           about weather, oceans, soil, climate change, and many other important topics.</p>
+                        <br>
+                        <h4> Structure and Surface</h4>
+                        <p> Earth is a terrestrial planet. It is small and rocky.
+                           Earth's atmosphere is the right thickness to keep the planet warm so living things like us
+                           can be there. It’s the only planet in our solar system we know of that supports life. It is
+                           mostly nitrogen, and it has plenty of oxygen for us to breathe.</p>
+
+                        <h4>Time on Earth</h4>
+
+                        <p>
+                           A day on Earth lasts a little under 24 hours.
+                           One year on Earth lasts 365.25 days. That 0.25 extra means every four years we need to add
+                           one day to our calendar. We call it a leap day (in a leap year).
+                        </p>
+
+                        <h4>Earth’s Neighbors</h4>
+                        <p> Earth has just one Moon. It is the only planet to have just one moon.
+                           Earth has lots of spacecraft watching it. There is still a lot we can learn about our home
+                           planet.
+                           Earth is the third planet from the Sun in our solar system. That means Venus and Mars are
+                           Earth’s neighboring planets.
+                        </p>
+
+                        <h4>Quick History</h4>
+                        <p> We have known about our planet since ancient times, of course. But we didn’t know our place
+                           in the solar system for a long time.</p>
+
+                        <h4>What does Earth look like?</h4>
                         <p>
 
-                        </p>
-                        <br>
-                        <h4></h4>
-                        <p>
+                           <img class="article-image" src="img/earth-article.jpg" width="70%" height="70%"
+                              alt="A photo of Earth in the background looking very small. The moon's surface is in the foreground, so Earth is rising over the moon.">
+                           <span>This Apollo 11 picture taken by an astronaut in 1969 shows the Earth rising over the
+                              Moon.
+                              Doesn't it look small?</span>
+                           <br>
 
+                           <img class="article-image" src="img/earth2-article.jpg" width="70%" height="70%"
+                              alt="A photo of the northern portion of the Earth. Swirls of white cover it.">
+                           <span>This is a view of Earth looking just at the northern portion.</span>
+                           <br>
+
+                           <img class="article-image" src="img/earth3-article.png" width="70%" height="70%"
+                              alt="A photo of Earth showing North and South America, oceans, and swirling clouds.">
+                           <span>A NASA camera on the Deep Space Climate Observatory satellite took this picture of the
+                              entire
+                              sunlit side of Earth from one million miles away.</span>
+                           <br>
                         </p>
-                        <br>
 
                      </article>
+
+
+
 
                   </section>
 
@@ -796,18 +940,92 @@
 
                      </div>
 
+                     <article class="planet-info">
+                        <h4>All About Mars</h4>
+                        <p>
+                           Mars is a cold desert world. It is half the size of Earth. Mars is sometimes called the Red
+                           Planet. It's red because of rusty iron in the ground.
+                        </p>
+                        <p>
+                           Like Earth, Mars has seasons, polar ice caps, volcanoes, canyons, and weather. It has a very
+                           thin atmosphere made of carbon dioxide, nitrogen, and argon.
 
-                     <article class="planet-info"><br>
-                        <h4></h4>
+                           There are signs of ancient floods on Mars, but now water mostly exists in icy dirt and thin
+                           clouds. On some Martian hillsides, there is evidence of liquid salty water in the ground.
+
+                           Scientists want to know if Mars may have had living things in the past. They also want to
+                           know if Mars could support life now or in the future.
+                        </p>
+
+                        <br>
+                        <h4> Structure and Surface</h4>
+                        <p> Mars is a terrestrial planet. It is small and rocky.
+                           Mars has a thin atmosphere.
+                           Mars has an active atmosphere, but the surface of the planet is not active. Its volcanoes are
+                           dead.</p>
+
+                        <h4>Time on Mars</h4>
+
+                        <p>
+                           One day on Mars lasts 24.6 hours. It is just a little longer than a day on Earth.
+                           One year on Mars is 687 Earth days. It is almost twice as long as one year on Earth.
+                        </p>
+
+                        <h4>Earth’s Neighbors</h4>
+                        <p> Earth has just one Moon. It is the only planet to have just one moon.
+                           Earth has lots of spacecraft watching it. There is still a lot we can learn about our home
+                           planet.
+                           Earth is the third planet from the Sun in our solar system. That means Venus and Mars are
+                           Earth’s neighboring planets.
+                        </p>
+
+                        <h4>Quick History</h4>
+                        <p> Mars has been known since ancient times because it can be seen without advanced telescopes.
+                           Several missions have visited Mars. And Mars is the only planet we have sent rovers to. They
+                           drive around Mars, taking pictures and measurements.</p>
+
+                        <h4>
+                           <a href="">
+                              Mars Rovers
+                           </a>
+                        </h4>
+                        <ul>
+                           <li>
+                              <a href="#">Perseverance</a>
+                           </li>
+
+                           <li>
+                              <a href="#">Curiosity</a>
+                           </li>
+
+                           <li>
+                              <a href="#">Spirit and Opportunity</a>
+                           </li>
+
+                           <li>
+                              <a href="#">Sojourner</a>
+                           </li>
+
+                        </ul>
+
+                        <h4>What does Mars look like?</h4>
                         <p>
 
-                        </p>
-                        <br>
-                        <h4></h4>
-                        <p>
+                           <img class="article-image" src="img/mars1-article.jpg" width="70%" height="70%" alt="mars">
+                           <span>NASA's Hubble Space Telescope took this picture of Mars as it was making its closest
+                              approach to Earth in 60,000 years!</span>
+                           <br>
 
+                           <img class="article-image" src="img/mars2-article.jpg" width="70%" height="70%" alt="mars">
+                           <span>In this picture of Mars, you can see water-ice clouds, polar ice, and some rocky
+                              features.</span>
+                           <br>
+
+                           <img class="article-image" src="img/mars3-article.png" width="70%" height="70%" alt="mars">
+                           <span>NASA's Mars Exploration Rover Opportunity took this picture with its panoramic camera
+                              near "Solander Point" on Mars.</span>
+                           <br>
                         </p>
-                        <br>
 
                      </article>
 
@@ -827,16 +1045,92 @@
 
 
                      <article class="planet-info"><br>
-                        <h4></h4>
-                        <p>
+                        <h4> All About Jupiter</h4>
+                        Jupiter is the biggest planet in our solar system. It's similar to a star, but it never got
+                        massive enough to start burning. It is covered in swirling cloud stripes. It has big storms like
+                        the Great Red Spot, which has been going for hundreds of years. Jupiter is a gas giant and
+                        doesn't have a solid surface, but it may have a solid inner core about the size of Earth.
+                        Jupiter also has rings, but they're too faint to see very well.
 
-                        </p>
-                        <br>
-                        <h4></h4>
-                        <p>
 
+
+                        Explore Jupiter! Click and drag to rotate the planet. Scroll or pinch to zoom in and out.
+                        Credit: NASA Visualization Technology Applications and Development (VTAD)
+
+
+                        <h4>Structure and Surface</h4>
+                        <ul>
+                           <li>
+                              Jupiter is the biggest planet in our solar system.
+                           </li>
+                           <li>
+                              Jupiter is a gas giant. It is made mostly of hydrogen and helium.
+                           </li>
+                           <li>
+                              Jupiter has a very thick atmosphere.
+                           </li>
+                           <li>
+                              Jupiter has rings, but they’re very hard to see.
+                           </li>
+                        </ul>
+
+
+                        <h4>Time on Jupiter</h4>
+                        <ul>
+                           <li>
+                              One day on Jupiter goes by in just 10 hours.
+                           </li>
+                           <li>
+                              One year on Jupiter is the same as 11.8 Earth years.
+                           </li>
+                        </ul>
+
+
+
+                        <h4>Jupiter's Neighbors</h4>
+                        <ul>
+                           <li>
+                              Jupiter has 79 confirmed moons.
+                           </li>
+                           <li>
+                              Jupiter is the fifth planet from the Sun. That means Mars and Saturn are Jupiter’s
+                              neighboring planets.
+                           </li>
+                        </ul>
+
+
+                        <h4>Quick History</h4>
+                        <ul>
+                           <li>
+                              Jupiter has been known since ancient times because it can be seen without advanced
+                              telescopes.
+                           </li>
+                           <li>
+                              Jupiter has been visited or passed by several spacecraft, orbiters and probes, such as
+                              Pioneer 10 and 11, Voyager 1 and 2, Cassini, New Horizons, and Juno.
+                           </li>
+                        </ul>
+
+                        <h4>What does Jupiter look like?</h4>
+                        <p>
+                           <img class="article-image" width="70%" height="70%" src="img/jupiter1.en.jpg"
+                              alt="A photo of Jupiter in the top left corner, clearly showing the bands of Jupiter's colors: brown, grey,and red. A small moon is in the lower right hand corner.">
+                           <span>Here you can see Jupiter and one of its many moons, Ganymede.</span>
+                           <br>
+                           <img class="article-image" width="70%" height="70%" src="img/jupiter2.en.jpg" alt="A full face of Jupiter with the Great Red Spot on the right hand side. A small dark spot on the left side of Jupiter is the shadow of a moon passing in front.
+">
+                           <br>
+                           <span>This picture is actually four pictures taken by Cassini put together. The dark spot on
+                              the left is the shadow from Jupiter's moon Europa.
+                           </span>
+                           <br>
+
+                           <img class="article-image" width="70%" height="70%" src="img/jupiter3.en.jpg" alt="A close up image of Jupiter's Red Spot, showing swirls of brown and red gas.
+">
+                           <span>This picture taken by Voyager 2 shows the Great Red Spot.</span>
                         </p>
-                        <br>
+
+
 
                      </article>
 
@@ -855,22 +1149,80 @@
                      </div>
 
 
-                     <article class="planet-info"><br>
-                        <h4></h4>
+                     <article class="planet-info">
+                        <h4>All About Saturn</h4>
                         <p>
-
+                           Saturn isn’t the only planet to have rings, but it definitely has the most beautiful ones.
+                           The rings we see are made of groups of tiny ringlets that surround Saturn. They’re made of
+                           chunks of ice and rock. Like Jupiter, Saturn is mostly a ball of hydrogen and helium.
                         </p>
-                        <br>
-                        <h4></h4>
                         <p>
-
+                           When Galileo Galilei saw Saturn through a telescope in the 1600s, he wasn't sure what he was
+                           seeing. At first he thought he was looking at three planets, or a planet with handles. Now we
+                           know those "handles" turned out to be the rings of Saturn.
                         </p>
+
                         <br>
+                        <h4> Structure and Surface</h4>
+                        <ul>
+                           <li>Saturn is a gas giant like Jupiter. It is made mostly of hydrogen and helium.</li>
+                           <li>Saturn has a thick atmosphere.</li>
+                           <li>Saturn has a lovely set of seven main rings with spaces between them.</li>
+                        
+                        </ul>
+
+                        <h4>Time on Saturn</h4>
+
+                        <ul>
+                           <li>One day on Saturn goes by in just 10.7 hours.</li>
+                           <li>One year on Saturn is the same as 29 Earth years.</li>
+                        </ul>
+
+                        <h4>Earth’s Neighbors</h4>
+                        <ul>
+                           <li>Saturn has 53 moons! It also has 29 unconfirmed moons we need to learn more about.
+                              </li>
+                           <li>Saturn is the sixth planet from the Sun. That means Jupiter and Uranus are Saturn’s neighboring planets.</li>
+                        </ul>
+
+                        <h4>Quick History</h4>
+                        <ul>
+                           <li>Saturn has been known since ancient times because it can be seen without advanced telescopes.
+                              </li>
+                           <li>Four robotic spacecraft have visited Saturn, including Pioneer 11, Cassini, and Voyager 1 and 2.</li>
+                           
+                        </ul>
+
+                        <h4>What does Mars look like?</h4>
+                        <p>
+                           <img class="article-image" src="img/saturn1.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn with its rings at an angle pointing upwards. Next to Saturn are two white dots, which are moons.
+                           ">
+                           <span>The Cassini spacecraft took this picture of Saturn's rings. You can see the grey and tan colors.
+                           </span>
+                           <br>
+
+                           <img class="article-image" src="img/saturn2.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn where it is backlit by the sun. Saturn and its rings are nearly black, and the sun is making the edges glow.
+                           ">
+                           <span>This is a picture of Saturn and its moons Tethys and Dione. Voyager 1 took this picture as it passed by.
+                           </span>
+                           <br>
+
+                           <img class="article-image" src="img/saturn3.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn looking down on it, showing its rings clearly. The shadow of Saturn falls on the left side of the rings.
+                           ">
+                           <span>NASA's Cassini spacecraft went behind Saturn and took this picture in 2013. You can see seven of its moons and its inner rings. In the background you can also see Earth.
+                           </span>
+                           <br>
+
+                           <img class="article-image" src="img/saturn4.en.jpg" width="70%" height="70%" alt="mars">
+                           <span>A portrait looking down on Saturn and its rings. This picture was made from images taken by NASA's Cassini spacecraft in 2013. It was put together by amateur image processor and Cassini fan Gordan Ugarkovic.
+                           </span>
+                           <br>
+                        </p>
 
                      </article>
-                     </li>
 
-                     </ul>
+
+
                   </section>
 
                   <section class="hidden Uran-info-list planet-info-list">

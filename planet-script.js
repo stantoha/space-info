@@ -1,4 +1,4 @@
-"use strict";
+
 const planetButtons = document.querySelectorAll('.planet-link');
 const Content = document.querySelectorAll('.planet-info-list');
 const solarS = document.querySelector('.solar-system');
