@@ -31,9 +31,13 @@ body{
     grid-template-areas:
     ". hd hd hd hd hd hd ."
     ". mn mn mn mn mn mn ."
+    ". mn mn mn mn mn mn ."
+    ". mn mn mn mn mn mn ."
+    ". mn mn mn mn mn mn ."
+    ". mn mn mn mn mn mn ."
     ". ft ft ft ft ft ft ." ;
     grid-template-columns:0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.1fr ;
-    grid-template-rows:auto auto 5vh ;
+    grid-template-rows:auto 1fr auto 1fr auto 1fr auto;
 }
 
 .hidden{
@@ -435,28 +439,34 @@ article.planet-info {
     letter-spacing: 5px;
     font-size: 1.5rem;
     margin-left: 25px;
+    text-align: start;
 }
 
 
 
-.planet-info span{
-    margin: 0 auto;
-    font-size: 0.7rem;
-    text-align: center;
+.planet-info span,
+.planet-info li{
+    margin: 10px 100px;
+    font-size: 1.1rem;
+    text-align: start;
 }
 
-.planet-info.article-image img{
-    margin: 15px;
+.planet-info  img.article-image{
+    display: block;
+    margin: 15px auto;
+    align-self: center;
 }
-.basic-info li,
+.basic-info p,
+.basic-info ul,
 .planet-info p{
     color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
     margin: 50px auto;
     text-align:start;
 }
 
 .basic-info li{
-    width: 150px;
+    max-width: 150px;
 }
 
 div.header-container,
