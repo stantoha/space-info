@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-   <link rel="stylesheet" href="solar-system.css">
-   <link rel="stylesheet" href="style.css">
-   <!--  <link rel="stylesheet" href="section.css"> -->
+   <!--  <link rel="stylesheet" href="solar-system.css"> -->
+   <!--  <link rel="stylesheet" href="style.css"> -->
+   <link rel="stylesheet" href="st.css">
 
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +27,7 @@
       }
 
       .header a.logo,
-      h3,
+      h2,
       h4 {
          transform: scale(0.9);
       }
@@ -219,22 +219,21 @@
 </style>
 
 <body>
-   <div class="wrapper multi_bg_example">
+   <div class="wrapper multi_bg_example bg">
       <div class="basic-container">
-         <div class=" header-container">
+         <div class="header-container">
             <header class="header">
                <div class="header-left">
                   <div class="header-left-section">
                      <label class="nav-btnl" for="nav-toggle">
                         <a class="logo" href="#">
-
                            <img src="img/space.svg" alt="logo">
                         </a>
                      </label>
 
                   </div>
 
-                  <div class="header-left-section">
+                  <div class="header-right-section">
                      <h1 class="title">
                         <a href="#" class="title-link">
                            solar system
@@ -244,10 +243,9 @@
 
                </div>
 
-
                <div class="header-right">
 
-                  <form class="sign-form header-right-section" action="" method="get">
+                  <form class="sign-form header-left-section" action="" method="get">
                      <div class="form-col">
                         <label for="email">email:</label><input id="email" name="email" type="email">
 
@@ -265,62 +263,72 @@
                         <span></span>
                      </label>
                      <nav class="nav">
-                        <li class="nav-item"><a class="nav-link  solarSystem-link" href="#">Solar-System</a></li>
 
-                        <li class="nav-item"><a class="nav-link  planet-list-object-link" href="#">Planets</a>
-                           <ul class="planet-list hidden">
-                              <li class="planet-item first">
-                                 <a href="#" class="planet-list-link">
+                        <li class="nav-item">
+                           <a class="nav-link planets" href="#">Planets</a>
+<!-- <img src="img/solar-system-439046.svg" alt=""> -->
+                           <ul class="tabheader__items hidden">
+
+                              <li class="tabheader__item">
+                                 <a class="tabheader__link" href="#">Solar-System</a>
+                              </li>
+
+                              <li class="tabheader__item ">
+                                 <a class="tabheader__link " href="#">
                                     Mercury
                                  </a>
                               </li>
 
-                              <li class="planet-item second">
-                                 <a href="#" class="planet-list-link">
+                              <li class="tabheader__item ">
+                                 <a class="tabheader__link" href="#">
                                     Venus
                                  </a>
                               </li>
 
-                              <li class="planet-item third">
-                                 <a href="#" class="planet-list-link">
+                              <li class="tabheader__item ">
+                                 <a class="tabheader__link" href="#">
                                     Earth
                                  </a>
                               </li>
 
-                              <li class="planet-item fourth">
-                                 <a href="#" class="planet-list-link">
+                              <li class="tabheader__item ">
+                                 <a class="tabheader__link" href="#">
                                     Mars
                                  </a>
                               </li>
 
-                              <li class="planet-item fifth">
-                                 <a href="#" class="planet-list-link">
+                              <li class="tabheader__item ">
+                                 <a class="tabheader__link" href="#">
                                     Jupiter
                                  </a>
                               </li>
 
-                              <li class="planet-item sixth">
-                                 <a href="#" class="planet-list-link">
+                              <li class="tabheader__item">
+                                 <a class="tabheader__link" href="#">
                                     Saturn
                                  </a>
                               </li>
 
-                              <li class="planet-item seventh">
-                                 <a href="#" class="planet-list-link">
+                              <li class="tabheader__item ">
+                                 <a class="tabheader__link" href="#">
                                     Uranus
                                  </a>
                               </li>
 
-                              <li class="planet-item eighth">
-                                 <a href="#" class="planet-list-link">
+                              <li class="tabheader__item ">
+                                 <a class="tabheader__link" href="#">
                                     Neptune
                                  </a>
                               </li>
                            </ul>
-                        </li>
 
-                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Articles</a>
+                        </li>
                      </nav>
                   </div>
 
@@ -330,141 +338,124 @@
             </header>
          </div>
 
-         <div class=" main-container">
+         <div class="main-container">
             <main class="main">
-               <!-- <div class="sidebar">
-
-               </div> -->
-
-
-               <div class=" content">
-                  <section class="solar-system">
-                     <h3 class="sub-title">
+               <div class="tabcontent__container">
+                  <section class="tabcontent hide">
+                     <h2 class="sub__title">
                         The solar system: A guide to things orbiting our sun
-                     </h3>
+                     </h2>
                      <span>
-                        How the solar system formed, was found and what it's filled with.
+                       <i> How the solar system formed, was found and what it's filled with.</i>
                      </span>
+                     <p>
+                        The order of the planets in the solar system, starting nearest the sun and
+                        working outward is
+                        the following: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune and
+                        then the
+                        possible Planet Nine.
+                        Ever since the discovery of Pluto in 1930, kids grew up learning that the solar
+                        system has
+                        nine planets. That all changed in the late 1990s when astronomers started arguing
+                        about
+                        whether Pluto was indeed a planet. In a highly controversial decision, the
+                        International
+                        Astronomical Union ultimately decided in 2006 to designate Pluto as a "dwarf
+                        planet,"
+                        reducing the list of the solar system's true planets to just eight.
 
-                     <div class="planet-image-container">
+                        If you insist on including Pluto, it would come after Neptune on the list. Pluto
+                        is truly way
+                        out there and on a wildly tilted, elliptical orbit (two of the several reasons it
+                        was
+                        demoted).
+                     </p>
+                     <br>
+                     <p>
+                        Astronomers, however, are still hunting for another possible planet in our solar
+                        system, a
+                        true ninth planet, after mathematical evidence of its existence was revealed on Jan.
+                        20,
+                        2016. The alleged "Planet Nine," also called "Planet X," is believed to be about 10
+                        times the
+                        mass of Earth and 5,000 times the mass of Pluto.
+                     </p>
+                     <p>
+                        The solar system is made up of the sun and everything that orbits around it, including
+                        planets, moons, asteroids, comets and meteoroids. It extends from the sun, called Sol by the
+                        ancient Romans, and goes past the four inner planets, through the Asteroid Belt to the four
+                        gas giants and on to the disk-shaped Kuiper Belt and far beyond to the teardrop-shaped
+                        heliopause. Scientists estimate that the edge of the solar system is about 9 billion miles
+                        (15 billion kilometers) from the sun. Beyond the heliopause lies the giant, spherical Oort
+                        Cloud, which is thought to surround the solar system.
+                     </p>
+                     <br>
+                     <div class="planet-image-container  solar ">
                         <div class="planet-image ">
                            <a class="solarSystem-link" href="#">
                               <img class="planet realsun sun"
-                                 src="img/real sun PNG image with transparent background.png">
-                              <img class="planet sun" src="img/sun1.png" alt="Sun">
-                              <img class="planet sun hotsun" src="img/Hot Sun.png" alt="Sun">
-                              <img class="planet sun sunn" src="img/sunny.png" alt="Sun">
+                                 src="img/sun/real sun PNG image with transparent background.png">
+                              <img class="planet sun" src="img/sun/sun1.png" alt="Sun">
+                              <img class="planet sun hotsun" src="img/sun/Hot Sun1.png" alt="Sun">
+                              <img class="planet sun sunn" src="img/sun/sunny.png" alt="Sun">
                            </a>
 
                            <a class="planet-link" href="#">
-                              <img class="planet mercury" src="img/mercury.jpg" alt="Mercury">
+                              <img class="planet mercury" src="img/mercury/mercury.jpg" alt="Mercury">
                            </a>
                            <a class="planet-link" href="#">
-                              <img class="planet earth" src="img/earth3.jpg" alt="Earth">
+                              <img class="planet earth" src="img/earth/earth3.jpg" alt="Earth">
+                           </a>  
+                           <a class="planet-link" href="#">
+                              <img class="planet venus" src="img/venus/venus.jpg" alt="Venus">
                            </a>
                            <a class="planet-link" href="#">
-                              <img class="planet venus" src="img/venus.jpg" alt="Venus">
+                              <img class="planet mars" src="img/mars/marss.jpg" alt="Mars">
                            </a>
                            <a class="planet-link" href="#">
-                              <img class="planet mars" src="img/marss.jpg" alt="Mars">
+                              <img class="planet jupiter" src="img/jupiter/jupiter.jpg" alt="Jupiter">
                            </a>
                            <a class="planet-link" href="#">
-                              <img class="planet jupiter" src="img/jupiter.jpg" alt="Jupiter">
+                              <img class="planet saturn" src="img/saturn/saturn.png" alt="Saturn">
                            </a>
                            <a class="planet-link" href="#">
-                              <img class="planet saturn" src="img/saturn.png" alt="Saturn">
+                              <img class="planet uran" src="img/uran/uran.png" alt="Uran">
                            </a>
                            <a class="planet-link" href="#">
-                              <img class="planet uran" src="img/uran.png" alt="Uran">
-                           </a>
-                           <a class="planet-link" href="#">
-                              <img class="planet neptun" src="img/nept.png" alt="Neptun">
+                              <img class="planet neptun" src="img/neptun/nept.png" alt="Neptune">
                            </a>
                         </div>
                      </div>
 
-
-
-                     <article class="planet-info">
-                        <div class="solar-system-model">
-
-                           <p>
-                              <iframe loading="lazy" src="https://www.solarsystemscope.com/iframe" width="740"
-                                 height="560" style="min-width:74; min-height: 56;" class="last"></iframe>
-                           </p>
-
-
-                        </div>
-                        <p>
-                           The order of the planets in the solar system, starting nearest the sun and
-                           working outward is
-                           the following: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune and
-                           then the
-                           possible Planet Nine.
-
-                           Ever since the discovery of Pluto in 1930, kids grew up learning that the solar
-                           system has
-                           nine planets. That all changed in the late 1990s when astronomers started arguing
-                           about
-                           whether Pluto was indeed a planet. In a highly controversial decision, the
-                           International
-                           Astronomical Union ultimately decided in 2006 to designate Pluto as a "dwarf
-                           planet,"
-                           reducing the list of the solar system's true planets to just eight.
-
-                           If you insist on including Pluto, it would come after Neptune on the list. Pluto
-                           is truly way
-                           out there and on a wildly tilted, elliptical orbit (two of the several reasons it
-                           was
-                           demoted).
-                        </p>
-
-                        <br>
-                        <p>
-                           Astronomers, however, are still hunting for another possible planet in our solar
-                           system, a
-                           true ninth planet, after mathematical evidence of its existence was revealed on Jan.
-                           20,
-                           2016. The alleged "Planet Nine," also called "Planet X," is believed to be about 10
-                           times the
-                           mass of Earth and 5,000 times the mass of Pluto.
-                        </p>
-
-                        <p>
-                           The solar system is made up of the sun and everything that orbits around it, including
-                           planets, moons, asteroids, comets and meteoroids. It extends from the sun, called Sol by the
-                           ancient Romans, and goes past the four inner planets, through the Asteroid Belt to the four
-                           gas giants and on to the disk-shaped Kuiper Belt and far beyond to the teardrop-shaped
-                           heliopause. Scientists estimate that the edge of the solar system is about 9 billion miles
-                           (15 billion kilometers) from the sun. Beyond the heliopause lies the giant, spherical Oort
-                           Cloud, which is thought to surround the solar system.
-                        </p>
-                        <br>
-                        <h4>HOW WAS THE SOLAR SYSTEM DISCOVERED?</h4>
-                        <p>
-
-                           For millennia, astronomers have followed points of light that seemed to move among the stars.
-                           The ancient Greeks named them planets, meaning "wanderers." Mercury, Venus, Mars, Jupiter and
-                           Saturn were known in antiquity, and the invention of the telescope added the Asteroid Belt,
-                           Uranus, Neptune, Pluto and many of these worlds' moons. The dawn of the space age saw dozens
-                           of probes launched to explore our system, an adventure that continues today.
-
-                           There have been five human-made objects so far, Voyager 1, Voyager 2, New Horizons, Pioneer
-                           10 and Pioneer 11, that have crossed the threshold into interstellar space.
-                           The discovery of Eris kicked off a rash of new discoveries of dwarf planets, and eventually
-                           led to the International Astronomical Union revising the definition of a "planet." The
-                           revision changed Pluto's status from planet to dwarf planet in 2006, a decision that remains
-                           controversial – especially after the New Horizons mission found immense geological variety on
-                           the world in 2015.
-
-                           Astronomers are now hunting for another planet in our solar system, a true ninth planet,
-                           after evidence of its existence was unveiled on Jan. 20, 2016. The so-called "Planet Nine,"
-                           as scientists are calling it, is about 10 times the mass of Earth and orbits the sun as close
-                           as 200 astronomical units (AU). One AU is the distance from Earth to the sun — about 93
-                           million miles (150 million km).
-                        </p>
-
-                        <h4>HOW DID THE SOLAR SYSTEM FORM?</h4>
+                     <article >
+                        <ul class="tabcontent__descr__list">
+                           <li class="tabcontent__descr">
+                              <h4>HOW WAS THE SOLAR SYSTEM DISCOVERED?</h4>
+                              <p>
+      
+                                 For millennia, astronomers have followed points of light that seemed to move among the stars.
+                                 The ancient Greeks named them planets, meaning "wanderers." Mercury, Venus, Mars, Jupiter and
+                                 Saturn were known in antiquity, and the invention of the telescope added the Asteroid Belt,
+                                 Uranus, Neptune, Pluto and many of these worlds' moons. The dawn of the space age saw dozens
+                                 of probes launched to explore our system, an adventure that continues today.
+      
+                                 There have been five human-made objects so far, Voyager 1, Voyager 2, New Horizons, Pioneer
+                                 10 and Pioneer 11, that have crossed the threshold into interstellar space.
+                                 The discovery of Eris kicked off a rash of new discoveries of dwarf planets, and eventually
+                                 led to the International Astronomical Union revising the definition of a "planet." The
+                                 revision changed Pluto's status from planet to dwarf planet in 2006, a decision that remains
+                                 controversial – especially after the New Horizons mission found immense geological variety on
+                                 the world in 2015.
+      
+                                 Astronomers are now hunting for another planet in our solar system, a true ninth planet,
+                                 after evidence of its existence was unveiled on Jan. 20, 2016. The so-called "Planet Nine,"
+                                 as scientists are calling it, is about 10 times the mass of Earth and orbits the sun as close
+                                 as 200 astronomical units (AU). One AU is the distance from Earth to the sun — about 93
+                                 million miles (150 million km).
+                              </p>
+                           </li>
+                           <li class="tabcontent__descr">
+                              <h4>HOW DID THE SOLAR SYSTEM FORM?</h4>
                         <p>
 
                            Many scientists think our solar system formed from a giant, rotating cloud of gas and dust
@@ -485,49 +476,55 @@
 
 
                         </p>
-                        <h4>
-                           THE SUN
-                        </h4>
-                        <p>
-                           The sun is by far the largest object in our solar system, containing 99.8% of the solar
-                           system's mass. It sheds most of the heat and light that makes life possible on Earth and
-                           possibly elsewhere. Planets orbit the sun in oval-shaped paths called ellipses, with the sun
-                           slightly off-center of each ellipse. NASA has a fleet of spacecraft observing the sun, such
-                           as the Parker Solar Probe, to learn more about its composition, and to make better
-                           predictions about solar activity and its effect on Earth.
-
-                           An artist's depiction of Parker Solar Probe studying the sun.
-
-                        </p>
-                        <h4>
-                           INNER SOLAR SYSTEM
-                        </h4>
-                        <p>
-
-                           The four inner four planets — Mercury, Venus, Earth and Mars — are made up mostly of iron and
-                           rock. They are known as terrestrial or earth-like planets because of their similar size and
-                           composition. Earth has one natural satellite — the moon — and Mars has two moons — Deimos and
-                           Phobos.
-
-                           Between Mars and Jupiter lies the Asteroid Belt. Asteroids are minor planets, and scientists
-                           estimate there are more than 750,000 of them with diameters larger than three-fifths of a
-                           mile (1 km) and millions of smaller asteroids. The dwarf planet Ceres, about 590 miles (950
-                           km) in diameter, resides here. A number of asteroids have orbits that take them closer into
-                           the solar system that sometimes lead them to collide with Earth or the other inner planets.
-
-                           Earth is surrounded by a flotilla of spacecraft, and Mars has been visited by many spacecraft
-                           as well. Some of the more prominent Martian missions include the Perseverance rover, InSight
-                           lander, Tianwen-1 rover, Curiosity rover, the Opportunity and Spirit rovers, the Mars
-                           Reconnaissance Orbiter (which takes high-resolution pictures from orbit) and the Viking
-                           landers and rovers.
-                           Venus has been explored by American, European and Soviet spacecraft, such as Venera 13 over
-                           the decades. NASA announced in June 2021 that it will launch two missions to Venus by 2030 -
-                           an orbiter called VERITAS and an atmospheric probe called DAVINCI+.
-
-                           Mercury has been host to several flybys and two-long term missions: MESSENGER (now concluded)
-                           and BepiColombo.
-                        </p>
-                        <h4>OUTER SOLAR SYSTEM</h4>
+                           </li>
+                           <li class="tabcontent__descr">
+                              <h4>
+                                 THE SUN
+                              </h4>
+                              <p>
+                                 The sun is by far the largest object in our solar system, containing 99.8% of the solar
+                                 system's mass. It sheds most of the heat and light that makes life possible on Earth and
+                                 possibly elsewhere. Planets orbit the sun in oval-shaped paths called ellipses, with the sun
+                                 slightly off-center of each ellipse. NASA has a fleet of spacecraft observing the sun, such
+                                 as the Parker Solar Probe, to learn more about its composition, and to make better
+                                 predictions about solar activity and its effect on Earth.
+      
+                                 An artist's depiction of Parker Solar Probe studying the sun.
+      
+                              </p>
+                           </li>
+                           <li class="tabcontent__descr">
+                              <h4>
+                                 INNER SOLAR SYSTEM
+                              </h4>
+                              <p>
+      
+                                 The four inner four planets — Mercury, Venus, Earth and Mars — are made up mostly of iron and
+                                 rock. They are known as terrestrial or earth-like planets because of their similar size and
+                                 composition. Earth has one natural satellite — the moon — and Mars has two moons — Deimos and
+                                 Phobos.
+      
+                                 Between Mars and Jupiter lies the Asteroid Belt. Asteroids are minor planets, and scientists
+                                 estimate there are more than 750,000 of them with diameters larger than three-fifths of a
+                                 mile (1 km) and millions of smaller asteroids. The dwarf planet Ceres, about 590 miles (950
+                                 km) in diameter, resides here. A number of asteroids have orbits that take them closer into
+                                 the solar system that sometimes lead them to collide with Earth or the other inner planets.
+      
+                                 Earth is surrounded by a flotilla of spacecraft, and Mars has been visited by many spacecraft
+                                 as well. Some of the more prominent Martian missions include the Perseverance rover, InSight
+                                 lander, Tianwen-1 rover, Curiosity rover, the Opportunity and Spirit rovers, the Mars
+                                 Reconnaissance Orbiter (which takes high-resolution pictures from orbit) and the Viking
+                                 landers and rovers.
+                                 Venus has been explored by American, European and Soviet spacecraft, such as Venera 13 over
+                                 the decades. NASA announced in June 2021 that it will launch two missions to Venus by 2030 -
+                                 an orbiter called VERITAS and an atmospheric probe called DAVINCI+.
+      
+                                 Mercury has been host to several flybys and two-long term missions: MESSENGER (now concluded)
+                                 and BepiColombo.
+                              </p>
+                           </li>
+                           <li class="tabcontent__descr">
+                              <h4>OUTER SOLAR SYSTEM</h4>
 
                         <p>
                            The outer planets — Jupiter, Saturn, Uranus and Neptune — are giant worlds with thick outer
@@ -552,8 +549,9 @@
                            the 2030s or so. Scientists do observations from the ground as well, to track the long-term
                            changes in weather and cloud formations in the gas giants.
                         </p>
-                        <p>
-                           <h4>TRANS-NEPTUNIAN REGION</h4>
+                           </li>
+                           <li class="tabcontent__descr">
+                              <h4>TRANS-NEPTUNIAN REGION</h4>
 
                            Astronomers had long suspected that a band of icy material known as the Kuiper Belt existed
                            past the orbit of Neptune extending from about 30 to 55 times the distance of Earth to the
@@ -569,17 +567,24 @@
                            discovered in the Oort Cloud. NASA's New Horizons mission performed history's first flyby of
                            the Pluto system on July 14, 2015.
 
-                           <h5>The first detection of Sedna</h5>
+                           </li>
+                           <li class="tabcontent__descr">
+                              <h4>The first detection of Sedna</h4>
 
-                           The discovery image of Sedna taken on Nov. 14, 2003. (Image credit: NASA/Caltech)
-                           If Planet Nine exists, it orbits the sun at a distance that is 20 times farther out than the
-                           orbit of Neptune. (The orbit of Neptune is 2.7 billion miles from the sun at its closest
-                           point.) The strange world's orbit is about 600 times farther from the sun than the Earth's
-                           orbit is from the star. Scientists have not actually seen Planet Nine directly, and some
-                           astronomers debate its existence, which was inferred by its gravitational effects on other
-                           objects in the Kuiper Belt.
-
-                           <h5>Related: What if Planet Nine is a baby black hole?</h5>
+                              The discovery image of Sedna taken on Nov. 14, 2003. (Image credit: NASA/Caltech)
+                              If Planet Nine exists, it orbits the sun at a distance that is 20 times farther out than the
+                              orbit of Neptune. (The orbit of Neptune is 2.7 billion miles from the sun at its closest
+                              point.) The strange world's orbit is about 600 times farther from the sun than the Earth's
+                              orbit is from the star. Scientists have not actually seen Planet Nine directly, and some
+                              astronomers debate its existence, which was inferred by its gravitational effects on other
+                              objects in the Kuiper Belt.
+   
+                           </li>
+                           <li class="tabcontent__descr">
+                              
+                           </li>
+                           <li class="tabcontent__descr">
+                              <h4>Related: What if Planet Nine is a baby black hole?</h4>
 
                            Past the Kuiper Belt is the very edge of the solar system, the heliosphere, a vast,
                            teardrop-shaped region of space containing electrically charged particles given off by the
@@ -589,40 +594,60 @@
                            The Oort Cloud lies well past the Kuiper Belt, and theoretically extends between 5 and
                            100,000 astronomical units (AU), the distance between the sun and Earth (about 93,000,000
                            miles or 150 million kilometers), and is home to up to 2 trillion icy bodies.
-                        </p>
+                           </li>
+                          
+                        </ul>
+                        
                      </article>
                   </section>
 
-
-
-
-                  <section class="hidden Mercury-info-list planet-info-list">
-                     <h3 class="sub-title">
+                  <section class="tabcontent hide">
+                     <h2 class="sub__title">
                         Mercury
-                     </h3>
+                     </h2>
 
                      <div class="planet-info-image-container">
                         <div class="basic-info">
                            <ul>
                               <li>
-                                 diameter:
+                                 diameter:4 879,4 km
                               </li>
 
                               <li>
-                                 sun:
+                                 Mass
+                                 3.3011×1023 kg[8]
+                                 0.055 Earths
                               </li>
 
                               <li>
-                                 temperature:
+                                 <table>
+                                    <th>
+                                    <td>Surface temp.</td>
+                                    <td>min</td>
+                                    <td>mean</td>
+                                    <td>max</td>
+                                    </th>
+                                    <tr>
+                                       <td></td>
+                                       <td>-173 °C</td>
+                                       <td>67 °C</td>
+                                       <td>427 °C</td>
+                                    </tr>
+                                    <tr>
+                                       <td></td>
+                                       <td>-193 °C</td>
+                                       <td>-73 °C</td>
+                                       <td>106.85 °C</td>
+                                    </tr>
+                                 </table>
+
                               </li>
 
-                              <li>
 
-                              </li>
                            </ul>
                         </div>
                         <div class="planet-image-container">
-                           <img class="planet-image rotate" src="img/mercury.jpg" alt="Mercury" width="300"
+                           <img class="planet-image rotate" src="img/mercury/mercury.jpg" alt="Mercury" width="300"
                               height="300">
                         </div>
                         <div class="basic-info">
@@ -641,7 +666,22 @@
 
 
 
-                     <article class="planet-info">
+                     <article>
+                        <ul  class="tabcontent__descr__list">
+                           <li class="tabcontent__descr">
+                              
+                           </li>
+                           <li class="tabcontent__descr">
+                              
+                           </li>
+                           <li class="tabcontent__descr">
+                              
+                           </li>
+                           <li class="tabcontent__descr">
+                              
+                           </li>
+                        </ul>
+                        
                         <h4>All About Mercury</h4>
 
                         <p>This small planet spins around slowly compared to Earth, so one day lasts a long time.
@@ -692,20 +732,20 @@
                         <h4>What does Mercury look like?</h4>
                         <p>
 
-                           <img class="article-image" src="img/mercury1.en.jpg" width="70%" height="70%" alt="mars">
+                           <img class="article-image" src="img/mercury/mercury1.en.jpg" width="70%" height="70%" alt="mars">
                            <span>Here you can see that Mercury is a light grey color.</span>
                            <br>
 
-                           <img class="article-image" src="img/mercury2.en.jpg" width="70%" height="70%" alt="mars">
+                           <img class="article-image" src="img/mercury/mercury2.en.jpg" width="70%" height="70%" alt="mars">
                            <span>This is Mercury's northern horizon as seen by the MESSENGER spacecraft during its third
                               flyby.</span>
                            <br>
 
-                           <img class="article-image" src="img/mercury3.en.jpg" width="70%" height="70%" alt="mars">
+                           <img class="article-image" src="img/mercury/mercury3.en.jpg" width="70%" height="70%" alt="mars">
                            <span>The big, star-shaped crater towards the bottom of the globe is named Debussy.</span>
                            <br>
 
-                           <img class="article-image" src="img/mercury4.en.jpg" width="70%" height="70%" alt="mars">
+                           <img class="article-image" src="img/mercury/mercury4.en.jpg" width="70%" height="70%" alt="mars">
                            <span>This picture of Mercury has colors added so you can better see the surface differences
                               and craters.</span>
                            <br>
@@ -717,10 +757,10 @@
 
                   </section>
 
-                  <section class="hidden Venus-info-list planet-info-list">
-                     <h3 class="sub-title">
+                  <section class="tabcontent hide">
+                     <h2 class="sub__title">
                         Venus
-                     </h3>
+                     </h2>
 
 
                      <div class="planet-info-image-container">
@@ -741,7 +781,7 @@
                            </ul>
                         </div>
                         <div class="planet-image-container">
-                           <img class="planet-image rotate" src="img/venus.jpg" alt="Venus" width="300" height="300">
+                           <img class="planet-image rotate" src="img/venus/venus.jpg" alt="Venus" width="300" height="300">
 
                         </div>
                         <div class="basic-info">
@@ -767,7 +807,7 @@
                      </div>
 
 
-                     <article class="planet-info"><br>
+                     <article class="tabcontent__descr"><br>
                         <h4> All About Venus</h4>
                         <p>Even though Venus isn't the closest planet to the Sun, it is still the hottest. It has a
                            thick atmosphere full of the greenhouse gas carbon dioxide and clouds made of sulfuric acid.
@@ -809,29 +849,29 @@
                         <h4>What does Venus look like?</h4>
                         <p>
 
-                           <img class="article-image" src="img/Venus_Clouds_br.en.jpg" width="70%" height="70%"
+                           <img class="article-image" src="img/venus/Venus_Clouds_br.en.jpg" width="70%" height="70%"
                               alt="Venus">
                            <span>Here you can see the clouds covering Venus.</span>
                            <br>
 
-                           <img class="article-image" src="img/venus2.en.jpg" width="70%" height="70%" alt="Venus">
+                           <img class="article-image" src="img/venus/venus2.en.jpg" width="70%" height="70%" alt="Venus">
                            <span>This is a combination of images taken by the Magellan spacecraft. The colors have been
                               altered so you can see all the differences in Venus's surface. Magellan used radar to get
                               information about the surface of Venus, which we can't normally see because of the thick,
                               cloudy atmosphere.</span>
                            <br>
 
-                           <img class="article-image" src="img/venus3.en.jpg" width="70%" height="70%" alt="Venus">
+                           <img class="article-image" src="img/venus/venus3.en.jpg" width="70%" height="70%" alt="Venus">
                            <span>A crater on the surface of Venus. It's 45 miles (72 km) wide.</span>
                            <br>
                      </article>
 
                   </section>
 
-                  <section class="hidden Earth-info-list planet-info-list">
-                     <h3 class="sub-title">
+                  <section class="tabcontent hide">
+                     <h2 class="sub__title">
                         Earth
-                     </h3>
+                     </h2>
 
                      <div class="planet-info-image-container">
                         <div class="basic-info">
@@ -851,13 +891,15 @@
                            </ul>
                         </div>
                         <div class="planet-image-container">
-                           <img class="planet-image rotate" src="img/earth3.jpg" alt="Earth" width="300" height="300">
+                           <img class="planet-image rotate" src="img/earth/Earth.png" alt="Earth" width="300" height="300">
 
                         </div>
                         <div class="basic-info">
-                           <p>                 
-                              Our home planet Earth is a rocky, terrestrial planet. It has a solid and active surface with
-                              mountains, valleys, canyons, plains and so much more. Earth is special because it is an ocean
+                           <p>
+                              Our home planet Earth is a rocky, terrestrial planet. It has a solid and active surface
+                              with
+                              mountains, valleys, canyons, plains and so much more. Earth is special because it is an
+                              ocean
                               planet. Water covers 70% of Earth's surface. </p>
 
                            <p> Since we live here, you might think we know all there is to know about Earth. Not at all,
@@ -869,31 +911,34 @@
                      </div>
 
 
-                     <article class="planet-info">
+                     <article class="tabcontent__descr">
 
                         <h4> All About Earth</h4>
-                      
+
                         <p>Our atmosphere is made mostly of nitrogen and has plenty of oxygen for us to breathe. The
                            atmosphere also protects us from incoming meteoroids, most of which break up in our
                            atmosphere before they can strike the surface as meteorites.</p>
 
-                          
+
                         <br>
                         <h4>Structure and Surface</h4>
                         <ul>
                            <li> Earth is a terrestrial planet. It is small and rocky.
-                              </li>
-                           <li>Earth's atmosphere is the right thickness to keep the planet warm so living things like us
-                              can be there. It’s the only planet in our solar system we know of that supports life. It is
+                           </li>
+                           <li>Earth's atmosphere is the right thickness to keep the planet warm so living things like
+                              us
+                              can be there. It’s the only planet in our solar system we know of that supports life. It
+                              is
                               mostly nitrogen, and it has plenty of oxygen for us to breathe.</li>
-                        
+
                         </ul>
                         <br>
-                     
+
                         <h4>Time on Earth</h4>
                         <ul>
                            <li>A day on Earth lasts a little under 24 hours.</li>
-                           <li>One year on Earth lasts 365.25 days. That 0.25 extra means every four years we need to add
+                           <li>One year on Earth lasts 365.25 days. That 0.25 extra means every four years we need to
+                              add
                               one day to our calendar. We call it a leap day (in a leap year).</li>
                         </ul>
 
@@ -901,34 +946,38 @@
 
                         <ul>
                            <li> Earth has just one Moon. It is the only planet to have just one moon.</li>
-                           <li>Earth has lots of spacecraft watching it. There is still a lot we can learn about our home
+                           <li>Earth has lots of spacecraft watching it. There is still a lot we can learn about our
+                              home
                               planet.</li>
-                              <li>Earth is the third planet from the Sun in our solar system. That means Venus and Mars are
-                                 Earth’s neighboring planets.</li>
+                           <li>Earth is the third planet from the Sun in our solar system. That means Venus and Mars are
+                              Earth’s neighboring planets.</li>
                         </ul>
 
                         <h4> Quick History</h4>
                         <ul>
-                           <li>We have known about our planet since ancient times, of course. But we didn’t know our place
-                              in the solar system for a long time.</li>    
+                           <li>We have known about our planet since ancient times, of course. But we didn’t know our
+                              place
+                              in the solar system for a long time.</li>
                         </ul>
 
                         <h4>What does Earth look like?</h4>
-                        <p>
-
-                           <img class="article-image" src="img/earth-article.jpg" width="70%" height="70%"
+                        
+<div>
+                          <img class="article-image" src="img/earth/earth-article.jpg" width="70%" height="70%"
                               alt="A photo of Earth in the background looking very small. The moon's surface is in the foreground, so Earth is rising over the moon.">
                            <span>This Apollo 11 picture taken by an astronaut in 1969 shows the Earth rising over the
                               Moon.
                               Doesn't it look small?</span>
                            <br>
+</div>
+                           
 
-                           <img class="article-image" src="img/earth2-article.jpg" width="70%" height="70%"
+                           <img class="article-image" src="img/earth/earth3-article.png" width="70%" height="70%"
                               alt="A photo of the northern portion of the Earth. Swirls of white cover it.">
                            <span>This is a view of Earth looking just at the northern portion.</span>
                            <br>
 
-                           <img class="article-image" src="img/earth3-article.png" width="70%" height="70%"
+                           <img class="article-image" src="img/earth/earth2-article.jpg" width="70%" height="70%"
                               alt="A photo of Earth showing North and South America, oceans, and swirling clouds.">
                            <span>A NASA camera on the Deep Space Climate Observatory satellite took this picture of the
                               entire
@@ -936,19 +985,16 @@
                            <br>
                         </p>
 
-                  
+
 
                      </article>
 
-
-
-
                   </section>
 
-                  <section class="hidden Mars-info-list planet-info-list">
-                     <h3 class="sub-title">
+                  <section class="tabcontent hide">
+                     <h2 class="sub__title">
                         Mars
-                     </h3>
+                     </h2>
                      <div class="planet-info-image-container">
                         <div class="basic-info">
                            <ul>
@@ -967,39 +1013,42 @@
                            </ul>
                         </div>
                         <div class="planet-image-container">
-                           <img class="planet-image rotate" src="img/marss.jpg" alt="mars" width="300" height="300">
-   
+                           <img class="planet-image rotate" src="img/mars/marss.jpg" alt="mars" width="300" height="300">
+
                         </div>
                         <div class="basic-info">
-                           <p>                 
-                              Like Earth, Mars has seasons, polar ice caps, volcanoes, canyons, and weather. It has a very
+                           <p>
+                              Like Earth, Mars has seasons, polar ice caps, volcanoes, canyons, and weather. It has a
+                              very
                               thin atmosphere made of carbon dioxide, nitrogen, and argon. </p>
 
-                           <p>  There are signs of ancient floods on Mars, but now water mostly exists in icy dirt and thin
+                           <p> There are signs of ancient floods on Mars, but now water mostly exists in icy dirt and
+                              thin
                               clouds. On some Martian hillsides, there is evidence of liquid salty water in the ground.
-   </p>
-   <p>                   
-      Scientists want to know if Mars may have had living things in the past. They also want to
-      know if Mars could support life now or in the future.
-   </p>
+                           </p>
+                           <p>
+                              Scientists want to know if Mars may have had living things in the past. They also want to
+                              know if Mars could support life now or in the future.
+                           </p>
                         </div>
                      </div>
-                     
 
-                     <article class="planet-info">
+
+                     <article class="tabcontent__descr">
                         <h4>All About Mars</h4>
                         <p>
                            Mars is a cold desert world. It is half the size of Earth. Mars is sometimes called the Red
                            Planet. It's red because of rusty iron in the ground.
                         </p>
-                       
+
 
                         <br>
                         <h4> Structure and Surface</h4>
                         <ul>
                            <li>Mars is a terrestrial planet. It is small and rocky.</li>
                            <li>Mars has a thin atmosphere.</li>
-                           <li>Mars has an active atmosphere, but the surface of the planet is not active. Its volcanoes are dead.</li>
+                           <li>Mars has an active atmosphere, but the surface of the planet is not active. Its volcanoes
+                              are dead.</li>
                         </ul>
 
 
@@ -1019,17 +1068,20 @@
                         <h4>Mars’ Neighbors</h4>
                         <ul>
                            <li>Mars has two moons. Their names are Phobos and Deimos.</li>
-                           <li>Mars is the fourth planet from the Sun. That means Earth and Jupiter are Mars’ neighboring planets.</li>
+                           <li>Mars is the fourth planet from the Sun. That means Earth and Jupiter are Mars’
+                              neighboring planets.</li>
 
                         </ul>
                         <h4>Quick History</h4>
                         <ul>
-                           <li>Mars has been known since ancient times because it can be seen without advanced telescopes.</li>
-                           <li>Several missions have visited Mars. And Mars is the only planet we have sent rovers to. They
+                           <li>Mars has been known since ancient times because it can be seen without advanced
+                              telescopes.</li>
+                           <li>Several missions have visited Mars. And Mars is the only planet we have sent rovers to.
+                              They
                               drive around Mars, taking pictures and measurements.</li>
 
                         </ul>
-                      
+
                         <h4>
                            <a href="">
                               Mars Rovers
@@ -1057,17 +1109,17 @@
                         <h4>What does Mars look like?</h4>
                         <p>
 
-                           <img class="article-image" src="img/mars1-article.jpg" width="70%" height="70%" alt="mars">
+                           <img class="article-image" src="img/mars/mars1-article.jpg" width="70%" height="70%" alt="mars">
                            <span>NASA's Hubble Space Telescope took this picture of Mars as it was making its closest
                               approach to Earth in 60,000 years!</span>
                            <br>
 
-                           <img class="article-image" src="img/mars2-article.jpg" width="70%" height="70%" alt="mars">
+                           <img class="article-image" src="img/mars/mars2-article.jpg" width="70%" height="70%" alt="mars">
                            <span>In this picture of Mars, you can see water-ice clouds, polar ice, and some rocky
                               features.</span>
                            <br>
 
-                           <img class="article-image" src="img/mars3-article.jpg" width="70%" height="70%" alt="mars">
+                           <img class="article-image" src="img/mars/mars3-article.jpg" width="70%" height="70%" alt="mars">
                            <span>NASA's Mars Exploration Rover Opportunity took this picture with its panoramic camera
                               near "Solander Point" on Mars.</span>
                            <br>
@@ -1077,18 +1129,18 @@
 
                   </section>
 
-                  <section class="hidden Jupiter-info-list planet-info-list">
-                     <h3 class="sub-title">
+                  <section class="tabcontent hide">
+                     <h2 class="sub__title">
                         Jupiter
-                     </h3>
+                     </h2>
 
                      <div class="planet-image-container">
-                        <img class="planet-image rotate" src="img/jupiter.jpg" alt="Jupiter" width="300" height="300">
+                        <img class="planet-image rotate" src="img/jupiter/jupiter.jpg" alt="Jupiter" width="300" height="300">
 
                      </div>
 
 
-                     <article class="planet-info"><br>
+                     <article class="tabcontent__descr"><br>
                         <h4> All About Jupiter</h4>
                         Jupiter is the biggest planet in our solar system. It's similar to a star, but it never got
                         massive enough to start burning. It is covered in swirling cloud stripes. It has big storms like
@@ -1157,11 +1209,11 @@
 
                         <h4>What does Jupiter look like?</h4>
                         <p>
-                           <img class="article-image" width="70%" height="70%" src="img/jupiter1.en.jpg"
+                           <img class="article-image" width="70%" height="70%" src="img/jupiter/jupiter1.en.jpg"
                               alt="A photo of Jupiter in the top left corner, clearly showing the bands of Jupiter's colors: brown, grey,and red. A small moon is in the lower right hand corner.">
                            <span>Here you can see Jupiter and one of its many moons, Ganymede.</span>
                            <br>
-                           <img class="article-image" width="70%" height="70%" src="img/jupiter2.en.jpg" alt="A full face of Jupiter with the Great Red Spot on the right hand side. A small dark spot on the left side of Jupiter is the shadow of a moon passing in front.
+                           <img class="article-image" width="70%" height="70%" src="img/jupiter/jupiter2.en.jpg" alt="A full face of Jupiter with the Great Red Spot on the right hand side. A small dark spot on the left side of Jupiter is the shadow of a moon passing in front.
 ">
                            <br>
                            <span>This picture is actually four pictures taken by Cassini put together. The dark spot on
@@ -1169,7 +1221,7 @@
                            </span>
                            <br>
 
-                           <img class="article-image" width="70%" height="70%" src="img/jupiter3.en.jpg" alt="A close up image of Jupiter's Red Spot, showing swirls of brown and red gas.
+                           <img class="article-image" width="70%" height="70%" src="img/jupiter/jupiter3.en.jpg" alt="A close up image of Jupiter's Red Spot, showing swirls of brown and red gas.
 ">
                            <span>This picture taken by Voyager 2 shows the Great Red Spot.</span>
                         </p>
@@ -1180,18 +1232,18 @@
 
                   </section>
 
-                  <section class="hidden Saturn-info-list planet-info-list">
-                     <h3 class="sub-title">
+                  <section class="tabcontent hide">
+                     <h2 class="sub__title">
                         Saturn
-                     </h3>
+                     </h2>
 
                      <div class="planet-image-container">
-                        <img class="planet-image rotate" src="img/saturn.png" alt="Saturn" width="300" height="300">
+                        <img class="planet-image rotate" src="img/saturn/saturn.png" alt="Saturn" width="300" height="300">
 
                      </div>
 
 
-                     <article class="planet-info">
+                     <article class="tabcontent__descr">
                         <h4>All About Saturn</h4>
                         <p>
                            Saturn isn’t the only planet to have rings, but it definitely has the most beautiful ones.
@@ -1240,28 +1292,28 @@
 
                         <h4>What does Saturn look like?</h4>
                         <p>
-                           <img class="article-image" src="img/saturn1.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn with its rings at an angle pointing upwards. Next to Saturn are two white dots, which are moons.
+                           <img class="article-image" src="img/saturn/saturn1.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn with its rings at an angle pointing upwards. Next to Saturn are two white dots, which are moons.
                            ">
                            <span>The Cassini spacecraft took this picture of Saturn's rings. You can see the grey and
                               tan colors.
                            </span>
                            <br>
 
-                           <img class="article-image" src="img/saturn2.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn where it is backlit by the sun. Saturn and its rings are nearly black, and the sun is making the edges glow.
+                           <img class="article-image" src="img/saturn/saturn2.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn where it is backlit by the sun. Saturn and its rings are nearly black, and the sun is making the edges glow.
                            ">
                            <span>This is a picture of Saturn and its moons Tethys and Dione. Voyager 1 took this picture
                               as it passed by.
                            </span>
                            <br>
 
-                           <img class="article-image" src="img/saturn3.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn looking down on it, showing its rings clearly. The shadow of Saturn falls on the left side of the rings.
+                           <img class="article-image" src="img/saturn/saturn3.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn looking down on it, showing its rings clearly. The shadow of Saturn falls on the left side of the rings.
                            ">
                            <span>NASA's Cassini spacecraft went behind Saturn and took this picture in 2013. You can see
                               seven of its moons and its inner rings. In the background you can also see Earth.
                            </span>
                            <br>
 
-                           <img class="article-image" src="img/saturn4.en.jpg" width="70%" height="70%" alt="mars">
+                           <img class="article-image" src="img/saturn/saturn4.en.jpg" width="70%" height="70%" alt="mars">
                            <span>A portrait looking down on Saturn and its rings. This picture was made from images
                               taken by NASA's Cassini spacecraft in 2013. It was put together by amateur image processor
                               and Cassini fan Gordan Ugarkovic.
@@ -1275,10 +1327,10 @@
 
                   </section>
 
-                  <section class="hidden Uran-info-list planet-info-list">
-                     <h3 class="sub-title">
+                  <section class="tabcontent hide">
+                     <h2 class="sub__title">
                         Uran
-                     </h3>
+                     </h2>
 
                      <div class="planet-info-image-container">
                         <div class="basic-info">
@@ -1298,7 +1350,7 @@
                            </ul>
                         </div>
                         <div class="planet-image-container">
-                           <img class="planet-image rotate" src="img/uranus.jpg" alt="Uranus" width="300" height="300">
+                           <img class="planet-image rotate" src="img/uran/uranus.jpg" alt="Uranus" width="300" height="300">
 
                         </div>
                         <div class="basic-info">
@@ -1319,7 +1371,7 @@
                      </div>
 
 
-                     <article class="planet-info"><br>
+                     <article class="tabcontent__descr"><br>
                         <h4> All About Uranus</h4>
 
                         <h4>Structure and Surface</h4>
@@ -1358,7 +1410,7 @@
 
                         <h4>What does Uranus look like?</h4>
                         <p>
-                           <img class="article-image" src="img/uranus1.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn with its rings at an angle pointing upwards. Next to Saturn are two white dots, which are moons.
+                           <img class="article-image" src="img/uran/uranus1.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn with its rings at an angle pointing upwards. Next to Saturn are two white dots, which are moons.
                            ">
                            <span>This picture shows Uranus surrounded by its four major rings and by 10 of its moons.
                               This image has colors added to show the different altitudes and thicknesses of clouds in
@@ -1368,7 +1420,7 @@
                            </span>
                            <br>
 
-                           <img class="article-image" src="img/uranus2.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn where it is backlit by the sun. Saturn and its rings are nearly black, and the sun is making the edges glow.
+                           <img class="article-image" src="img/uran/uranus2.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn where it is backlit by the sun. Saturn and its rings are nearly black, and the sun is making the edges glow.
                            ">
                            <span>The Hubble Space Telescope took this picture of Uranus. You can see bands and a dark
                               spot in Uranus' atmosphere.
@@ -1380,10 +1432,10 @@
 
                   </section>
 
-                  <section class="hidden Neptune-info-list planet-info-list">
-                     <h3 class="sub-title">
+                  <section class="tabcontent hide">
+                     <h2 class="sub__title">
                         Neptune
-                     </h3>
+                     </h2>
 
                      <div class="planet-info-image-container">
                         <div class="basic-info">
@@ -1403,7 +1455,7 @@
                            </ul>
                         </div>
                         <div class="planet-image-container">
-                           <img class="planet-image rotate" src="img/nept.png" alt="Neptune" width="300" height="300">
+                           <img class="planet-image rotate" src="img/neptun/nept.png" alt="Neptune" width="300" height="300">
 
                         </div>
                         <div class="basic-info">
@@ -1422,7 +1474,7 @@
                      </div>
 
 
-                     <article class="planet-info"><br>
+                     <article class="tabcontent__descr"><br>
                         <h4> All About Neptune</h4>
 
 
@@ -1461,60 +1513,46 @@
 
                         <h4>What does Neptune look like?</h4>
                         <p>
-                           <img class="article-image" src="img/neptune1.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn with its rings at an angle pointing upwards. Next to Saturn are two white dots, which are moons.
+                           <img class="article-image" src="img/neptun/neptune1.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn with its rings at an angle pointing upwards. Next to Saturn are two white dots, which are moons.
                            ">
                            <span>Voyager 2 took this picture of Neptune in 1989.</span>
                            <br>
 
-                           <img class="article-image" src="img/neptune2.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn where it is backlit by the sun. Saturn and its rings are nearly black, and the sun is making the edges glow.
+                           <img class="article-image" src="img/neptun/neptune2.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn where it is backlit by the sun. Saturn and its rings are nearly black, and the sun is making the edges glow.
                            ">
                            <span>Clouds streak across Neptune.</span>
                            <br>
 
-                           <img class="article-image" src="img/neptune3.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn where it is backlit by the sun. Saturn and its rings are nearly black, and the sun is making the edges glow.
+                           <img class="article-image" src="img/neptun/neptune3.en.jpg" width="70%" height="70%" alt="                           A photo of Saturn where it is backlit by the sun. Saturn and its rings are nearly black, and the sun is making the edges glow.
                            ">
                            <span>Neptune is a very cold, windy world.</span>
                            <br>
 
                      </article>
 
-
-
                   </section>
 
-                  <!-- <section class=" clearfix last "><div class="solarwidth"><ul class="solarsystem last"><li class="sun"><a href="#sun" class="last"><span class="last">Солнце</span></a></li><li class="mercury"><a href="#mercury" class="last"><span class="last">Меркурий</span></a></li><li class="venus"><a href="#venus" class="last"><span class="last">Венера</span></a></li><li class="earth"><a href="#earth" class="last"><span class="last">Земля<span class="moon last"> &amp; Moon</span></span></a></li><li class="mars"><a href="#mars" class="last"><span class="last">Марс</span></a></li><li class="asteroids_meteorids"><span class="last">Астероиды &amp; Метеориты</span></li><li class="jupiter"><a href="#jupiter" class="last"><span class="last">Юпитер</span></a></li><li class="saturn"><a href="#saturn" class="last"><span class="last">Saturn &amp; <span class="ring last">Ring</span></span></a></li><li class="uranus"><a href="#uranus" class="last"><span class="last">Уран</span></a></li><li class="neptune"><a href="#neptune" class="last"><span class="last">Нептун</span></a></li><li class="pluto last"><a href="#pluto" class="last"><span class="last">Плутон</span></a></li></ul></div><ul id="descriptions" class="last"><li><h3 id="sun"><span id="i" class="last">Солнце</span></h3><p class="last">Солнце является звездой, которая представляет собой горячий шар из раскаленных газов в центре нашей Солнечной системы. Его влияние простирается далеко за пределы орбит Нептуна и Плутона. Без Солнца и его интенсивной энергии и тепла, не было бы жизни на Земле. Существуют миллиарды звезд, как наше Солнце, разбросанных по галактике Млечный Путь.</p></li><li><h3 id="mercury"><span id="i-2" class="last">Меркурий</span></h3><p class="last">Выжженный Солнцем Меркурий лишь немного больше, чем спутник Земли Луна. Подобно Луне, Меркурий практически лишен атмосферы и не может сгладить следы воздействия от падения метеоритов, поэтому он как и Луна покрыт кратерами. Дневная сторона Меркурия очень сильно нагревается на Солнце, а на ночной стороне температура падает на сотни градусов ниже нуля. В кратерах Меркурия, которые расположены на полюсах, существует лед. Меркурий совершает один оборот вокруг Солнца за 88 дней.</p></li><li><h3 id="venus"><span id="i-3" class="last">Венера</span></h3><p class="last">Венера это мир чудовищной жары (еще больше чем на Меркурии) и вулканической активности. Аналогичная по структуре и размеру Земле, Венера покрыта толстой и токсичной атмосферой, которая создает сильный парниковый эффект. Этот выжженной мир достаточно горячий, чтобы расплавить свинец. Радарные снимки сквозь могучую атмосферу выявили вулканы и деформированные горы. Венера вращается в противоположном направлении, от вращения большинства планет.</p></li><li><h3 id="earth"><span id="i-4" class="last">Земля</span></h3><p class="last">Земля — планета океан. Наш дом, с его обилием воды и жизни делает его уникальным в нашей Солнечной системе. Другие планеты, в том числе несколько лун, также имеют залежи льда, атмосферу, времена года и даже погоду, но только на Земле все эти компоненты собрались вместе таким образом, что стало возможным существование жизнь.</p></li><li><h3 id="mars"><span id="i-5" class="last">Марс</span></h3><p class="last">Хотя детали поверхности Марса трудно увидеть с Земли, наблюдения в телескоп показывают, что на Марсе существуют сезоны и белые пятна на полюсах. В течение многих десятилетий, люди полагали, что яркие и темные области на Марсе это пятна растительности и что Марс может быть подходящим местом для жизни, и что вода существует в полярных шапках. Когда космический аппарат Маринер-4, прилетел у Марсу в 1965 году, многие из ученых были потрясены, увидев фотографии мрачной планеты покрытой кратерами. Марс оказался мертвой планетой. Более поздние миссии, однако, показали, что Марс хранит множество тайн, которые еще предстоит решить.</p></li><li><h3 id="jupiter"><span id="i-6" class="last">Юпитер</span></h3><p class="last">Юпитер — самая массивная планета в нашей Солнечной системе, имеет четыре больших спутника и множество небольших лун. Юпитер образует своего рода миниатюрную Солнечную систему. Чтобы превратится в полноценную звезду, Юпитеру нужно было стать в 80 раз массивнее.</p></li><li><h3 id="saturn"><span id="i-7" class="last">Сатурн</span></h3><p class="last">Сатурн — самая дальняя из пяти планет, которые были известны до изобретения телескопа. Подобно Юпитеру, Сатурн состоит в основном из водорода и гелия. Его объем в 755 раз больше, чем у Земли. Ветры в его атмосфере достигают скорости 500 метров в секунду. Эти быстрые ветра в сочетании с теплом, поднимающимся из недр планеты, вызывают появление желтых и золотистых полос, которые мы видим в атмосфере.</p></li><li><h3 id="uranus"><span id="i-8" class="last">Уран</span></h3><p class="last">Первая планета найденная с помощью телескопа, Уран был открыт в 1781 году астрономом Уильямом Гершелем. Седьмая планета от Солнца настолько далека, что один оборот вокруг Солнца занимает 84 года.</p></li><li><h3 id="neptune"><span id="i-9" class="last">Нептун</span></h3><p class="last">Почти в 4,5 млрд. километрах от Солнца вращается далекий Нептун. На один оборот вокруг Солнца у него уходит 165 лет. Он невидим невооруженным глазом из-за его огромного расстояния от Земли. Интересно, что его необычная эллиптическая орбита, пересекается с орбитой карликовой планеты Плутона из-за чего Плутон находится внутри орбиты Нептуна порядка 20 лет из 248 за которые совершает один оборот вокруг Солнца.</p></li><li class="last"><h3 id="pluto"><span id="i-10" class="last">Плутон</span></h3><p class="last">Крошечный, холодный и невероятно далекий Плутон был открыт в 1930 году и долго считался девятой планетой. Но после открытий подобных Плутону миров, которые находились еще дальше, Плутон был переведен в категорию карликовых планет в 2006 году.</p></li></ul></section>
-
-                  </section> -->
-
                </div>
-
-               <!-- <aside class="aside">
-
-               </aside> -->
-
-               <button class="up-button" type="button">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Up_arrow_white.svg" alt="">
-
-
-                  <span class="visually-hidden">Наверх</span>
-               </button>
             </main>
          </div>
 
-         <div class="container footer-container">
+         <div class="footer-container">
             <footer class="footer">
 
 
             </footer>
          </div>
+
+         <button class="up__button hidden" type="button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Up_arrow_white.svg" alt="Наверх">
+            <span class="hide">Наверх</span>
+         </button>
       </div>
 
    </div>
-
-   <script src="planet-script.js"></script>
+  
    <script src="list.script.js"></script>
-   <script src="script.js"></script>
-   <script src="up-button.js"></script>
+   
 
 </body>
 

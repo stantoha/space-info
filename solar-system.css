@@ -26,8 +26,6 @@ body{
 
 .basic-container{
     display: grid;
-   
-   
     grid-template-areas:
     ". hd hd hd hd hd hd ."
     ". mn mn mn mn mn mn ."
@@ -73,21 +71,28 @@ body{
 
 .header-left,
 .header-right{
-    display: flex;
     flex: 50%;
+    display: block;
     justify-content:flex-start;
 }
-
-
 
 .header-left-section,
 .header-right-section{
     display:flex;
     justify-content:flex-start;
     align-items: center;
-    padding: 5px;
+    padding: 5px 50px;
     margin:5px auto;
 }
+
+.header-left-section{
+    float: left;
+}
+
+.header-right-section{
+    float: right;
+}
+
 .header-right-section{
     justify-content: flex-end;
 }
@@ -295,6 +300,58 @@ a.solarSystem-link,
     transform: translateX(-100px) rotate(360deg);
   }
 
+  
+/* .tabcontent {
+    width: 850px;
+    position: relative
+} */
+
+
+.tabheader {
+    width: 280px;
+    padding: 35px 30px;
+    background-color: #fff
+}
+
+.tabheader h3 {
+    font-weight: 700;
+    font-size: 16px
+}
+
+.tabheader__items {
+    margin-top: 35px;
+    padding-left: 26px;
+    border-left: 1px solid #000
+}
+
+.tabheader__item {
+    font-weight: 700;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, .6);
+    cursor: pointer;
+    transition: .3s all
+}
+
+.tabheader__item_active {
+    color: #000;
+    font-size: 22px;
+    font-weight: 700
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display:none;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
 .planet-list{
     padding-top: 25vh;
     margin-left: 27px;
@@ -355,9 +412,9 @@ a:active.planet-list-link{
 
 .main{
     display:flex;
-    height: auto;
+    height: auto    ;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 20px auto;
     padding:0;
     overflow: hidden;
     background-color: rgba(0, 0, 0,0.7);
@@ -374,13 +431,13 @@ a:active.planet-list-link{
 } */
 
 
-/*  .solar-system .planet-image{
+ .solar-system .planet-image{
     margin:  auto;
     height: 28vh;
-} */
+}
 
 .content{
-    width: 68vw;
+    width: 70vw;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -522,25 +579,27 @@ div.solar-system-model{
     justify-content: center;
     border-radius: 30px/30px;
     box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.7);
-   /*  animation-name:bg ;
+    animation-name:rt ;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 1200s;  */
+    animation-duration: 600s; 
 }
 
 
  
-/* @keyframes bg{
+@keyframes rt{
     0%{
     }
     50%{
+        transform: rotate(720deg);
          background-position-x:-100% ;
     background-position-y:center ;
     }
 100%{
+    transform: rotate(1440deg);
     background-position-x:100% ;
     background-position-y:center ;
-}}  */
+}} 
 
 
 
@@ -1117,7 +1176,7 @@ img.planet-image{
     }
 }
 
-.up-button  {
+/* .up-button  {
     display: inline-block;
     position: fixed;
     top:50vw;
@@ -1129,7 +1188,7 @@ img.planet-image{
     padding: 5px;
     text-align: center;
     border: none;
-}
+} */
 
 .up-button svg{
    transform: scale(2.5);
@@ -1139,15 +1198,12 @@ img.planet-image{
     visibility: hidden;
 }
 
-.shown {
-    display: inline-block;
-  }
+
 
   
 
   
-
-/* 
+ 
 
 .hidden-button {
     display: none;
@@ -1157,8 +1213,8 @@ img.planet-image{
     position: fixed;
     z-index: 10;
     padding: 0;
-    bottom: 75px;
-    right: 140px;
+    bottom: 0;
+    right: 0;
     width: 50px;
     height: 50px;
     font-size: 36px;
@@ -1166,17 +1222,16 @@ img.planet-image{
     text-align: center;
     vertical-align: middle;
     border: none;
-    background-color: transparent;
+    /* background-color: transparent */;
     display: none;
     cursor: pointer;
     transform: rotate(-90deg);
-    fill: white;
+    
 } 
 
 .shown {
     display: inline-block;
-  } */
-
+  }
 
 
 .footer-container{
