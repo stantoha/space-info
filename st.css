@@ -16,38 +16,23 @@ body{
     margin: 0 auto;
     overflow: hidden;
     min-height: 900px;
-    border-top: 50px solid black;
-    border-bottom: 50px solid black;
-    background-image: url("img/universe1.jpg"),  url("img/universe4.jpg");
-    background-repeat: no-repeat,    no-repeat;
-    background-position:top, bottom ;
-    background: -moz-linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -webkit-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -ms-linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
-    background-size:cover,cover ;
-    animation-name: bg;
-    animation-duration: 1800s;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    background-image: url("img/universe1.jpg");
+    background-repeat:no-repeat;
+    background-position:center ;
+    background: -moz-linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -webkit-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -ms-linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+    background-size:cover ;
+    animation-name: back;
+    animation-duration: 720s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-}
-
-@keyframes bg{
-    from{
-        background-position:left ;
-    }
-    to{
-        background-position:right ;
-    }
-}
-
-.main p,
-.main h2,
-.main ul{
-    z-index: 1000;
 }
 
 
 
 .basic-container{
-    display: grid;
+    /* display: grid;
     gap: 5px;
     grid-template-areas:
     ". hd hd hd hd hd hd ."
@@ -58,16 +43,8 @@ body{
     ". mn mn mn mn mn mn ."
     ". ft ft ft ft ft ft ." ;
     grid-template-columns:0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.1fr ;
-    grid-template-rows:auto 1fr auto 1fr auto 1fr auto;
-    background-image: url(img/universe3.jpg);
-    background-repeat: no-repeat,    no-repeat;
-    background-position:top, bottom ;
-    background: -moz-linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -webkit-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -ms-linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
-    background-size:cover,cover ;
-    animation-name: back;
-    animation-duration: 720s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    grid-template-rows:auto 1fr auto 1fr auto 1fr auto; */
+   
 }
 
 @keyframes back{
@@ -108,7 +85,7 @@ body{
     justify-content: space-between ;
     align-items: center;
     padding: 5px;
-    margin: 0 5vw;
+    margin: 0 1vw;
     height: 10vh;
 }
 
@@ -323,11 +300,167 @@ body{
     left: 0;
   } 
 
-  #nav-toggle:checked ~ .nav-btnl >img {
-      position: absolute;
-    transform: translateX(-100px) rotate(360deg);
-  }
+  .tabcontent__container{
+    display: block;
+    margin: 10vh auto 0;
+    padding: 50px;
+} 
+.tabcontent {
+    display: block;
+    margin: 0 auto;
+    width: 70vw;
+}
 
+.tabcontent h2,
+.tabcontent p,
+.tabcontent  span{
+    color: white;
+    
+}
+
+/* .tabcontent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+} */
+.tabcontent__descr__list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.tabcontent__descr {
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    color: white;
+}
+
+
+.tabheader__items {
+    display: flex;
+    flex-direction: column;     
+    position: absolute;
+    margin-top: 50px;
+    top: 200px;
+}
+
+.tabheader__item {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s all
+}
+
+
+a.tabheader__link{
+    color: white;
+    transition: 0.5s;
+}
+
+a.tabheader__link__active{
+    color:red;
+    transform: scale(2);
+}
+.planet__info__image__container{
+   display: flex;
+   justify-content: space-between;
+
+}
+
+h2.sub__title{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 50px;
+}
+
+  .planet__image__container{
+    display: flex;
+    padding: 100px;
+    width: 310px;
+    height: 310px;
+    margin:30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.7);
+    background-color: transparent;
+    background-size: 200%;
+    animation-name:rt ;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 600s; 
+}
+
+
+div.planet__image__container.solar{
+    animation-name:rt ;
+    z-index: 0;
+    box-shadow:none;
+    background-color: none;
+    background-size: 100%;
+    animation-duration: 1800s;
+}
+ 
+@keyframes rt{
+    0%{
+    }
+    50%{
+        transform: rotate(-1440deg);
+         background-position-x:-100% ;
+    background-position-y:center ;
+    }
+100%{
+    transform: rotate(-2880deg);
+    background-position-x:100% ;
+    background-position-y:center ;
+}} 
+
+
+
+img.planet-image{
+    display:block;
+    margin:5px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    justify-self: center;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 1;
+    overflow: hidden; 
+}
+
+.basic__info{
+    display: block;
+    color: white;
+    font-size: 1.2em;
+}
+
+.tabcontent__articles figure,
+.tabcontent__articles figcaption,
+.basic__info__item{
+    padding: 5px;
+}
+
+
+h4{
+    display: block;
+    color: white;
+    font-size: 1.4em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.tabcontent__articles figure,
+.tabcontent__articles figcaption{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
 
 .planet{
     position: absolute;
@@ -336,8 +469,8 @@ body{
 
 .realsun,
 .sun,
-.hotsun, 
-.sunn,
+.sun__one, 
+.sun__two,
 .mercury,
 .venus,
 .earth,
@@ -353,15 +486,18 @@ body{
 
 .realsun,
 .sun {  
-     
     top:23vh ;
     left: 35vw;
     width: 28.5vw;
     height: 28.5vw;
     animation-name: sun  ;
-    animation-duration: 270s;
+    animation-duration: 120s; 
+}
+
+.realsun{  
     
-    
+    animation-name: realsun  ;
+    animation-duration: 300s;
 }
 
 @keyframes sun{
@@ -369,7 +505,19 @@ body{
         transform: rotate(0deg) ;
     }
     50%{
-        transform: rotate(720deg) scale(0.5) ;
+        transform: rotate(720deg) ;
+    }
+    100%{
+        transform: rotate(1440deg) ;
+    }
+}
+
+@keyframes realsun{
+    0%{
+        transform: rotate(0) ;
+    }
+    50%{
+        transform: rotate(720deg) scale(1.15);
     }
     100%{
         transform: rotate(1440deg) ;
@@ -377,74 +525,75 @@ body{
 
 }
 
-.hotsun{
-    animation-name: hotsun  ;
+.sun__one{
+    animation-name: sun__one  ;
     animation-duration: 80s;
     
 }
 
-@keyframes hotsun{
+@keyframes sun__one{
     0%{
-        transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
     filter: brightness(90%) saturate(110%) contrast(100%);
+    opacity:0.5;
     }
     25%{
         transform: rotate(-120deg) scale(1.2);
         filter: brightness(100%) saturate(100%) contrast(110%);
-        opacity: 0.8;
+        opacity: 0.6;
     }
     50%{
         transform: rotate(-240deg) scale(1.15);
 
         filter: brightness(200%) saturate(110%) contrast(120%);
-        opacity: 0.7;
+        opacity:0.5;
     }
     75%{
         transform: rotate(-360deg) scale(1.2);
         filter: brightness(100%) saturate(100%) contrast(110%);
-        opacity: 0.8;
+        opacity: 0.6;
     }
     100%{
+        transform: rotate(-480deg) scale(1);
         filter: brightness(90%) saturate(110%) contrast(100%);
+        opacity:0.5;
     }
 }
 
-.sunn{
+.sun__two{
     opacity: 0.5;
     filter: saturate(120%) brightness(90%) contrast(120%);
-    animation-name: sunn  ;
+    animation-name: sun__two  ;
     animation-duration: 150s;
     
 }
 
-@keyframes sunn{
+@keyframes sun__two{
     0%{
-        transform:  rotate(120deg);
+        transform:  rotate(90deg);
     filter: brightness(90%) saturate(110%) contrast(100%);
+    opacity: 0.4;
     }
     25%{
-        transform:  rotate(240deg);
-
+        transform:  rotate(-360deg) scale(1.15);
         filter: brightness(200%) saturate(100%) contrast(110%);
         opacity: 0.6;
     }
     50%{
         
-        transform:  rotate(360deg) scale(1.1);
-
+        transform:  rotate(-540deg) scale(1.1);
         filter: brightness(110%) saturate(110%) contrast(120%);
         opacity: 0.4;
     }
     75%{
-        transform:  rotate(480deg);
-
+        transform:  rotate(120deg) scale(1.15);
         filter: brightness(100%) saturate(100%) contrast(110%);
         opacity: 0.6;
     }
     100%{
-        transform:  rotate(540deg);
-
+        transform:  rotate(480deg);
         filter: brightness(90%) saturate(110%) contrast(100%);
+        opacity: 0.4;
     }
 }
 
@@ -868,72 +1017,7 @@ body{
     }
 }
 
-.tabcontent__container{
-    display: block;
-    margin: 10vh auto 0;
-    padding: 50px;
-} 
-.tabcontent {
-    display: block;
-    margin: 0 auto;
-    width: 70vw;
-}
 
-.tabcontent h2,
-.tabcontent p,
-.tabcontent  span{
-    color: white;
-    
-}
-
-/* .tabcontent img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover
-} */
-.tabcontent__descr__list{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-.tabcontent__descr {
-    display: block;
-    margin: 0 auto;
-    padding: 50px;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 36px;
-    color: white;
-}
-
-
-.tabheader__items {
-    display: flex;
-    flex-direction: column;     
-    position: absolute;
-    margin-top: 50px;
-    top: 200px;
-}
-
-.tabheader__item {
-    display: block;
-    padding: 5px;
-    margin: 5px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: .3s all
-}
-
-
-a.tabheader__link{
-    color: white;
-    transition: 0.5s;
-}
-
-a.tabheader__link__active{
-    color:red;
-    transform: scale(2);
-}
 
 .hide{
     display: none;
@@ -964,90 +1048,11 @@ a.tabheader__link__active{
     bottom: 300px;
     right: 50px;
 }
-
-
-
-.planet-image-container{
-    display: flex;
-    padding: 100px;
-    width: 310px;
-    height: 310px;
-    margin:30px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.7);
-    background-color: transparent;
-    background-size: 200%;
-    animation-name:rt ;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 600s; 
+.main p,
+.main h2,
+.main ul{
+    z-index: 1000;
 }
 
-.planet-image-container{
-    display: flex;
-    padding: 100px;
-    width: 310px;
-    height: 310px;
-    margin:30px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.7);
-    background-color: transparent;
-    background-size: 200%;
-    animation-name:rt ;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 600s; 
-}
-
- 
-@keyframes rt{
-    0%{
-    }
-    50%{
-        transform: rotate(720deg);
-         background-position-x:-100% ;
-    background-position-y:center ;
-    }
-100%{
-    transform: rotate(1440deg);
-    background-position-x:100% ;
-    background-position-y:center ;
-}} 
 
 
-
-img.planet-image{
-    display:block;
-    margin:5px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    justify-self: center;
-    background-color: rgba(0, 0, 0, 1);
-    z-index: 2;
-    overflow: visible;
-   
-}
-
-div.planet-image-container.solar{
-    z-index: 0;
-    display: flex;
-    padding: 100px;
-    width: 310px;
-    height: 310px;
-    margin:30px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow:none;
-    background-color: none;
-    background-size: 100%;
-    animation-name:rt ;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 600s;
-}
