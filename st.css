@@ -300,6 +300,12 @@ body{
     left: 0;
   } 
 
+
+  .main p,
+  .main h2,
+  .main ul{
+      z-index: 1000;
+  }
   .tabcontent__container{
     display: block;
     margin: 10vh auto 0;
@@ -338,7 +344,17 @@ body{
     color: white;
 }
 
+a.tabcontent__descr__btn{
+    color: white;
+font-size: large;
+height: 50px;
+}
 
+a.tabcontent__descr__btn__active{
+    color: red;
+font-size: larger;
+height: 100px;
+}
 .tabheader__items {
     display: flex;
     flex-direction: column;     
@@ -429,7 +445,7 @@ img.planet-image{
     height: 300px;
     border-radius: 50%;
     justify-self: center;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: transparent;
     z-index: 1;
     overflow: hidden; 
 }
@@ -440,11 +456,7 @@ img.planet-image{
     font-size: 1.2em;
 }
 
-.tabcontent__articles figure,
-.tabcontent__articles figcaption,
-.basic__info__item{
-    padding: 5px;
-}
+
 
 
 h4{
@@ -456,10 +468,12 @@ h4{
 }
 
 .tabcontent__articles figure,
-.tabcontent__articles figcaption{
+.tabcontent__articles figcaption,
+.basic__info__item{
     display: block;
     margin: 0 auto;
     text-align: center;
+    padding: 5px;
 }
 
 .planet{
@@ -1048,11 +1062,7 @@ h4{
     bottom: 300px;
     right: 50px;
 }
-.main p,
-.main h2,
-.main ul{
-    z-index: 1000;
-}
+
 
 
 
