@@ -48,10 +48,13 @@ body{
 }
 
 @keyframes back{
-    from{
+    0%{
         background-position:top left ;
     }
-    to{
+    50%{
+        background-position:center center ;
+    }
+    100%{
         background-position:bottom right ;
     }
 }
