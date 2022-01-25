@@ -13,49 +13,28 @@
 </head>
 <style>
 
-   @media handheld and(max-width:400px) {
-      body{
-         margin: 0;
-      }
-      .header-left-section{
-    float: none;
-}
-
-.header-right-section{
-    float: none;
-}
-
-.header-right-section{
-    justify-content: center;
-}
-   } 
    /* Large desktops and laptops */
-   @media (min-width: 1600px) {
-
+   @media (min-width: 1440px) {
+      .sign-form label,
       .header a,
-      .header label,
       .sidebar a,
       .main a,
       .header p,
       .sidebar p,
       .main p,
       .main span {
-         font-size: 1.2em;
-      }
-
-      .header a.logo,
-      h2,
-      h4 {
-         transform: scale(0.9);
+         font-size: 1.7em;
       }
 
    }
 
 
    /* Large desktops and laptops */
-   @media (min-width: 1200px) and (max-width:1599px) {
+   @media (min-width: 1024px) and (max-width:1439px) {
 
-      .header a,
+      .sign-form input{
+     transform: scale(0.9);
+      }
       .header label,
       .sidebar a,
       .main a,
@@ -66,58 +45,69 @@
          font-size: 1em;
       }
 
-      .header a.logo,
-      .header h1,
       h2,
       h3,
       h4 {
          transform: scale(0.8);
       }
 
-
-
    }
 
-   /* Landscape tablets and medium desktops */
-   @media (min-width: 992px) and (max-width: 1199px) {
 
-      .header a,
-      .header label,
-      .sidebar a,
-      .main a,
-      .header p,
-      .sidebar p,
-      .main p,
-      .main span {
-         font-size: 0.8em;
-      }
-
-
-      .header a.logo,
-      .header h1,
-      h2,
-      h3,
-      h4 {
-         transform: scale(0.7);
-      }
-
-   }
 
    /* Portrait tablets and small desktops */
-   @media (min-width: 768px) and (max-width: 991px) {
+   @media (min-width: 768px) and (max-width: 1023px)  {
       body {
-         margin: 0 5vw;
+         margin: 0;
+      }
+      .tabcontent__descr{
+         padding: 0;
       }
 
-
-      .header-container {
-         width: 89vw;
-
+      .header{
+         height: 80px;
+         flex-wrap: wrap;
       }
 
-      .header a,
-      .header label,
-      .sidebar a,
+      .sign-form input{
+     transform: scale(0.8);
+      }
+
+      .nav-btn{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  .nav-btn > span::before {
+    content: '';
+    top: -15px;
+  }
+  .nav-btn > span::after {
+    content: '';
+    top: 15px;
+  }
+
+  .nav-btn > span,
+  .nav-btn > span::before,
+  .nav-btn > span::after {
+      display: block;
+      position: absolute;
+    width: 40px;
+    height: 8px;}
+
+      .planet__image__container{
+      padding:50px;
+      width: 260px;
+      height: 260px;
+      }
+
+      img.planet-image{
+      display:block;
+      margin:5px;
+      width: 250px;
+      height: 250px;
+      }
+
       .main a,
       .header p,
       .sidebar p,
@@ -125,32 +115,77 @@
       .main span {
          font-size: 0.7em;
       }
-
-
-      .header a.logo,
-      .header h1,
-      h2,
-      h3,
-      h4 {
-         transform: scale(0.6);
-      }
+      .header-left-section,
+.header-right-section{
+    float: none;
+    justify-content: center;
+    padding: 0;
+}
 
 
    }
 
    /* Landscape phones and portrait tablets */
-   @media (min-width:480px) and (max-width: 767px) {
+   @media (min-width:425px) and (max-width: 767px) {
       body {
-         margin: 0 auto;
+         margin: 0;
       }
-
+      .sign-form{
+         display: none;
+      }
+      .tabcontent__descr{
+         padding: 0;
+      }
       .header-container {
          width: 100vw;
       }
+      .nav-btn{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  .nav-btn > span::before {
+    content: '';
+    top: -15px;
+  }
+  .nav-btn > span::after {
+    content: '';
+    top: 15px;
+  }
 
-      .header a,
-      .header label,
-      .sidebar a,
+  .nav-btn > span,
+  .nav-btn > span::before,
+  .nav-btn > span::after {
+      display: block;
+      position: absolute;
+    width: 40px;
+    height: 8px;}
+      .planet__image__container{
+      padding:50px;
+      width: 210px;
+      height: 210px;
+      }
+
+      img.planet-image{
+      display:block;
+      margin:5px;
+      width: 200px;
+      height: 200px;
+      }
+      .header-left-section,
+.header-right-section{
+    justify-content: center;
+    padding: 10px;
+}
+
+.header-right{
+   flex: 10%;
+}
+
+.header .logo{
+   transform: scale(0.8);
+}
+
       .main a,
       .header p,
       .sidebar p,
@@ -159,8 +194,9 @@
          font-size: 0.5em;
       }
 
-      .header a.logo,
-      .header h1,
+      .header h1{
+         transform: scale(0.8);
+      }
       h2,
       h3,
       h4 {
@@ -169,18 +205,71 @@
    }
 
    /* Portrait phones and smaller */
-   @media (min-width:320px) and (max-width: 479px) {
-      body {
-         margin: 0 auto;
+   @media (min-width:320px) and (max-width: 424px) {
+      body{
+         margin: 0;
+      }
+     
+      .header{
+         flex-wrap: wrap;
       }
 
+.header-left-section,
+.header-right-section{
+    float: none;
+    justify-content: center;
+    padding: 0;
+}
       .header-container {
          width: 100vw;
       }
 
-      .header a,
-      .header label,
-      .sidebar a,
+      .planet__image__container{
+      padding:30px;
+      width: 160px;
+      height: 160px;
+      }
+      .nav-btn{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  .nav-btn > span::before {
+    content: '';
+    top: -15px;
+  }
+  .nav-btn > span::after {
+    content: '';
+    top: 15px;
+  }
+
+  .nav-btn > span,
+  .nav-btn > span::before,
+  .nav-btn > span::after {
+      display: block;
+      position: absolute;
+    width: 40px;
+    height: 8px;}
+      .planet__image__container{
+      padding:50px;
+      width: 210px;
+      height: 210px;
+      }
+      img.planet-image{
+      display:block;
+      margin:5px;
+      width: 150px;
+      height: 150px;
+      }
+
+      .sign-form,
+      .title__container{
+         display: none;
+      }
+      .tabcontent__descr{
+         padding: 0;
+      }
+   
       .main a,
       .header p,
       .sidebar p,
@@ -190,8 +279,10 @@
       }
 
 
-      .header a.logo,
-      .header h1,
+      .header a.logo{
+         transform: scale(0.8);
+      }
+
       h2,
       h3,
       h4 {
@@ -204,9 +295,32 @@
       body {
          margin: 0 auto;
       }
+      
+      .header{
+         flex-wrap: wrap;
+      }
 
+      .sign-form,
+      .title__container{
+         display: none;
+      }
+      .tabcontent__descr{
+         padding: 0;
+      }
       .header-container {
          width: 100vw;
+      }
+      .planet__image__container{
+      padding:10px;
+      width: 160px;
+      height: 160px;
+      }
+
+      img.planet-image{
+      display:block;
+      margin:5px;
+      width: 150px;
+      height: 150px;
       }
 
       .header a,
@@ -250,7 +364,7 @@
 
                   </div>
 
-                  <div class="header-right-section">
+                  <div class="header-right-section title__container">
                      <h1 class="title">
                         <a href="#" class="title-link">
                            solar system
@@ -269,7 +383,7 @@
                      </div>
 
                      <div class="form-col">
-                        <label for="password">password:</label>
+                        <label for="password">pass:</label>
                         <input id="password" name="password" type="password">
                      </div>
                   </form>
@@ -291,49 +405,49 @@
                               </li>
 
                               <li class="tabheader__item ">
-                                 <a class="tabheader__link " href="#">
+                                 <a class="tabheader__link slidein" href="#">
                                     Mercury
                                  </a>
                               </li>
 
                               <li class="tabheader__item ">
-                                 <a class="tabheader__link" href="#">
+                                 <a class="tabheader__link slidein" href="#">
                                     Venus
                                  </a>
                               </li>
 
                               <li class="tabheader__item ">
-                                 <a class="tabheader__link" href="#">
+                                 <a class="tabheader__link slidein" href="#">
                                     Earth
                                  </a>
                               </li>
 
                               <li class="tabheader__item ">
-                                 <a class="tabheader__link" href="#">
+                                 <a class="tabheader__link slidein" href="#">
                                     Mars
                                  </a>
                               </li>
 
                               <li class="tabheader__item ">
-                                 <a class="tabheader__link" href="#">
+                                 <a class="tabheader__link slidein" href="#">
                                     Jupiter
                                  </a>
                               </li>
 
                               <li class="tabheader__item">
-                                 <a class="tabheader__link" href="#">
+                                 <a class="tabheader__link slidein" href="#">
                                     Saturn
                                  </a>
                               </li>
 
                               <li class="tabheader__item ">
-                                 <a class="tabheader__link" href="#">
+                                 <a class="tabheader__link slidein" href="#">
                                     Uranus
                                  </a>
                               </li>
 
                               <li class="tabheader__item ">
-                                 <a class="tabheader__link" href="#">
+                                 <a class="tabheader__link slidein" href="#">
                                     Neptune
                                  </a>
                               </li>
@@ -358,14 +472,49 @@
          <div class="main-container">
             <main class="main">
                <div class="tabcontent__container">
-                  <section class="tabcontent show fade">
-                     <h2 class="sub__title">
+                  <section class="tabcontent hide">
+                     <h2 class="sub__title slidein">
                         The solar system: A guide to things orbiting our sun
                      </h2>
+                     <div class="planet__image__container  solar">
+                        <div class="planet-image ">
+                           <a class="solarSystem-link" href="#">
+                              <img class="planet realsun sun__one"
+                                 src="img/sun/real sun PNG image with transparent background.png">
+                              <img class="planet sun " src="img/sun/sun1.png" alt="Sun">
+                              <img class="planet sun sun__one" src="img/sun/Hot Sun1.png" alt="Sun">
+                              <img class="planet sun sun__two" src="img/sun/sunny.png" alt="Sun">
+                           </a>
+
+                           <a class="planet-link" href="#">
+                              <img class="planet mercury" src="img/mercury/mercury.jpg" alt="Mercury">
+                           </a>
+                           <a class="planet-link" href="#">
+                              <img class="planet earth" src="img/earth/earth3.jpg" alt="Earth">
+                           </a>
+                           <a class="planet-link" href="#">
+                              <img class="planet venus" src="img/venus/venus.jpg" alt="Venus">
+                           </a>
+                           <a class="planet-link" href="#">
+                              <img class="planet mars" src="img/mars/marss.jpg" alt="Mars">
+                           </a>
+                           <a class="planet-link" href="#">
+                              <img class="planet jupiter" src="img/jupiter/jupiter.jpg" alt="Jupiter">
+                           </a>
+                           <a class="planet-link" href="#">
+                              <img class="planet saturn" src="img/saturn/saturn.png" alt="Saturn">
+                           </a>
+                           <a class="planet-link" href="#">
+                              <img class="planet uran" src="img/uran/uran.png" alt="Uran">
+                           </a>
+                           <a class="planet-link" href="#">
+                              <img class="planet neptun" src="img/neptun/nept.png" alt="Neptune">
+                           </a>
+                        </div>
+                     </div>
                      <span>
                         <i> How the solar system formed, was found and what it's filled with.</i>
                      </span>
-
 
                      <p>
                         The order of the planets in the solar system, starting nearest the sun and
@@ -409,42 +558,7 @@
                         Cloud, which is thought to surround the solar system.
                      </p>
                      <br>
-                     <div class="planet__image__container  solar">
-                        <div class="planet-image ">
-                           <a class="solarSystem-link" href="#">
-                              <img class="planet realsun sun__one"
-                                 src="img/sun/real sun PNG image with transparent background.png">
-                              <img class="planet sun " src="img/sun/sun1.png" alt="Sun">
-                              <img class="planet sun sun__one" src="img/sun/Hot Sun1.png" alt="Sun">
-                              <img class="planet sun sun__two" src="img/sun/sunny.png" alt="Sun">
-                           </a>
-
-                           <a class="planet-link" href="#">
-                              <img class="planet mercury" src="img/mercury/mercury.jpg" alt="Mercury">
-                           </a>
-                           <a class="planet-link" href="#">
-                              <img class="planet earth" src="img/earth/earth3.jpg" alt="Earth">
-                           </a>
-                           <a class="planet-link" href="#">
-                              <img class="planet venus" src="img/venus/venus.jpg" alt="Venus">
-                           </a>
-                           <a class="planet-link" href="#">
-                              <img class="planet mars" src="img/mars/marss.jpg" alt="Mars">
-                           </a>
-                           <a class="planet-link" href="#">
-                              <img class="planet jupiter" src="img/jupiter/jupiter.jpg" alt="Jupiter">
-                           </a>
-                           <a class="planet-link" href="#">
-                              <img class="planet saturn" src="img/saturn/saturn.png" alt="Saturn">
-                           </a>
-                           <a class="planet-link" href="#">
-                              <img class="planet uran" src="img/uran/uran.png" alt="Uran">
-                           </a>
-                           <a class="planet-link" href="#">
-                              <img class="planet neptun" src="img/neptun/nept.png" alt="Neptune">
-                           </a>
-                        </div>
-                     </div>
+                     
 
                      <article>
                         <ul class="tabcontent__descr__list">
@@ -681,8 +795,8 @@
                              <h2 class="sub__title">
                                  Mercury
                              </h2>
-                             <a class="tabcontent__descr__btn tabcontent__descr__btn__active" href="#">Show more</a>
-                             <li class="tabcontent__descr show fade">
+                             <a class="tabcontent__descr__btn " href="#">Show more</a>
+                             <li class="tabcontent__descr hide">
                                  <div class="planet__info__image__container">
              
                                      <div class="planet__image__container">
@@ -1031,8 +1145,7 @@
                            </ul>
                         </div>
                         <div class="planet__image__container">
-                           <img class="planet-image rotate" src="img/venus/venus.jpg" alt="Venus" width="300"
-                              height="300">
+                           <img class="planet-image rotate" src="img/venus/venus.jpg" alt="Venus" >
 
                         </div>
                         <div class="basic-info">
@@ -1144,8 +1257,7 @@
                            </ul>
                         </div>
                         <div class="planet__image__container">
-                           <img class="planet-image rotate" src="img/earth/earth1.png" alt="Earth" width="300"
-                              height="300">
+                           <img class="planet-image rotate" src="img/earth/earth1.png" alt="Earth" >
 
                         </div>
                         <div class="basic-info">
@@ -1267,8 +1379,7 @@
                            </ul>
                         </div>
                         <div class="planet__image__container">
-                           <img class="planet-image rotate" src="img/mars/marss.jpg" alt="mars" width="300"
-                              height="300">
+                           <img class="planet-image rotate" src="img/mars/marss.jpg" alt="mars" >
 
                         </div>
                         <div class="basic-info">
@@ -1611,8 +1722,7 @@
                            </ul>
                         </div>
                         <div class="planet__image__container">
-                           <img class="planet-image rotate" src="img/uran/uran.png" alt="Uranus" width="300"
-                              height="300">
+                           <img class="planet-image rotate" src="img/uran/uran.png" alt="Uranus" >
 
                         </div>
                         <div class="basic-info">
@@ -1717,8 +1827,7 @@
                            </ul>
                         </div>
                         <div class="planet__image__container">
-                           <img class="planet-image rotate" src="img/neptun/nept.png" alt="Neptune" width="300"
-                              height="300">
+                           <img class="planet-image rotate" src="img/neptun/nept.png" alt="Neptune" >
 
                         </div>
                         <div class="basic-info">
@@ -1813,10 +1922,9 @@
       </div>
 
    </div>
-   <a class="tabcontent__descr__btn " href="#">Show more</a>
+
    <script src="list.script.js"></script>
-
-
+   <script src="script.js"></script>
 </body>
 
 </html>
